@@ -1,0 +1,52 @@
+/* Responsive retrofit for legacy fixed-width table layout */
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, embed, object {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    background-attachment: scroll !important;
+    background-size: cover !important;
+  }
+
+  table, thead, tbody, tr, th, td {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  table {
+    border: none !important;
+  }
+
+  td {
+    padding: 6px 10px !important;
+  }
+
+  img {
+    width: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  font[size="+3"], font[size="7"] {
+    font-size: 22px !important;
+  }
+
+  p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
