@@ -1,0 +1,503 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<!-- Inserted by miarroba -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org' . concat('/choice/', 'd5x2uDVHd7ALE', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+  firstScript.parentNode.insertBefore(element, firstScript);
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+      var payload = json.__tcfapiCall;
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+  makeStub();
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+<!-- Inserted by miarroba -->
+<title>los parques_carlosquaglia</title>
+<meta http-equiv="" content="text/html; charset=iso-8859-1">
+<meta http-equiv="" content="text/html; charset=iso-8859-1">
+<meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"></head>
+
+<body bgcolor="#339999" text="#000033" link="#FF9900" vlink="#9933FF" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Inserted by miarroba -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2VG59" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Inserted by miarroba -->
+<p>&nbsp;</p>
+<p><strong><a href="index.html"><em>Volver</em></a></strong></p>
+<p> 
+  <embed src="UnLugarenelTiempo.mid" width="18" height="15" align="middle"></embed></p>
+<p align="center"><strong><em><strong><em><img src="estrellita%20blanca.gif" width="31" height="31"></em></strong><u>Una 
+  visi&oacute;n diferente</u>...</em></strong></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong></strong></em></p>
+<p>&nbsp;</p>
+<table width="43%" border="0" align="right">
+  <tr> 
+    <td><em><strong>Autor: Carlos Quaglia </strong><font size="2">( Argentino 
+      radicado en Brasil)</font></em></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p></p>
+<p>&nbsp;</p>
+<p><strong>&nbsp;</strong></p>
+<table width="1077" border="1" align="center">
+  <tr>
+    <td><p align="center"><em><em><font color="#FFFF00">&iexcl;Nuevo!</font></em></em><strong><em><strong><em><img src="estrellita%20blanca.gif" width="31" height="31"></em></strong></em><u><em>ESTA NOITE DE NATAL</em></u><em>...</em></strong></p>
+      <p align="center"><em><strong>&nbsp;</strong></em></p>
+      <p align="center"><em><strong>As estrelas est&atilde;o... Mas, n&atilde;o est&atilde;o iluminando.</strong></em></p>
+      <p align="center"><em><strong>Porque n&atilde;o est&atilde;o iluminando?...</strong></em></p>
+      <p align="center"><em><strong>Porque est&atilde;o atr&aacute;s das obscuras nuvens.</strong></em></p>
+      <p align="center"><em><strong>&nbsp;</strong></em></p>
+      <p align="center"><em><strong>As nuvens est&atilde;o... E est&atilde;o assombrando.</strong></em></p>
+      <p align="center"><em><strong>&nbsp;</strong></em></p>
+      <p align="center"><em><strong>Se as estrelas n&atilde;o te iluminam,</strong></em></p>
+      <p align="center"><em><strong>Que as nuvens te assombrem...</strong></em></p>
+      <p align="center"><em><strong>&nbsp;</strong></em></p>
+    <p align="center"><em><strong>Esta noite estarei contigo. Na luz ou na sombra.</strong></em></p>
+    <p align="center">&nbsp;</p></td>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+<p align="center"><strong><a href="index.html"><em>Volver</em></a></strong></p>
+<p>&nbsp;</p>
+<p align="center"><em><strong><u>Algunos anteriores</u></strong></em></p>
+<p>&nbsp;</p>
+<table width="1080" border="1" align="center">
+  <tr>
+    <td width="666"><p align="center"><strong><em><strong><em><img src="estrellita%20blanca.gif" width="31" height="31"></em></strong></em></strong><strong><em><u>UN DESCANSO EN  EL CAMINO</u>&hellip;</em></strong></p>
+      <p><em><strong>&nbsp;</strong></em></p>
+      <p align="center"><em><strong>Estoy dentro de  un bell&iacute;simo paisaje&hellip;</strong><br>
+      <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Un nacer  del sol a la orilla del mar.</strong></em></p>
+      <p align="center"><em><strong>Trato de  concentrarme y observarlo sin distraerme&hellip;</strong><br>
+        <strong>Y al poco  tiempo me veo pensando en &eacute;l, pensando sobre su belleza, asoci&aacute;ndola con otras  bellezas que he conocido y que anhelo conocer.</strong><br>
+      <strong>&nbsp;Distra&iacute;do y perdido en mis pensamientos e  im&aacute;genes: sin poder atender al bello &nbsp;nacer  del sol que me rodea.</strong></em></p>
+      <p align="center"><em><strong>Esos  pensamientos e im&aacute;genes me envuelven en un clima emotivo y me dejan encerrado  en m&iacute; mismo.</strong></em></p>
+      <p align="center"><em><strong>Por m&aacute;s que me  resista e intente volver al paisaje externo, mi paisaje interno se sobrepone y  mi mente se queda encadenada a sus contenidos.</strong></em></p>
+      <p align="center"><em><strong>Insisto y, con  el sol ya alto, percibo al paisaje y a m&iacute; mismo como hechos de la misma  sustancia, formando una unidad.</strong></em></p>
+      <p align="center"><em><strong>Agradezco, me  levanto y contin&uacute;o alegremente mi camino&hellip;</strong></em></p>
+      <p align="center"><em><br>
+      </em></p>
+      <p align="center">&nbsp;</p>
+    </td>
+    <td width="398"><p align="center"><img src="VIAGEM-graciela-maria-casartelli.jpg" width="526" height="395"></p>
+      <p align="center">&nbsp;</p>
+      <p align="center">&nbsp;</p>
+    </td>
+  </tr>
+</table>
+<p align="center"><strong><em><br>
+</em></strong></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<table width="1046" border="1" align="center">
+  <tr>
+    <td width="633"><p align="center"><em><strong><u>CUENTO &nbsp;DE DRAGONES</u>&hellip;</strong></em></p>
+      <p><strong>&nbsp;</strong></p>
+      <p><strong><em>Hab&iacute;a una vez, hace no demasiado tiempo, ni demasiado  espacio; hab&iacute;a un lugar en el cual andaban por las veredas y calles: gatos,  perros, tigres, zorros, leones, tortugas, hormigas; y hasta dragones&hellip;</em></strong></p>
+      <p><em><strong>Eran los dragones los que m&aacute;s me atra&iacute;an, pues echaban fuego  por la boca, o volaban.</strong></em></p>
+      <p><em><strong>Al mismo tiempo, me atemorizaban; pues nuestros padres nos  dec&iacute;an que jugar con fuego era peligroso: O uno se quemaba, o uno se hac&iacute;a pis  en la cama&hellip;</strong><br>
+            <strong>Yo pienso que nunca jugu&eacute; con los dragones porque no  recuerdo haberme quemado ni haberme hecho pis en la cama</strong><br>
+            <strong>Pero tuve amigos que jugaron&hellip; Nunca supe que se hubiesen  hecho pis, pero s&iacute; los vi consumirse entre las llamas entre gritos y llantos&hellip;</strong></em></p>
+      <p><em><strong>Pero esta historia se est&aacute; volviendo triste y no tiene  gracia quedarse en la tristeza.</strong></em></p>
+      <p><em><strong>Hab&iacute;a tambi&eacute;n dragones que no echaban fuego por la boca,  pero s&iacute; volaban&hellip;</strong></em></p>
+      <p><em><strong>Nuestros padres tambi&eacute;n nos dec&iacute;an que era peligroso jugar  con ellos, pues uno se pod&iacute;a caer&hellip;</strong><br>
+            <strong>En este caso, como no exist&iacute;a el riesgo de hacerse pis en la  cama (cosa horrorosa), eran m&aacute;s los amigos que jugaban con ellos. </strong><br>
+            <strong>Vi a muchos caerse&hellip; Y tambi&eacute;n los vi levantarse y seguir  jugando&hellip; Subiendo cada vez un poquito m&aacute;s, hasta que desde abajo no se los  pod&iacute;a distinguir de los dragones, dejando muy tristes a los padres que no quer&iacute;an  volar con sus hijos para convertirse en dragones.</strong></em></p>
+    <p><em><strong>Sin embargo, algunos padres lo hicieron&hellip; Y antes de fundirse  con los dragones, se los ve&iacute;a muy contentos y felices.</strong></em></p></td>
+    <td width="397"><p align="center"><strong><em><u>M&Aacute;GICOS INSTANTES</u></em></strong></p>
+      <p align="center"><em><strong>&nbsp;</strong></em></p>
+      <p align="center"><em><strong>Pasaste muy cerca: Como la suave brisa de un aletear  de p&aacute;jaros&hellip;</strong></em></p>
+      <p align="center"><em><strong>Como la leve fragancia de frutas silvestres&hellip;&nbsp; </strong></em></p>
+      <p align="center"><em><strong>Como el abrir y cerrar</strong></em></p>
+      <p align="center"><em><strong>de ojos de una mirada transparente.</strong></em></p>
+      <p align="center"><em><strong>&nbsp;</strong></em></p>
+      <p align="center"><em><strong>En esos m&aacute;gicos instantes compusimos una sinfon&iacute;a con  todos sus</strong></em> <em><strong>movimientos...&nbsp; </strong></em></p>
+      <p align="center"><em><strong>Y la grabamos en nuestra memoria com&uacute;n.</strong></em></p></td>
+  </tr>
+</table>
+<table width="1051" border="1" align="center">
+  <tr>
+    <td><p align="center"><em><strong><u>AMAR...TE</u>.</strong></em></p>
+      <p><em><strong>&nbsp;</strong></em></p>
+      <p align="center"><em><strong>Amarte es no extra&ntilde;arte.</strong></em></p>
+      <p align="center"><em><strong>Es siempre recordarte;</strong></em></p>
+      <p align="center"><em><strong>con placer y agradecimiento...</strong></em></p>
+      <p align="center"><em><strong>&nbsp;</strong></em></p>
+      <p align="center"><em><strong>Amarte es no descartarte.</strong></em></p>
+      <p align="center"><em><strong>Es siempre esperarte;</strong></em></p>
+      <p align="center"><em><strong>con alegr&iacute;a y merecimiento...</strong></em></p>
+      <p align="center"><em><strong>&nbsp;</strong></em></p>
+      <p align="center"><em><strong>Amarte es no buscarte.</strong></em></p>
+      <p align="center"><em><strong>Es siempre encontrarte;</strong></em></p>
+      <p align="center"><em><strong>con amable reconocimiento...</strong></em></p>
+      <p align="center"><em><strong>&nbsp;</strong></em></p>
+      <p align="center"><em><strong>Amarte es jugar contigo;</strong></em></p>
+      <p align="center"><em><strong>como juego con las palabras;</strong></em></p>
+    <p align="center"><em><strong>sin trampas ni sufrimiento&hellip;</strong></em><strong></strong></p></td>
+    <td><p align="center"><strong><em>&nbsp;<u>COMO&nbsp; PABLO&nbsp;  NERUDA</u>...</em></strong></p>
+      <p align="center"><em><strong>&nbsp;</strong></em></p>
+      <p align="center"><em><strong>Poderia escrever os versos mais tristes esta noite...</strong></em></p>
+      <p align="center"><em><strong>Escrever, por exemplo:</strong></em></p>
+      <p align="center"><em><strong>Que o c&eacute;u est&aacute; nublado.</strong><br>
+            <strong>E meu cora&ccedil;&atilde;o, aberto, est&aacute; arrasado.</strong></em></p>
+      <p align="center"><em><strong>Poderia, estilo Pablo, escrever:</strong></em></p>
+      <p align="center"><em><strong>Corpo de mulher, morros ondulados,</strong><br>
+            <strong>Pareces-te &agrave; floresta em tua &iacute;ntima umidade.</strong></em></p>
+      <p align="center"><em><strong>Poderia... Em fim..., compor um poema de amor.</strong></em></p>
+      <p align="center"><em><strong>Para, hoje &agrave; noite,</strong></em></p>
+      <p align="center"><em><strong>ajudar-me a aceitar tua aus&ecirc;ncia sem dor...</strong></em></p>
+      <p align="center">&nbsp;</p>
+      <p align="center">&nbsp;</p>
+    <p align="center"></p></td>
+  </tr>
+</table>
+<p align="center"><strong><em><u>UN ARTISTA</u>&hellip;</em></strong></p>
+<p align="center"><em><strong>&nbsp;</strong></em></p>
+<p align="center"><em><strong>Un artista es quien consigue que otros perciban su  subjetividad en la forma que &eacute;l la expresa&hellip;</strong></em></p>
+<p align="center"><em><strong>Esto puede ser a trav&eacute;s de la pintura, de la  escultura, de la m&uacute;sica, de la danza, del teatro, o de la literatura.</strong></em></p>
+<p align="center"><em><strong>B&aacute;sicamente es un don innato, que no se ense&ntilde;a ni se  aprende en academias o instituciones.</strong><br>
+      <strong>El problema no est&aacute; en las dificultades que pueda  tener su desarrollo material, lo que s&iacute; se ense&ntilde;a y se aprende en los lugares  citados y un artista puede frecuentarlos si le sirven.</strong></em></p>
+<p align="center"><em><strong>El problema puede estar en la respuesta al &iquest;para qu&eacute;?&hellip;  Y tambi&eacute;n al &iquest;qu&eacute;?</strong><br>
+      <strong>&iquest;Qu&eacute; se quiere expresar?... &iquest;Y para qu&eacute;?</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><strong><em><strong><em><img src="estrellita%20blanca.gif" width="31" height="31"></em></strong><u>VIAGEM DE IDA E VOLTA...</u></em></strong></p>
+<p align="center"><em><strong>&nbsp;</strong></em></p>
+<p align="center"><em><strong>Uma noite obscura, sem lua, nem  far&oacute;is pr&oacute;ximos.</strong><br>
+      <strong>Nuvens borrascosas... Como de  tormenta.</strong></em></p>
+<p align="center"><em><strong>Uma rua vazia e silenciosa... Sem  casas &agrave; vista, quase campo.</strong><br>
+      <strong>Com mato e &aacute;rvores frondosas nas  laterais.</strong></em></p>
+<p align="center"><em><strong>A sombra existir n&atilde;o deveria... Pois  luz n&atilde;o havia.</strong><br>
+      <strong>Mas, quando me ro&ccedil;ou... Um frio  visceral me envolveu.</strong></em></p>
+<p align="center"><em><strong>Enquanto ia perdendo a vis&atilde;o e tudo  ia ficando mais escuro...</strong></em></p>
+<p align="center"><em><strong>Entretanto, meus ouvidos sentiam  m&uacute;sicas, nas quais reconhecia o Wagner, Beethoven e Strauss, que me foram  envolvendo num girar enlouquecido e sem fim.</strong></em></p>
+<p align="center"><em><strong>Quando a m&uacute;sica e os giros acabaram  e recobrei a vis&atilde;o, era um dia de sol maravilhoso e me encontrava numa pradaria  calidamente verde, maculado por azuis, vermelhos, laranjas e amarelos de flores  esparsas na pradaria.</strong></em></p>
+<p align="center"><em><strong>Tal coisa n&atilde;o podia ser poss&iacute;vel, a  menos que estivesse sonhando ou morto...</strong></em></p>
+<p align="center"><em><strong>Ent&atilde;o comecei a percorrer meu corpo  com as m&atilde;os, reconhecendo como pr&oacute;prio cada um dos seus setores.</strong></em></p>
+<p align="center"><em><strong>Mas, mesmo assim, havia algo que n&atilde;o  encaixava em minhas sensa&ccedil;&otilde;es... E n&atilde;o consegui descobrir o qu&ecirc; era.</strong></em></p>
+<p align="center"><em><strong>Decidi caminhar para reconhecer o  lugar e encontrar algum indicio de onde me encontrava...</strong><br>
+      <strong>O sol brilhava calidamente, mas n&atilde;o  podia determinar se estava se pondo ou nascendo, nem havia nuvens que pudessem  dar alguma referencia de sua localiza&ccedil;&atilde;o. E n&atilde;o estava vertical sobre mim.</strong><br>
+      <strong>Ent&atilde;o, decidi caminhar em sua dire&ccedil;&atilde;o,  pois a pesar de sua luminosidade espl&ecirc;ndida, n&atilde;o me cegava.</strong></em></p>
+<p align="center"><em><strong>Comecei a caminhar a bom passo, mas  sem pressa, para chegar a algum lugar, enquanto sentia um prazeroso vigor no  meu corpo. </strong></em></p>
+<p align="center"><em><strong>Deparei-me com um animal de quatro  patas caminhando em minha dire&ccedil;&atilde;o...</strong><br>
+      <strong>Ao nos aproximarmos, percebi que era  um lobo de mais ou menos um metro e meio de altura.</strong><br>
+      <strong>Nem ele nem eu sentimos receio por nosso  encontro e continuamos nos aproximando.</strong><br>
+      <strong>Antes de bater nos detivemos e nos  olhamos nos olhos... </strong><br>
+      <strong>Eu registrei uma instant&acirc;nea reminisc&ecirc;ncia  no seu olhar.</strong><br>
+      <strong>Continuei a observ&aacute;-lo com aten&ccedil;&atilde;o,  mas acabei desistindo de lembrar de onde eu o conhecia.</strong><br>
+      <strong>Ao observar suas patas dianteiras,  vi que eram como m&atilde;os...</strong><br>
+      <strong>E nesse preciso instante, ele me  estendeu a sua direita e a apoiou amistosamente na palma da minha, sem deixar  de olhar nos meus olhos.</strong><br>
+      <strong>Eu n&atilde;o podia pensar e nada falei,  pois ele n&atilde;o teria entendido minha l&iacute;ngua.</strong></em></p>
+<p align="center"><em><strong>N&atilde;o obstante isso, de alguma  maneira, com o seu olhar transparente, o estranho lobo indicou-me para segui-lo  em sua dire&ccedil;&atilde;o, oposta da minha e do sol...</strong><br>
+      <strong>N&atilde;o vacilei em aceitar seu convite e  recome&ccedil;amos a caminhar lado a lado.</strong><br>
+      <strong>Com o seu olhar ele ia me indicando  regi&otilde;es da paisagem, entre as quais consegui distinguir riachos com &aacute;guas de  mil cores em movimento, e suaves e ondulantes colinas, que me falavam de  belezas que n&atilde;o cabiam no meu entendimento, mas que de alguma maneira conseguia  reconhecer.</strong></em></p>
+<p align="center"><em><strong>Era-me imposs&iacute;vel determinar o tempo  transcorrido, pois o sol continuava no mesmo lugar e as paisagens se sucediam  sem interrup&ccedil;&atilde;o, como se fossem uma s&oacute;... &nbsp;</strong></em></p>
+<p align="center"><em><strong>Estava vivendo um instante m&aacute;gico e  desisti de quebr&aacute;-lo com a minha raz&atilde;o.</strong><br>
+      <strong>N&atilde;o posso ent&atilde;o dizer quanto tempo  foi isso, nem qual era esse espa&ccedil;o onde estava.</strong></em></p>
+<p align="center"><em><strong>Mas, lembro que em um momento, o  lobo e eu nos detivemos e ficamos de novo frente a frente.</strong><br>
+      <strong>Ent&atilde;o, ele me estendeu novamente sua  m&atilde;o, tomando a minha e me indicando que a&iacute; se separavam os nossos caminhos.</strong></em></p>
+<p align="center"><em><strong>Mas, que novamente nos  encontrar&iacute;amos...</strong></em></p>
+<p align="center"><em><strong>A lembran&ccedil;a posterior foi de eu  girando na m&uacute;sica na mais completa escurid&atilde;o. </strong><br>
+      <strong>Pouco depois, um frio visceral... E  logo, novamente na noite obscura, onde antes me encontrava caminhando rumo &agrave;  minha casa.</strong></em></p>
+<p align="center"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><em><img src="estrellita%20blanca.gif" width="31" height="31"></em></strong>&nbsp;  &nbsp;<u>VIDA HUMANA</u>&hellip;</em></strong></p>
+<p align="center"><strong>&nbsp;</strong></p>
+<p align="center"><strong><em>Debemos confiar  en la vida&hellip;</em></strong></p>
+<p align="center"><em><strong>Comprender que  en ella hay sabidur&iacute;a.</strong></em></p>
+<p align="center"><em><strong>&nbsp;</strong></em></p>
+<p align="center"><em><strong>Podremos crear  vida&hellip;</strong></em></p>
+<p align="center"><em><strong>&iquest;Qu&eacute; tipo de  vida vamos a crear?...</strong></em></p>
+<p align="center"><em><strong>&iquest;Mejor o peor  que la nuestra, la de ahora? &nbsp;</strong></em></p>
+<p align="center"><em><strong>&nbsp;</strong></em></p>
+<p align="center"><strong><em>Debemos confiar  en la vida&hellip;</em></strong></p>
+<p align="center"><em><strong>Y en la m&aacute;s  evolucionada y compleja de sus expresiones:</strong></em></p>
+<p align="center"><em><strong>La vida humana.</strong></em></p>
+<p align="center"><em><strong>&nbsp;</strong></em></p>
+<p align="center"><em><strong>En ella hay  Sabidur&iacute;a, hay Fuerza y hay Bondad&hellip;</strong></em></p>
+<p align="center"><em><strong>Abri&eacute;ndose  paso.</strong></em></p>
+<div>
+  <p align="center"><em><strong>&nbsp;</strong></em></p>
+</div>
+<p align="center"><em><strong>&nbsp;</strong></em></p>
+<p align="center"><em><strong>Tal vez esto no sea la vida humana&hellip; Tal vez, la vida  humana es inaprensible en s&iacute; misma.</strong></em></p>
+<p align="center"><em><strong>Esto es una visi&oacute;n de la vida humana y hay tantas  visiones como miradas existen.</strong></em><strong></strong></p>
+<p align="center">&nbsp;</p>
+<p align="center"><strong>--------------------</strong></p>
+<table width="1211" border="1" align="center">
+  <tr>
+    <th width="378" scope="col"><p align="center"><strong><em><strong><em><img src="estrellita%20blanca.gif" width="31" height="31"></em></strong><u>ESCRIBIR</u>&hellip;</em></strong></p>
+      <p align="center"><em><strong>&nbsp;</strong></em></p>
+      <p align="center"><em><strong>Escribir por el  placer de expresar un registro interno, el que de por s&iacute; es intraducible&hellip; o  inexpresable, por s&iacute; mismo.</strong></em></p>
+      <p align="center"><em><strong>Cada palabra  debe estar asociada a alguna part&iacute;cula espec&iacute;fica del registro interno y cada  signo de puntuaci&oacute;n debe tener una resonancia r&iacute;tmica con &eacute;l.</strong></em></p>
+      <p align="center"><em><strong>M&aacute;s tarde,  despu&eacute;s, al leer lo escrito, debe reproducirse el registro.</strong></em></p>
+    <p align="center"><em><strong>Y ese escrito,  le&iacute;do por otros, s&oacute;lo ser&aacute; comprensible si evoca el mismo registro interno en  quienes lo leen.</strong></em></p></th>
+    <th width="817" scope="col"><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em><strong><em><img src="estrellita%20blanca.gif" width="31" height="31"></em></strong></em>&nbsp;<u><em>&nbsp;  ESCREVER...</em></u></strong></p>
+      <p><strong>&nbsp;</strong></p>
+      <p><strong><em>Escrever, hoje em dia, &eacute; digitar num  teclado e ver o resultado na tela de um computador, como antes era ver num  papel numa m&aacute;quina de escrever e antes era desenhar signos com uma caneta numa  folha de papel.</em></strong></p>
+      <p><em><strong>Fora disso, escrever &eacute; brincar com as  palavras, ordenando-as de acordo aos seus significados.</strong></em></p>
+      <p><em><strong>Esses significados s&atilde;o absolutamente  subjetivos e n&atilde;o t&ecirc;m um padr&atilde;o comum e objetivo.</strong></em></p>
+      <p><em><strong>E quando as palavras v&atilde;o se combinando,  v&atilde;o surgindo significados mais complexos, tamb&eacute;m subjetivos.</strong></em></p>
+      <p><em><strong>Depois de terminado, um escrito &eacute; a  s&iacute;ntese de significados anteriores e, simultaneamente, um novo significado.</strong></em></p>
+      <p><em><strong>Lido por outra pessoa pode resultar tal  vez inintelig&iacute;vel...</strong><br>
+    <strong>Ou pode ter um significado distinto.</strong></em></p></th>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><em>Supe que mis ojos ya no ver&iacute;an los tuyos...</em></p>
+<p align="center"><br>
+  <em><strong><em><img src="estrellita%20blanca.gif" width="31" height="31"></em></strong><u>M 
+  A M I</u>...</em></p>
+<p align="center"><em><br>
+  Hola Mami: hoy estuviste conmigo y estuve con vos, conversando.</em></p>
+<p align="center"><em> Por la primera vez desde hace 20 a&ntilde;os, cuando te 
+  fuiste de aqu&iacute;.</em></p>
+<p align="center"><em> Sin verte com mis ojos provis&oacute;rios, senti tu presencia 
+  y creo que sentiste la mia...</em></p>
+<p align="center"><em> Te ayud&eacute; a morir, &iquest;te acord&aacute;s?..., 
+  Como vos me ayudaste a nacer.</em></p>
+<p align="center"><em> Me suenan todavia tus &uacute;ltimas palabras: &#8220;Cachi: 
+  em la vida no vale la pena hacerse mala sangre&#8221;; vos, que tanto te la 
+  hiciste por mi...!</em></p>
+<p align="center"><em> Despu&eacute;s cerraste los ojos, mientras yo trataba de 
+  guiarte por tu camino interno...</em></p>
+<p align="center"><em> Cuando todo termin&oacute;, me quede em silencio y no derram&eacute; 
+  uma l&aacute;grima. Por alguna raz&oacute;n, sent&iacute; que no eras ese cuerpo.<br>
+  <br>
+  Algunos d&iacute;as despu&eacute;s, cuando fui a recoger el que hab&iacute;a<br>
+  sido tu cuerpo, ya preparado para viajar a Buenos Aires,<br>
+  donde ser&iacute;a enterrado; al ver ese rostro, llor&eacute;...</em></p>
+<p align="center"><em> Tambi&eacute;n tengo un cuerpo y supe que los ojos de &eacute;l 
+  ya <br>
+  no ver&iacute;an m&aacute;s el tuyo.</em></p>
+<p align="center"><em> Fueron lindos los &uacute;ltimos meses que pasamos juntos 
+  y sent&iacute;<br>
+  que pude agradecerte todo lo que siempre me diste y por lo<br>
+  que nunca te hab&iacute;a dicho gracias.</em></p>
+<p align="center"><em>. . .</em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em></em><strong><em><strong><em><img src="estrellita%20blanca.gif" width="31" height="31"></em></strong>(&iquest;O 
+  los &uacute;ltimos ser&aacute;n los primeros?...)</em></strong></p>
+<p>&nbsp;</p>
+<table width="88%" border="0" align="center">
+  <tr>
+    <td width="61%"><p align="center"><em><strong>Mis padres se contin&uacute;an 
+        en m&iacute;&#8230;<br>
+        <br>
+        Y los padres de mis padres&#8230;<br>
+        <br>
+        Y los padres de los padres de mis padres&#8230;</strong></em></p>
+      <p align="center"><em><strong>Y as&iacute; podr&iacute;amos remontarnos 
+        hasta los primeros seres humanos.<br>
+        <br>
+        Ad&aacute;n y Eva, por ejemplo, en el caso de partir de esa historia.</strong></em></p>
+      <p align="center"><em><strong><br>
+        O, partiendo de otra: Aquellos &#8220;hom&iacute;nidas&#8221;, animales 
+        fr&aacute;giles<br>
+        <br>
+        y vulnerables, parecidos con los monos, pero no monos ni descendientes<br>
+        <br>
+        de ellos y s&iacute; posiblemente otra rama de un largo e intrincado proceso 
+        de <br>
+        <br>
+        evoluci&oacute;n natural.</strong></em></p>
+</td>
+    <td width="39%"><div align="center"><img src="imagencarlosquaglia.jpg" width="352" height="512"><br>
+        <em>Pintura con pasteles al &oacute;leo de Mirta Beatriz Campos (Mendiolaza, 
+        C&oacute;rdoba, Argentina) </em> <br>
+      </div></td>
+  </tr>
+</table>
+<p align="center"><em><strong>Y ah&iacute; estaban ellos, aterrorizados y diezmados 
+  por predadores y fuerzas de la naturaleza&#8230;, junt&aacute;ndose en comunidades 
+  como otros <br>
+  animales y perdiendo todas las batallas&#8230;</strong></em></p>
+<p align="center"><em><strong>Hasta que un d&iacute;a (o &#8220;era una vez&#8221;), 
+  despu&eacute;s de una tormenta el&eacute;ctrica que dej&oacute; &aacute;rboles 
+  incendiados, alg&uacute;n o algunos de estos fr&aacute;giles<br>
+  seres, no huyeron del fuego como todos los otros, sino que, a riesgo de la integridad 
+  de sus vidas, fueron hacia &eacute;l,<br>
+  lo recogieron y aprendieron a conservarlo y producirlo.</strong></em></p>
+<p align="center"><em><strong>Dejaron entonces de ser animales, pues fueron m&aacute;s 
+  all&aacute; de los l&iacute;mites impuestos por el natural instinto de conservaci&oacute;n.</strong></em></p>
+<p align="center"><em><strong>&iquest;Por que hicieron eso?... Una verdadera &#8220;locura&#8221;, 
+  podr&iacute;a decirse.</strong></em></p>
+<p align="center"><em><strong>Seguramente porque algo dentro de ellos les permiti&oacute; 
+  antever un futuro, en el cual el fuego los calentar&iacute;a, mantendr&iacute;a 
+  a raya a sus<br>
+  predadores y les permitir&iacute;a cocinar sus alimentos; superando as&iacute; 
+  el dolor y el sufrimiento.</strong></em></p>
+<p align="center"><em><strong>Fue entonces el surgimiento de los primeros seres 
+  humanos&#8230; Dotados de una conciencia intencional apta para dise&ntilde;ar 
+  el futuro, <br>
+  transformando la naturaleza y a s&iacute; mismos.</strong></em></p>
+<p align="center"><em><strong>Y as&iacute; fueron ellos construyendo la historia 
+  humana, en la cual, junto a muchos aciertos, sumaron tambi&eacute;n muchos errores.</strong></em></p>
+<p align="center"><em><strong>Y todos ellos, con sus aciertos y sus errores, se 
+  contin&uacute;an en nosotros, aprendiendo sin l&iacute;mites.</strong></em></p>
+<p align="center"><strong> </strong> </p>
+<p align="center"><em><strong> <br>
+  </strong></em> <em><font size="2">Reservados todos los derechos de autor.</font></em></p>
+<p align="center"></p>
+<p align="center"><strong><a href="index.html"><em>Volver</em></a></strong></p>
+<p> <br>
+</p>
+<!-- Inserted by miarroba -->
+</script></noframes></noembed></noscript>
+<script type="text/javascript" src="https://hosting.miarroba.info/?__muid=ed9e6a264cde1bc792bf148e45ce0e4ebdd18f7c&amp;h=1395044&amp;t=1614096502&amp;k=cf2a7c11098d1a919d87bfa78053e91f"></script><noscript><img alt="beacon" border="0" width="1" height="1" src="https://hosting.miarroba.info/?__muid=ed9e6a264cde1bc792bf148e45ce0e4ebdd18f7c&amp;h=1395044&amp;t=1614096502&amp;k=cf2a7c11098d1a919d87bfa78053e91f&amp;img=1" /></noscript>
+<script type="text/javascript">var s=document.createElement("script");var t="//des.smartclip.net/ads?type=dyn&plc=75133&elementId=ed9e6a264cde1bc792bf148e45ce0e4ebdd18f7c&sz=400x320&rnd="+Math.round(Math.random()*1e8);s.type="text/javascript";s.src=t;document.body.appendChild(s);</script><div id="ed9e6a264cde1bc792bf148e45ce0e4ebdd18f7c"></div>
+<div id="ads_HEZRL65RXYI2"></div>
+<script defer="" language="javascript" type="text/javascript">
+(function(){
+var newscript= document.createElement('script');
+newscript.type = 'text/javascript';
+newscript.async = true;
+lz_elem = (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]);
+lz_elem.appendChild(newscript);
+newscript.onload = function(ev){
+var lz_url="https://play.sunmediaads.com/red/zone.php?code=HEZRL65RXYI2&a=&pubid=&lgid="+((new Date()).getTime() % 2147483648) + Math.random();
+var lz_target = "ads_HEZRL65RXYI2";
+var lz_sync_mode=false;
+lz_loadads(lz_url ,lz_target,lz_sync_mode);
+}
+newscript.src= "https://img.sunmediaads.com/ads/lz_loader.js?ver=1.4";
+})();
+</script>
+<!-- Inserted by miarroba -->
+</body>
+</html>

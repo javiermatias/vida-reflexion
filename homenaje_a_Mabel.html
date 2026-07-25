@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Inserted by miarroba -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org' . concat('/choice/', 'd5x2uDVHd7ALE', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+  firstScript.parentNode.insertBefore(element, firstScript);
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+      var payload = json.__tcfapiCall;
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+  makeStub();
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+<!-- Inserted by miarroba -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Homenaje a Mabel</title>
+<style type="text/css">
+<!--
+body,td,th {
+	color: #330099;
+}
+body {
+	background-color: #FFCCFF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+a:link {
+	color: #FF9900;
+}
+a:visited {
+	color: #9933FF;
+}
+a:hover {
+	color: #006633;
+}
+a:active {
+	color: #FF0000;
+}
+.Estilo1 {
+	font-weight: bold;
+	font-style: italic;
+}
+.Estilo2 {
+	font-size: x-small;
+	font-style: italic;
+}
+.Estilo3 {
+	font-size: 12px
+}
+.Estilo5 {font-size: 14}
+.Estilo6 {font-size: 12}
+-->
+</style></head>
+
+<body>
+<!-- Inserted by miarroba -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2VG59" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Inserted by miarroba -->
+<p><a href="index.html"><em><strong>Volver</strong></em></a></p>
+<p>
+  <embed src="WATERMAR.MID" width="22" height="14"></embed>
+</p>
+<p>&nbsp;</p>
+<p><em>El año 2012, nos llevó a una de las más hermosas personas de quien disfrutamos su amistad por largos años y sentimos hoy su pérdida irreparable...</em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><u><em><strong>Homenaje a Mabel Fernández de Pertile</strong></em></u></p>
+<p align="right">&nbsp;</p>
+<p align="right"><em><strong>Autor: Graciela María Casartelli (Córdoba, Argentina)--------------------------------</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center" class="Estilo1">Imágenes tomadas de la PPs creada por Giovanna Barbará cuando festejamos sus primeros 83 años en casa de Mabel</p>
+<p align="center">&nbsp;</p>
+<table width="508" border="1" align="center">
+  <tr>
+    <td width="667"><img src="mabel1.jpg" width="500" height="375" /></td>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>En dónde estarás flotando…<br />
+  </strong></em></p>
+<p align="center"><em><strong>¿En esa hoja acorazonada verde claro?<br />
+  </strong></em></p>
+<p align="center"><em><strong>¿En esta flor amarilla  intenso?<br />
+  </strong></em></p>
+<p align="center"><em><strong>En el helecho que cuelga gracioso de  la viga de tu quincho encantado…<br />
+  </strong></em></p>
+<p align="center"><em><strong>O en aquellas alas blancas que se pierden en la lejanía….<br />
+  </strong></em></p>
+<p align="center"><em><strong>¿Dónde? ¿Dónde?<br />
+  </strong></em></p>
+<p align="center"><em><strong>En qué lugar encontrar tu alma,<br />
+  </strong></em></p>
+<p align="center"><em><strong>que vibra en muchas tonalidades amigas;<br />
+  </strong></em></p>
+<p align="center"><em><strong>acompaña sin cansarse, se brinda, congrega<br />
+  </strong></em></p>
+<p align="center"><em><strong>se apasiona, canta… se entrega…</strong></em></p>
+<p align="center">&nbsp;</p>
+<table width="512" border="1" align="center">
+  <tr>
+    <td width="667"><img src="mabel2.jpg" width="500" height="375" /></td>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><br />
+  En dónde flotas que no puedo verte, <br />
+  </strong></em></p>
+<p align="center"><em><strong>al tiempo que miles de sucesos compartidos, <br />
+  </strong></em></p>
+<p align="center"><em><strong>me giran y me giran…</strong></em></p>
+<p align="center">&nbsp;</p>
+<table width="510" height="279" border="1" align="right">
+  <tr>
+    <td width="500"><div align="center"><img src="mabel3.jpg" width="500" height="472" /></div></td>
+  </tr>
+</table>
+<p align="center"><em><strong><br />
+  Recordándote…<br />
+  Y sabiendo, que será difícil conocer a alguien <br />
+  con tu capacidad de  entrega,<br />
+  sin que espere algo a  cambio;<br />
+  por el simple don de  comprender,  de ponerse en el lugar del  otro,<br />
+  antes que juzgar o rechazar.</strong></em></p>
+<p align="center"><em><strong>Estás allí.  En esa  hoja, o en esta guía de una flor colgante,<br />
+  pendiente del borde de tu hamaca.<br />
+  </strong></em></p>
+<p align="center"><em><strong>En los miles de detalles que festejaban ese lugar  paradisíaco <br />
+  que te cobijaba.<br />
+  </strong></em></p>
+<p align="center"><em><strong>En el reloj “Cucú” , que quedará  anunciando cada hora,<br />
+  aún sin cuerda, mientras<br />
+  los adornos de los muebles y las paredes, <br />
+  bailarán su danza de pequeños sortilegios.</strong></em></p>
+<p align="center"><em><strong>Y quedamos, amiga , amándonos…<br />
+  entre ese grupo de rosas perfumadas, <br />
+  que procuraban su más elegante aspecto, sólo para reunirnos<br />
+  en un momento cualquiera.<br />
+  </strong></em></p>
+<p align="center"><em><strong>Vamos advirtiendo, cuántos espacios se convierten en vacíos  y<br />
+  sentimos el alma, vacía de vos.<br />
+  Amiga que tantas veces, te “jugaste” por lo que sentías<br />
+  era correspondiente  concretar.  </strong></em></p>
+<p align="center"><em><strong>La más bella flor del interior de tu casa, <br />
+  mansión magnífica; están en esa rama, en esa pequeña flor<br />
+  el alambrado, una simple piedra, un nido y el aleteo  solitario<br />
+  que has dejado en derredor, como ese perfume<br />
+  que anunciaba tu presencia</strong></em></p>
+<p align="center"><em><strong><br />
+  Y extrañándote, <br />
+</strong></em><em><strong>estás cerca, pero ya no te podemos ver.<br />
+  La mesa con sus finas tazas de té, quedó oculta<br />
+  tras el delicado mantel, que movido por el viento cálido, <br />
+  cobijó los platos humeantes y exquisiteces preparados por tu  ternura.<br />
+</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><br />
+</strong></em></p>
+<p align="center"><em><strong>Ternura que con gracia y sonrisas, </strong></em><br />
+  <em><strong>llenaba los ambientes, las calles de tu pueblo y sus  jardines<br />
+Y que, aunque fuera noche lograba amanecer<br />
+creciendo en sonrisas generosas destellantes<br />
+Todas las sonrisas   juntas, del embeleso ingenuo<br />
+de una pequeña flor, un diminuto fruto,<br />
+una verde hoja, marchitada en el viento,<br />
+que no volverá a ser…</strong></em></p>
+<p align="center">&nbsp;</p>
+<table width="200" border="1" align="center">
+  <tr>
+    <td><img src="mabel5.jpg" width="500" height="375" /></td>
+    <td><img src="mabel4.jpg" width="347" height="413" /></td>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+<table width="200" border="1" align="center">
+  <tr>
+    <td><img src="2012 06-16 pensamientos c.jpg" width="640" height="480" /></td>
+  </tr>
+</table>
+<table width="200" border="1" align="right">
+  <tr>
+    <td><div align="center" class="Estilo3"><em>.<span class="Estilo5">...si efectivamente estos PENSAMIENTOS son de nuestro jardín...
+      </span></em>
+    </div>
+      <div class="Estilo5"></div>
+      <div class="Estilo5">
+        <div align="center"><em><br />
+        </em></div>
+      </div>
+      <div class="Estilo5">
+        <div align="center"><em>hoy ha estado nevando aquí... no mucho.</em></div>
+      </div>
+      <div class="Estilo5">
+        <div align="center"><em>Pero curiosamente los PENSAMIENTO crean como una</em></div>
+      </div>
+      <div class="Estilo5">
+        <div align="center"><em>capa de aire en torno a ellos y la nieve no los afecta...</em></div>
+      </div>
+    <div class="Estilo5">
+      <div align="center"><em>es algo muy raro....</em></div>
+    </div>
+    <div align="center" class="Estilo5"><em>Ro.Sartor    </em> </div>
+    <div class="Estilo5">
+      <div align="center" class="Estilo2"><em><a href="http://esperantorondo.blogspot.com/" target="_blank">Esperantorondo.blogspot.com</a></em></div>
+    </div>
+    <div>
+      <div align="center" class="Estilo2"><em><a href="http://mendozaesperantorondo.blogspot.com/" target="_blank">mendozaesperantorondo.blogspot.com</a></em></div>
+    </div></td>
+  </tr>
+</table>
+<div align="center"></div>
+<p align="center">&nbsp;</p>
+<p align="center" class="Estilo2">&nbsp; </p>
+<p align="center" class="Estilo2">&nbsp;</p>
+<p align="center" class="Estilo2">&nbsp;</p>
+<p align="center" class="Estilo2">&nbsp;</p>
+<p align="center" class="Estilo2">&nbsp;</p>
+<p align="center" class="Estilo2">&nbsp;</p>
+<p align="center" class="Estilo2">Reservados los derechos de autor.</p>
+<p align="center"><a href="index.html"><em><strong>Volver</strong></em></a></p>
+<!-- Inserted by miarroba -->
+</script></noframes></noembed></noscript>
+<script type="text/javascript" src="https://hosting.miarroba.info/?__muid=65d154a173c44a2f051fb2d72ce5301a5ebb25ca&amp;h=1395044&amp;t=1623896522&amp;k=3633720d6e8fb262e9ddc1b9c1c34694"></script><noscript><img alt="beacon" border="0" width="1" height="1" src="https://hosting.miarroba.info/?__muid=65d154a173c44a2f051fb2d72ce5301a5ebb25ca&amp;h=1395044&amp;t=1623896522&amp;k=3633720d6e8fb262e9ddc1b9c1c34694&amp;img=1" /></noscript>
+<script type="text/javascript">var s=document.createElement("script");var t="//des.smartclip.net/ads?type=dyn&plc=75133&elementId=65d154a173c44a2f051fb2d72ce5301a5ebb25ca&sz=400x320&rnd="+Math.round(Math.random()*1e8);s.type="text/javascript";s.src=t;document.body.appendChild(s);</script><div id="65d154a173c44a2f051fb2d72ce5301a5ebb25ca"></div>
+<div id="ads_HEZRL65RXYI2"></div>
+<script defer="" language="javascript" type="text/javascript">
+(function(){
+var newscript= document.createElement('script');
+newscript.type = 'text/javascript';
+newscript.async = true;
+lz_elem = (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]);
+lz_elem.appendChild(newscript);
+newscript.onload = function(ev){
+var lz_url="https://play.sunmediaads.com/red/zone.php?code=HEZRL65RXYI2&a=&pubid=&lgid="+((new Date()).getTime() % 2147483648) + Math.random();
+var lz_target = "ads_HEZRL65RXYI2";
+var lz_sync_mode=false;
+lz_loadads(lz_url ,lz_target,lz_sync_mode);
+}
+newscript.src= "https://img.sunmediaads.com/ads/lz_loader.js?ver=1.4";
+})();
+</script>
+<!-- Inserted by miarroba -->
+</body>
+</html>

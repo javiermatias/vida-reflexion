@@ -1,0 +1,519 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<!-- Inserted by miarroba -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org' . concat('/choice/', 'd5x2uDVHd7ALE', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+  firstScript.parentNode.insertBefore(element, firstScript);
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+      var payload = json.__tcfapiCall;
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+  makeStub();
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+<!-- Inserted by miarroba -->
+<title>maria_cristina_garay_andrade</title>
+<meta http-equiv="" content="text/html; charset=iso-8859-1">
+<meta http-equiv="" content="text/html; charset=iso-8859-1">
+<meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"></head>
+
+<body bgcolor="#99CCFF" text="#003333" link="#9933CC" vlink="#FF9900" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Inserted by miarroba -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2VG59" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Inserted by miarroba -->
+<p align="left"><em><a href="index.html"><strong>Volver</strong></a> </em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>&quot;<u>Desde mis silencios</u>&quot;</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"> <em> 
+  <embed src="Al_piano_PeterS_Bustamante.mid" width="15" height="13" align="left"></embed></em></p>
+<div align="center"> 
+  <table width="39%" border="0" align="right">
+    <tr> 
+      <td><div align="left">
+        <p><em><strong>Autor: Mar&iacute;a Cristina Garay Andrade 
+          (Argentina) </strong></em></p>
+        <p><a href="http://mariacristinadesdemissilencios.blogspot.com/"><em><font size="2">http://mariacristinadesdemissilencios.blogspot.com/</font></em></a></p>
+      </div></td>
+    </tr>
+  </table>
+</div>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<table width="581" border="1" align="center">
+  <tr>
+    <th width="571" scope="col"><p><img src="amanecer_solitario_graciela_maria_casartelli.jpg" width="496" height="365"></p>
+      <p><strong><font size="2"><em>&quot;Amanecer solitario&quot;, pintura en acr&iacute;lico sobre fibrof&aacute;ci,de Graciela Mar&iacute;a Casartelli, 30 x 40 cm</em></font></strong></p>
+      <p>&nbsp;</p>
+    <p>&nbsp;</p></th>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+<table width="60%" border="0" align="center">
+  <!--DWLayoutTable-->
+  <tr>
+    <td width="792" height="1330" valign="top"><p align="center">&nbsp;</p>
+      <p align="center"><em><font color="#FF9900" size="2">Nuevo! </font><strong><strong><font color="#660066" size="3"><img src="estrellita%20blanca.gif" width="34" height="24"></font></strong></strong></em><EM>
+        <u><em><strong>Dilema        </strong></em></u>
+        <div align="center" id="yui_3_7_2_1_1379975281580_7950">
+          <p align="center" id="yui_3_7_2_1_1379975281580_7967">&nbsp;</p>
+          <p align="center"><span><em><strong>Esto que siento por ti tan apasionado y loco</strong></em></span></p>
+          <p align="center" id="yui_3_7_2_1_1379975281580_7964"><span id="yui_3_7_2_1_1379975281580_7949"><em id="yui_3_7_2_1_1379975281580_7948"><strong id="yui_3_7_2_1_1379975281580_7930">Que a la cordura para serenarme invoco</strong></em></span></p>
+          <p align="center" id="yui_3_7_2_1_1379975281580_7946"><span id="yui_3_7_2_1_1379975281580_7949"><em id="yui_3_7_2_1_1379975281580_7948"><strong id="yui_3_7_2_1_1379975281580_7930">Un tanto de mesura aplico al delirio desatado</strong></em></span></p>
+          <p align="center" id="yui_3_7_2_1_1379975281580_7985"><span id="yui_3_7_2_1_1379975281580_7949"><em id="yui_3_7_2_1_1379975281580_7948"><strong id="yui_3_7_2_1_1379975281580_7930">Por destino de pensarte en vano junto a mi lado</strong></em></span></p>
+          <p align="center" id="yui_3_7_2_1_1379975281580_7991"><span id="yui_3_7_2_1_1379975281580_7949"><em id="yui_3_7_2_1_1379975281580_7948"><strong id="yui_3_7_2_1_1379975281580_7930">&nbsp;</strong></em></span></p>
+          <p align="center" id="yui_3_7_2_1_1379975281580_7995"><span id="yui_3_7_2_1_1379975281580_7949"><em id="yui_3_7_2_1_1379975281580_7948"><strong id="yui_3_7_2_1_1379975281580_7930">Espejismos de deseos dejaron tus ternuras</strong></em></span></p>
+          <p align="center" id="yui_3_7_2_1_1379975281580_7999"><span id="yui_3_7_2_1_1379975281580_7949"><em id="yui_3_7_2_1_1379975281580_7948"><strong id="yui_3_7_2_1_1379975281580_7930">Embriago en una amanecida todas tus locuras</strong></em></span></p>
+          <p align="center" id="yui_3_7_2_1_1379975281580_8003"><span id="yui_3_7_2_1_1379975281580_7949"><em id="yui_3_7_2_1_1379975281580_7948"><strong id="yui_3_7_2_1_1379975281580_7930">Sentir que tu boca en besos recorre mi cuello</strong></em></span></p>
+          <p align="center" id="yui_3_7_2_1_1379975281580_8007"><span id="yui_3_7_2_1_1379975281580_7949"><em id="yui_3_7_2_1_1379975281580_7948"><strong id="yui_3_7_2_1_1379975281580_7930">Erizando mi piel prodigada dejaron su sello</strong></em></span></p>
+          <p align="center" id="yui_3_7_2_1_1379975281580_8013"><span id="yui_3_7_2_1_1379975281580_7949"><em id="yui_3_7_2_1_1379975281580_7948"><strong id="yui_3_7_2_1_1379975281580_7930">&nbsp;</strong></em></span></p>
+          <p align="center" id="yui_3_7_2_1_1379975281580_8018"><span id="yui_3_7_2_1_1379975281580_7949"><em id="yui_3_7_2_1_1379975281580_7948"><strong id="yui_3_7_2_1_1379975281580_7930">Dilema de cobard&iacute;a no te supe retener</strong></em></span></p>
+          <p align="center" id="yui_3_7_2_1_1379975281580_8021"><span id="yui_3_7_2_1_1379975281580_7949"><em id="yui_3_7_2_1_1379975281580_7948"><strong id="yui_3_7_2_1_1379975281580_7930">Dej&eacute; morir callado el sue&ntilde;o en un atardecer</strong></em></span></p>
+          <p align="center" id="yui_3_7_2_1_1379975281580_8025"><span id="yui_3_7_2_1_1379975281580_7949"><em id="yui_3_7_2_1_1379975281580_7948"><strong id="yui_3_7_2_1_1379975281580_7930">Cuando no me anim&eacute; a decirte qu&eacute;date conmigo</strong></em></span></p>
+          <p align="center"><span id="yui_3_7_2_1_1379975281580_7949"><em id="yui_3_7_2_1_1379975281580_7948"><strong id="yui_3_7_2_1_1379975281580_7930">&Aacute;mame con pasi&oacute;n, el silencio fue mi castigo</strong></em></span></p>
+          <p align="center" id="yui_3_7_2_1_1379975281580_8070"><span id="yui_3_7_2_1_1379975281580_7949"><em id="yui_3_7_2_1_1379975281580_7948"><strong id="yui_3_7_2_1_1379975281580_7930">&nbsp;</strong></em></span></p>
+          <p align="center" id="yui_3_7_2_1_1379975281580_8065"><span id="yui_3_7_2_1_1379975281580_7949"><em id="yui_3_7_2_1_1379975281580_7948"><strong id="yui_3_7_2_1_1379975281580_7930">Al marcharte qued&oacute; mi coraz&oacute;n dolorido</strong></em></span></p>
+          <p align="center" id="yui_3_7_2_1_1379975281580_8076"><span id="yui_3_7_2_1_1379975281580_7949"><em id="yui_3_7_2_1_1379975281580_7948"><strong id="yui_3_7_2_1_1379975281580_7930">Confundida qued&eacute; al sentir tan intenso lo vivido</strong></em></span></p>
+          <p align="center" id="yui_3_7_2_1_1379975281580_8062"><span id="yui_3_7_2_1_1379975281580_7949"><em id="yui_3_7_2_1_1379975281580_7948"><strong id="yui_3_7_2_1_1379975281580_7930">Recuerdos gratos de ayer esfum&aacute;ndose el dilema</strong></em></span></p>
+          <p align="center" id="yui_3_7_2_1_1379975281580_8057"><span id="yui_3_7_2_1_1379975281580_7949"><em id="yui_3_7_2_1_1379975281580_7948"><strong id="yui_3_7_2_1_1379975281580_7930">Entre el dolor y el placer hall&eacute; la felicidad plena</strong></em></span></p>
+        </div>
+      </p>
+      <p align="center" id="yui_3_7_2_1_1379975281580_7594"><strong>. . .</strong></p>
+      <p align="center"><SPAN lang="ES">&nbsp;</SPAN></p>
+      <p align="center"><SPAN lang="ES"><A href="http://mariacristinadesdemissilencios.blogspot.com/" rel="nofollow" target="_blank"><EM><STRONG><font size="2">http://mariacristinadesdemissilencios.blogspot.com/</font></STRONG></EM></A></SPAN></p>
+      <p align="center"><font size="2"><SPAN lang="ES"><A href="http://mariacristinadiccionario.blogspot.com/" rel="nofollow" target="_blank"><EM><STRONG>http://mariacristinadiccionario.blogspot.com/</STRONG></EM></A></SPAN></font></p>
+      <p align="center"><font size="2"><SPAN lang="ES"><A href="http://www.youtube.com/user/MCRIS1945" rel="nofollow" target="_blank"><EM><STRONG>http://www.youtube.com/user/MCRIS1945</STRONG></EM></A></SPAN></font></p>
+      <p align="center"><font size="2"><SPAN lang="ES"><A href="http://www.facebook.com/mariacristina.garayandrade" rel="nofollow" target="_blank"><EM><STRONG>http://www.facebook.com/mariacristina.garayandrade</STRONG></EM></A></SPAN></font></p>
+      <p align="center"><em>Monte Grande - Buenos  Aires <br>
+      Argentina </em></p>
+      <p align="center"><em>maracristinagarayandrade@yahoo.com.ar</em></p>
+      <p align="center">&nbsp;</p>
+      <p align="center"> </p>
+    <p align="center"><strong></strong></p>      <p align="center"><em><font size="2">Derechos Reservados de Autora</font></em></p></td>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><u><br>
+  </u></strong></em></p>
+<p align="center"><em><u><a href="index.html"><strong>Volver</strong></a></u></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><u><br>
+  Algunos anteriores</u></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><u>POR HABERTE CONOCIDO</u></strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<table width="48%" border="0" align="right">
+  <tr> 
+    <td><div align="center"><em><font size="2">CON TODO AFECTO, PARA </font></em><font size="2"><em>MI 
+        QUERIDA AMIGA GRACIELA MARIA CASARTELLI.</em></font></div></td>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><em>En el sendero incierto de mi destino</em></p>
+<p align="center"><em>El alma plena por primera vez</em></p>
+<p align="center"><em>Pronuncia tu nombre por el camino</em></p>
+<p align="center"><em>En canto eterno de palpitante fe</em></p>
+<p align="center"> </p>
+<p align="center"><em> Que dicha saber que estas ah&iacute;</em></p>
+<p align="center"><em>A la espera de mi previsible llegada</em></p>
+<p align="center"><em>Por la noche, en el atardecer o en la madrugada</em></p>
+<p align="center"><em>Seguro que en el d&iacute;a habr&aacute; de darse as&iacute;</em></p>
+<p align="center"> </p>
+<p align="center"><em>La vida acaricia con dulzura mi sensible coraz&oacute;n</em></p>
+<p align="center"><em>Con aroma de azahares bautiza mi figura</em></p>
+<p align="center"><em>El sol c&aacute;lido me rodea con much&iacute;sima ternura</em></p>
+<p align="center"><em>su luz me ba&ntilde;a de energ&iacute;a y fascinaci&oacute;n</em></p>
+<p align="center"> </p>
+<p align="center"><em>Subiendo la colina buscando apagar mi sed</em></p>
+<p align="center"><em>un pan de amor se presenta a mi merced</em></p>
+<p align="center"><em>El final cercano me tiende la mano</em></p>
+<p align="center"><em>y en m&iacute; brota espont&aacute;nea, la palabra &quot;hermano&quot;</em></p>
+<p align="center"> </p>
+<p align="center"><em>Recorro mis pasos intensamente vividos</em></p>
+<p align="center"><em>Algunos dolores yacen semidormidos en el olvido</em></p>
+<p align="center"><em>itinerario de huellas que firme he transitado</em></p>
+<p align="center"><em>Persistiendo reviven s&oacute;lo evocando el pasado</em></p>
+<p align="center"> </p>
+<p align="center"><em>Giro la mirada desde lo alto sin sobresaltos</em></p>
+<p align="center"><em>Observo la pradera sembrada de cruces en madera</em></p>
+<p align="center"><em>Soledades de almas que pasaron por mi historia</em></p>
+<p align="center"><em>Quedaron eternas grabadas en mi memoria</em></p>
+<p align="center"> </p>
+<p align="center"><em>&iexcl;Con qu&eacute; retiro solitario se llega al final 
+  del sol!</em></p>
+<p align="center"><em>Voy buscando su albor como un enamorado girasol</em></p>
+<p align="center"><em>Encanecida percibo en viaje la traves&iacute;a final positiva 
+  </em></p>
+<p align="center"><em>Avanza mi energ&iacute;a con maestr&iacute;a en su cuenta 
+  regresiva </em></p>
+<p align="center"> </p>
+<p align="center"><em>Desafi&aacute;ndole al temor de la partida sin cobard&iacute;a</em></p>
+<p align="center"><em>Dejo sembrada una flor de amor por cada d&iacute;a</em></p>
+<p align="center"><em>Para que t&uacute; las recojas y tal vez intrigada digas</em></p>
+<p align="center"><em>Alguien que por aqu&iacute; pas&oacute; y las dej&oacute; 
+  de amistad mendigas </em></p>
+<p align="center"> </p>
+<p align="center"><em>Mientras lentamente se va ocultando el sol generador</em></p>
+<p align="center"><em>Con misi&oacute;n casi cumplida mi figura hacia &eacute;l 
+  erguida camina</em></p>
+<p align="center"><em>y se anima a llevarse grabado consigo el exquisito sabor</em></p>
+<p align="center"><em>de haberte besado el alma con total devoci&oacute;n y estima</em></p>
+<p align="center"> </p>
+<p align="center"><em>De la luz divina con que Dios siempre me ilumina</em></p>
+<p align="center"><em>Mi mano tendida en solidaridad y lealtad</em></p>
+<p align="center"><em>Recoge los frutos que me ense&ntilde;&oacute; su doctrina 
+  </em></p>
+<p align="center"><em>De crear con mi pr&oacute;jimo una sublime amistad</em></p>
+<p align="center"> </p>
+<p align="center"><em>Junto a esa paz atemporal que permanente me incita</em></p>
+<p align="center"><em>a la entrega incondicional en universal humanidad</em></p>
+<p align="center"><em>en mi coraz&oacute;n conmovido se instal&oacute; y habita</em></p>
+<p align="center"><em>con plenitud, por haberte conocido, el amor y la felicidad</em></p>
+<p> </p>
+<p align="center"><em><strong><strong><font color="#660066" size="3"><img src="estrellita%20blanca.gif" width="34" height="24"><u>NI&Ntilde;EZ </u></font></strong></strong></em></p>
+<p align="center"> </p>
+<p align="center"><em>&iquest;Que ser&aacute; de ti mi ni&ntilde;o en el futuro?...</em></p>
+<p align="center"><em>&iquest;Reflexionar&aacute; el hombre de su soberbia?,</em></p>
+<p align="center"><em>&iquest;Depondr&aacute; mesi&aacute;nicas actitudes?</em></p>
+<p align="center"><em>&iquest;Y aflorar&aacute; de su alma por fin todas las virtudes?</em></p>
+<p align="center"> </p>
+<p align="center"><em>Llanto ahogado por el dolor que te ha tocado.</em></p>
+<p align="center"><em>El mundo indiferente corre tras el dinero alocado,</em></p>
+<p align="center"><em>ignora tu sufrir esa gente y te ha hecho a un lado,</em></p>
+<p align="center"><em>cayendo por omisi&oacute;n en imperdonable pecado.</em></p>
+<p align="center"> </p>
+<p align="center"><em>Mientras abonan la tierra con tu inocencia,</em></p>
+<p align="center"><em>crece la ambici&oacute;n desmedida, la avaricia y la codicia 
+  </em></p>
+<p align="center"><em>lavan culpas en altares suntuosos sin conciencia,</em></p>
+<p align="center"><em>&iexcl;no est&aacute; Dios ah&iacute; se&ntilde;ores de 
+  la violencia!</em></p>
+<p align="center"> </p>
+<p align="center"><em>No alcanzan las inconmensurables fortunas,</em></p>
+<p align="center"><em>para proveerle a tu dignidad una cuna,</em></p>
+<p align="center"><em>ni se puede emitir moneda para que tu hambre ceda, </em></p>
+<p align="center"><em>pero s&iacute; para engrosar el caudal de la patria financiera.</em></p>
+<p align="center"> </p>
+<p align="center"><em>Qu&eacute; absurda paradoja tantas divisas guardadas,</em></p>
+<p align="center"><em>y t&uacute; ni siquiera d&oacute;nde refugiarte de las crueles 
+  heladas,</em></p>
+<p align="center"><em>bajo techo la mezquindad astuta se resguarda,</em></p>
+<p align="center"><em>y t&uacute; por la calle de la mano de tu &aacute;ngel de 
+  la guarda.</em></p>
+<p align="center"> </p>
+<p align="center"><em>El camino te lleva a un destino incierto,</em></p>
+<p align="center"><em>&iquest;acaso de amor el mundo est&aacute; desierto?</em></p>
+<p align="center"><em>La sabidur&iacute;a nos est&aacute; poniendo en alerta,</em></p>
+<p align="center"><em>el dolor no tiene fronteras anda tocando puertas.</em></p>
+<p align="center"> </p>
+<p align="center"><em>Fijarnos como meta compartir el pan de cada d&iacute;a </em></p>
+<p align="center"><em>misi&oacute;n de humanidad que enaltece la vida,</em></p>
+<p align="center"><em>hacer sonre&iacute;r a un ni&ntilde;o triste es sinfon&iacute;a,</em></p>
+<p align="center"><em> Dios con su ternura musicaliza entonces la alegr&iacute;a.</em></p>
+<p align="center"> </p>
+<p align="center"></p>
+<p align="center"><em>. . . </em></p>
+<p align="center"><em><font color="#660066" size="3"><img src="estrellita%20blanca.gif" width="34" height="24"></font><u>A 
+  MI MADRE</u></em></p>
+<p align="center"> </p>
+<p align="center"><em>Aferrada al crucifijo de mi rosario,</em></p>
+<p align="center"><em>Con los ojos fijos en un reloj sin tiempo imaginario,</em></p>
+<p align="center"><em>Desped&iacute; tu venerado cuerpo en el osario,</em></p>
+<p align="center"><em>Siendo Dios mi &uacute;nico compa&ntilde;ero en el calvario.</em></p>
+<p align="center"> </p>
+<p align="center"><em>Cargu&eacute; la pena con el alma serena y en carne viva,</em></p>
+<p align="center"><em>Desped&iacute; silenciosa tus restos mortales madre m&iacute;a,</em></p>
+<p align="center"><em>Y con mucho amor en el coraz&oacute;n enlutado por tu partida,</em></p>
+<p align="center"><em>Resign&eacute; el llanto, calm&eacute; el quebranto y encar&eacute; 
+  la vida.</em></p>
+<p align="center"> </p>
+<p align="center"><em>De regreso, la casa fr&iacute;a en doliente recibida,</em></p>
+<p align="center"><em>Callada, solitaria, hu&eacute;rfana acongojada y retra&iacute;da,</em></p>
+<p align="center"><em>L&aacute;grimas contenidas de congoja encontr&eacute; en 
+  tus cosas,</em></p>
+<p align="center"><em>Y en el jard&iacute;n solitario florecidas tus rosas. </em></p>
+<p align="center"> </p>
+<p align="center"><em>Cu&aacute;ntos silencios me hablaron con serenidad,</em></p>
+<p align="center"><em>Esa palabra sublime de milagro y eternidad,</em></p>
+<p align="center"><em>Refugio de semillas que hace la vida germinar,</em></p>
+<p align="center"><em>Hija de tu vientre, madre, tu nombre deb&iacute;a callar.</em></p>
+<p align="center"> </p>
+<p align="center"><em>Qu&eacute; angustia estremecedora no volverte a llamar,</em></p>
+<p align="center"><em>Que sonido atragantado definitivo corte del cord&oacute;n 
+  umbilical,</em></p>
+<p align="center"><em>Que un surtidor de l&aacute;grimas brotaba sin poderlo parar,</em></p>
+<p align="center"><em>Y la ni&ntilde;a envejecida, pudo como entonces romper a 
+  llorar.</em></p>
+<p align="center"> </p>
+<p align="center"><em>Busqu&eacute; los brazos de mi &Aacute;ngel inseparable,</em></p>
+<p align="center"><em>Alentador de horas de agon&iacute;as interminables, </em></p>
+<p align="center"><em>Sin apartarse ni un solo minuto de mi lado</em></p>
+<p align="center"><em>Me rodeo con sus alas y con ternura se sent&oacute; a mi 
+  lado,</em></p>
+<p align="center"><em>Muy callado, muy callado....</em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em>(A los 5 meses de la muerte de mi madre )</em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em>. . .</em></p>
+<p align="center">&nbsp;</p>
+<p align="center"></p>
+<p align="center"><em><font color="#660066" size="3"><img src="estrellita%20blanca.gif" width="34" height="24"></font><u>Me 
+  Preguntaste</u></em></p>
+<p align="center"></p>
+<p align="center"> </p>
+<p align="center"><em>Me preguntaste si te extra&ntilde;o con dulzura,</em></p>
+<p align="center"><em>yo, no concibo la vida si sentirme en tus brazos,</em></p>
+<p align="center"><em>imposible prescindir de tu ternura,</em></p>
+<p align="center"><em>estoy atada a ti son muy fuertes tus lazos.</em></p>
+<p align="center"> </p>
+<p align="center"><em>Me preguntaste si te pienso con deseos de aclarar tus dudas,</em></p>
+<p align="center"><em>yo no concibo la vida sin tu presencia constante,</em></p>
+<p align="center"><em>vives en todo lo que me rodea, mi alma desnudas,</em></p>
+<p align="center"><em>mi cuerpo vibra pensando cuando soy tu amante.</em></p>
+<p align="center"> </p>
+<p align="center"><em>Tu amor demanda incesante mi coraz&oacute;n latiente,</em></p>
+<p align="center"><em>incitado erotismo acostumbra querer,</em></p>
+<p align="center"><em>susurros rom&aacute;nticos entre las bocas ardientes, </em></p>
+<p align="center"><em>anhelo permanente de ser tu mujer.</em></p>
+<p align="center"></p>
+<p align="center"><em><strong>. . .</strong></em></p>
+<p align="center"> <em><strong><a href="index.html">Volver</a></strong></em></p>
+<p align="center">&nbsp;</p>
+<div align="center"> 
+  <table width="86%" border="0" align="center">
+    <!--DWLayoutTable-->
+    <tr> 
+      <td width="175" height="214" valign="top"><em><strong><img src="maria_cristina_garay_andrade.jpg" width="153" height="212"></strong></em></td>
+      <td width="482" valign="top"> <div align="center"><em><strong><font size="2">Soy 
+          Mar&iacute;a Cristina Garay Andrade. Nac&iacute; en Capital Federal 
+          (Argentina), el 19 de septiembre de 1945; radicada actualmente en Monte 
+          Grande, Pcia. Buenos Aires, Argentina, soltera ante la ley de los hombres, 
+          sin hijos biol&oacute;gicos pero con tres del coraz&oacute;n que me 
+          regal&oacute; Dios para que iluminen mi vida Cynthia, Leandro y Diego.<br>
+          Egresada del Colegio Instituto Ni&ntilde;o Jes&uacute;s, 20 a&ntilde;os 
+          de servicio en la AFIP (entre recaudador de este pa&iacute;s) desempe&ntilde;&aacute;ndome 
+          como Jefa de Asistencia Sanitaria en el Departamento de Relaciones Humanas 
+          de dicha repartici&oacute;n. </font></strong></em></div>
+        <p align="center"><em><strong><font size="2">Asesora parlamentaria (1989-1993) 
+          y candidata a Diputada Nacional en el 8&ordm; lugar por el partido PAIS 
+          (en las elecciones 1997); hoy retirada de la pol&iacute;tica.</font></strong></em></p>
+        <p align="center"><em><strong><font size="2">Participante activa en la 
+          &#8220;Jornadas Ley de Cuotas&#8221;, Convenci&oacute;n de Parlamentarias 
+          Argentinas, Honorable Congreso de la Naci&oacute;n (Noviembre 1991)</font></strong></em></p></td>
+    </tr>
+  </table>
+</div>
+<p align="center"><em><strong><font size="2">Participaci&oacute;n en el taller 
+  de Educaci&oacute;n y cultura, en la Bicameral de la Mujer, Honorable Congreso 
+  de la Naci&oacute;n (agosto 1992)</font></strong></em></p>
+<p align="center"><em><strong><font size="2">Participaci&oacute;n en el Seminario 
+  &#8220;Mujer y Pecado&#8221;, Ministerio de Cultura y Educaci&oacute;n, Museo 
+  Julio A. Roca<br>
+  (Capital Federal) - (Julio 1995)</font></strong></em></p>
+<p align="center"><em><strong><font size="2">Escritora ensayista, autora del &#8220;Diccionario 
+  de la Discriminaci&oacute;n de la Mujer en el Lenguaje&#8221; (1994) , trabajo 
+  de investigaci&oacute;n sin<br>
+  presentes y primer diccionario de lectura, y &#8220;Memorias&#8221; de Beba 
+  Gil (2005)</font></strong></em></p>
+<p align="center"><em><strong><font size="2">Conferencista sobre el Diccionario 
+  de la Discriminaci&oacute;n de la mujer en el Lenguaje en las jornadas de ONGS 
+  y grupos Aut&oacute;nomos de Mujeres de Latinoam&eacute;rica y del Caribe hacia 
+  Beijin 1995 realizados en la Ciudad de Mar del Plata (Argentina) (septiembre 
+  1994).</font></strong></em></p>
+<p align="center"><em><strong><font size="2">Ponencia sobre el tema de Discriminaci&oacute;n 
+  de la Mujer en el Lenguaje en la C&aacute;tedra de Derechos Humanos Universidad 
+  de Buenos Aires (Junio 1995)<br>
+  Panelista en los talleres en las Jornadas Feministas sobre &#8220;&Eacute;tica, 
+  Est&eacute;tica y Feminismo&#8221; en ATEM<br>
+  (Asociaci&oacute;n de Trabajo y Estudio de la Mujer) (1995).</font></strong></em></p>
+<p align="center"><em><strong><font size="2">Mi participaci&oacute;n en Internet 
+  comenz&oacute; en el a&ntilde;o 1995 con investigaciones en pol&iacute;tica 
+  nacional y principalmente internacional<br>
+  interviniendo en foros y paginas web con trabajos referentes al tema.<br>
+  Descubro el mundo de los grupos pasado algunos a&ntilde;os y comienzo a colaborar 
+  con aportes reflexivos que contribuyan a mejorar la calidad de vida personal 
+  basados<br>
+  en el amor a Dios y a mi pr&oacute;jimo.<br>
+  <br>
+  Es mi intenci&oacute;n con toda mi sensibilidad puesta de manifiesto, contribuir 
+  con un granito de arena a formar el gran m&eacute;dano de paz al cual aspiramos 
+  todas/os reine<br>
+  en el planeta.<br>
+  . . .</font></strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"> <em><strong><font size="2">La musicalizaci&oacute;n de esta 
+  p&aacute;gina es gentileza para esta Web de Pedro Bustamante y su piano m&aacute;gico...<br>
+  <a href="http://www.peterbustamante.com">http://www.peterbustamante.com</a></font></strong></em></p>
+<p align="center"><em><strong><br>
+  </strong></em></p>
+<p align="center">&nbsp; </p>
+<p align="center"><em><strong><a href="index.html">Volver</a> </strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<!-- Inserted by miarroba -->
+</script></noframes></noembed></noscript>
+<script type="text/javascript" src="https://hosting.miarroba.info/?__muid=572c33cd6d178bbe9677b3c58fef5e2b5479736d&amp;h=1395044&amp;t=1614094541&amp;k=ce61e61e101257b1a8e749822a5ee039"></script><noscript><img alt="beacon" border="0" width="1" height="1" src="https://hosting.miarroba.info/?__muid=572c33cd6d178bbe9677b3c58fef5e2b5479736d&amp;h=1395044&amp;t=1614094541&amp;k=ce61e61e101257b1a8e749822a5ee039&amp;img=1" /></noscript>
+<script type="text/javascript">var s=document.createElement("script");var t="//des.smartclip.net/ads?type=dyn&plc=75133&elementId=572c33cd6d178bbe9677b3c58fef5e2b5479736d&sz=400x320&rnd="+Math.round(Math.random()*1e8);s.type="text/javascript";s.src=t;document.body.appendChild(s);</script><div id="572c33cd6d178bbe9677b3c58fef5e2b5479736d"></div>
+<div id="ads_HEZRL65RXYI2"></div>
+<script defer="" language="javascript" type="text/javascript">
+(function(){
+var newscript= document.createElement('script');
+newscript.type = 'text/javascript';
+newscript.async = true;
+lz_elem = (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]);
+lz_elem.appendChild(newscript);
+newscript.onload = function(ev){
+var lz_url="https://play.sunmediaads.com/red/zone.php?code=HEZRL65RXYI2&a=&pubid=&lgid="+((new Date()).getTime() % 2147483648) + Math.random();
+var lz_target = "ads_HEZRL65RXYI2";
+var lz_sync_mode=false;
+lz_loadads(lz_url ,lz_target,lz_sync_mode);
+}
+newscript.src= "https://img.sunmediaads.com/ads/lz_loader.js?ver=1.4";
+})();
+</script>
+<!-- Inserted by miarroba -->
+</body>
+</html>

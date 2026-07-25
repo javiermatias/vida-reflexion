@@ -1,0 +1,810 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<!-- Inserted by miarroba -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org' . concat('/choice/', 'd5x2uDVHd7ALE', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+  firstScript.parentNode.insertBefore(element, firstScript);
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+      var payload = json.__tcfapiCall;
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+  makeStub();
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+<!-- Inserted by miarroba -->
+<title>Carlos A.Gallardo Chambonnet</title>
+<meta http-equiv="" content="text/html; charset=iso-8859-1">
+<meta http-equiv="" content="text/html; charset=iso-8859-1">
+<meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"></head>
+
+<body bgcolor="#009999" text="#003333" link="#FFCC00" vlink="#9999CC" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Inserted by miarroba -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2VG59" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Inserted by miarroba -->
+<p align="center">&nbsp;</p>
+<p align="left"><em><strong><a href="index.html">Volver</a></strong></em></p>
+<p align="center"> <em><strong>
+  <embed src="cuandonadiemeve.mid" width="13" height="11" align="left"></embed> </strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><u>A prudencial distancia del espejo</u>...<br>
+  </strong></em></p>
+<p align="center"><em><strong><br>
+  </strong></em></p>
+<div align="center">
+  <table width="45%" border="0" align="right">
+    <tr> 
+      <td><div align="center"><em><strong>Autor: Carlos Alberto Gallardo Chambonnet<br>
+          Gallnnet <br>
+          </strong> <font size="2">E-mail : gallardochambonnet@gmail.com</font></em></div></td>
+    </tr>
+  </table>
+</div>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<div align="center">
+  <table width="20%" border="0" align="center">
+    <!--DWLayoutTable-->
+    <tr> 
+      <td width="197" height="235" valign="top"><em><strong><img src="distancia_espejo.jpg" width="196" height="233"></strong></em></td>
+    </tr>
+  </table>
+</div>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Deseo enviar, por los valores de la fraternidad 
+  y la solidaridad, algunos de mis intentos, sin restricciones <br>
+  de ninguna clase...ya que el poema &quot; si as&iacute; puedo llamarlo&quot; 
+  deja de ser personal cuando penetra en el alma <br>
+  de quien lo lee. </strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>UN HUMILDE REGALO...</strong></em></p>
+<p align="center">&nbsp;</p>
+<div align="center">
+  <table width="66%" border="0" align="right">
+    <tr> 
+      <td><em><strong>No tenemos en nuestras manos las soluciones del mundo, <br>
+        pero ante los problemas del mundo, tenemos nuestras manos.<br>
+        <br>
+        MADRE TERESA DE CALCUTA </strong></em></td>
+    </tr>
+  </table>
+</div>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><u><u><u></u></u></u></strong></em></p>
+<p align="center"><br>
+  <em><strong><u><u><u><u><img src="estrellita%20blanca.gif" width="31" height="31"></u></u></u></u></strong>Envejecemos 
+  para que el alma vaya madurando y corrigiendo los errores de la juventud, esto 
+  ocurre por ejemplo, cuando <br>
+  las pasiones como la ira ya no se sienten... porque lo importante es no sentir 
+  ira... controlarla es sencillo... para eso envejecemos,<br>
+  para ser mejores, no para convertirnos en santos , sino, en verdaderos seres 
+  humanos.</em></p>
+<p align="center"><em>Yo me quedo en los minutos que no vuelven... Gallnnet</em><br>
+</p>
+<DIV>
+  <div align="center"><em><strong><u><u><u><u><img src="estrellita%20blanca.gif" width="31" height="31"></u></u></u></u></strong>El verbo se va expandiendo</em></div>
+</DIV>
+<DIV>
+  <div align="center"><em>hasta llegar al portal</em></div>
+</DIV>
+<DIV>
+  <div align="center"><em>donde una oruga se encoge</em></div>
+</DIV>
+<DIV>
+  <div align="center">
+    <p><em>al ver a un verso pasar... Gallnnet</em></p>
+    <div id="yui_3_13_0_ym1_1_1386022993082_5188">
+      <p><em id="yui_3_13_0_ym1_1_1386022993082_5190"><span lang="ES" id="yui_3_13_0_ym1_1_1386022993082_5189">En esta nueva clase de verso, creado por su servidor, los hemistiquios, isostiquios o heterostiquios, no se toman en cuenta, pues esto, alterar&iacute;a su m&eacute;trica&hellip;</span></em><br>
+      <em><span lang="ES">&nbsp;&nbsp;Acentos r&iacute;tmicos en las s&iacute;labas&hellip; 3-7-11</span></em></p>
+    </div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5187"><strong><em><span lang="ES">&nbsp;</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5186"><strong id="yui_3_13_0_ym1_1_1386022993082_5235"><em id="yui_3_13_0_ym1_1_1386022993082_5234"><span lang="ES" id="yui_3_13_0_ym1_1_1386022993082_5233"><u><strong><em><strong><em><font color="#FFFF00" size="2">&iexcl;Nuevo!</font></em></strong><strong><em><strong><em><strong><u><u><u><u><img src="estrellita%20blanca.gif" alt="" width="31" height="31"></u></u></u></u></strong></em></strong></em></strong></em></strong></u>ALFARERO&hellip;&nbsp;&nbsp;V. S.</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5180"><strong><em><span lang="ES">&nbsp;</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5197"><strong id="yui_3_13_0_ym1_1_1386022993082_5196"><em id="yui_3_13_0_ym1_1_1386022993082_5195"><span lang="ES" id="yui_3_13_0_ym1_1_1386022993082_5194">Alfarero de los sue&ntilde;os embrionarios</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5224"><strong id="yui_3_13_0_ym1_1_1386022993082_5239"><em id="yui_3_13_0_ym1_1_1386022993082_5238"><span lang="ES" id="yui_3_13_0_ym1_1_1386022993082_5237">que transforma con sus manos y el pincel</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5202"><strong id="yui_3_13_0_ym1_1_1386022993082_5201"><em id="yui_3_13_0_ym1_1_1386022993082_5200"><span lang="ES" id="yui_3_13_0_ym1_1_1386022993082_5199">aquel barro que form&oacute; los dinosaurios</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5203"><strong id="yui_3_13_0_ym1_1_1386022993082_5243"><em id="yui_3_13_0_ym1_1_1386022993082_5242"><span lang="ES" id="yui_3_13_0_ym1_1_1386022993082_5241">y tambi&eacute;n al Homo sapiens cual es &Eacute;l.</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5204"><strong id="yui_3_13_0_ym1_1_1386022993082_5247"><em id="yui_3_13_0_ym1_1_1386022993082_5246"><span lang="ES" id="yui_3_13_0_ym1_1_1386022993082_5245">&nbsp;</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5209"><strong id="yui_3_13_0_ym1_1_1386022993082_5208"><em id="yui_3_13_0_ym1_1_1386022993082_5207"><span lang="ES" id="yui_3_13_0_ym1_1_1386022993082_5206">Que en el alma forman parte del dintel</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5214"><strong id="yui_3_13_0_ym1_1_1386022993082_5213"><em id="yui_3_13_0_ym1_1_1386022993082_5212"><span lang="ES" id="yui_3_13_0_ym1_1_1386022993082_5211">ese m&aacute;rmol de periodos cuaternarios</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5215"><strong id="yui_3_13_0_ym1_1_1386022993082_5251"><em id="yui_3_13_0_ym1_1_1386022993082_5250"><span lang="ES" id="yui_3_13_0_ym1_1_1386022993082_5249">pensamientos que el po&eacute;tico cincel</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5220"><strong id="yui_3_13_0_ym1_1_1386022993082_5219"><em id="yui_3_13_0_ym1_1_1386022993082_5218"><span lang="ES" id="yui_3_13_0_ym1_1_1386022993082_5217">va esculpiendo con sus golpes centenarios.</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5221"><strong><em><span lang="ES">&nbsp;</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5222"><strong id="yui_3_13_0_ym1_1_1386022993082_5255"><em id="yui_3_13_0_ym1_1_1386022993082_5254"><span lang="ES" id="yui_3_13_0_ym1_1_1386022993082_5253">Van dejando la expresi&oacute;n en corolarios</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5223"><strong id="yui_3_13_0_ym1_1_1386022993082_5259"><em id="yui_3_13_0_ym1_1_1386022993082_5258"><span lang="ES" id="yui_3_13_0_ym1_1_1386022993082_5257">que cimentan la esperanza de so&ntilde;ar</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5264"><strong id="yui_3_13_0_ym1_1_1386022993082_5263"><em id="yui_3_13_0_ym1_1_1386022993082_5262"><span lang="ES" id="yui_3_13_0_ym1_1_1386022993082_5261">esos tiempos de los sue&ntilde;os solitarios</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5265"><strong><em><span lang="ES">&nbsp;</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5266"><strong id="yui_3_13_0_ym1_1_1386022993082_5287"><em id="yui_3_13_0_ym1_1_1386022993082_5286"><span lang="ES" id="yui_3_13_0_ym1_1_1386022993082_5285">que transmutan las palabras en vergel.</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5283"><strong><em><span lang="ES">Hoy el sol del Alfarero, al despertar</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5282"><strong><em><span lang="ES">ve jardines con coronas de laurel.</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5281"><strong><em><span lang="ES">&nbsp;</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5280"><strong><em><span lang="ES">Carlos Alberto/Gallnnet</span></em></strong></div>
+    <div align="center" id="yui_3_13_0_ym1_1_1386022993082_5278"><strong><em><span lang="ES"> </span></em></strong>&nbsp;</div>
+    <p align="center"><SPAN lang="ES">&nbsp;</SPAN><em><strong><a href="index.html">Volver</a></strong></em></p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><strong><u><em>Algunos poemas anteriores.</em></u></strong></p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><strong><em>MI&nbsp; MUNDO&nbsp;  V. S.</em></strong><br>
+        <u><strong><em>Interpreto  a un mendigo</em></strong></u></p>
+<p align="center"><strong><em>Siento  el v&eacute;rtigo del miedo y la impotencia</em></strong><br>
+        <strong><em>que  devoran mis entra&ntilde;as, sin piedad,</em></strong><br>
+        <strong><em>me  dirijo hacia el altar, pido clemencia</em></strong><br>
+        <strong><em>a  la sombra de aquel Cristo en soledad.</em></strong></p>
+    <p align="center"><strong><em>Soy  humilde, desdichado limosnero,</em></strong><br>
+        <strong><em>en  la puerta de la iglesia pido pan;</em></strong><br>
+        <strong><em>andrajoso  es mi vestido ,y el sombrero</em></strong><br>
+        <strong><em>donde  dejan las limosnas que me dan.</em></strong></p>
+    <p align="center"><strong><em>Abre  el cielo la ma&ntilde;ana, implanta el d&iacute;a,</em></strong><br>
+        <strong><em>sin  distingo de razones; con frialdad,</em></strong><br>
+        <strong><em>baja  el sol con luz de tarde en romer&iacute;a</em></strong><br>
+        <strong><em>y  a mi sino, le llovizna la impiedad.</em></strong></p>
+    <p align="center"><strong><em>Otro  d&iacute;a que se filtra en la semana</em></strong><br>
+        <strong><em>a  este mundo que hilvanando he de entender</em></strong><br>
+        <strong><em>aunque  nazca para mi cada ma&ntilde;ana</em></strong><br>
+        <strong><em>con  el negro resplandor de un padecer.</em></strong></p>
+    <p align="center"><strong><em>Siento  amor por los que alumbra una alborada;</em></strong><br>
+        <strong><em>por  aquellos que no saben que es perder</em></strong><br>
+        <strong><em>y  por esos cuya edad luce dorada</em></strong><br>
+        <strong><em>y  aunque viejos, no han sabido comprender.</em></strong></p>
+    <p align="center"><strong><em>Siento  amor por la mirada desgastada</em></strong><br>
+        <strong><em>sin  reto&ntilde;os que renueven la visi&oacute;n;</em></strong><br>
+        <strong><em>por  la edad, que cada d&iacute;a es renovada</em></strong><br>
+        <strong><em>con  peque&ntilde;os algodones de ilusi&oacute;n.</em></strong></p>
+    <p align="center"><strong><em>Siento  amor por la sonrisa que es negada,</em></strong><br>
+        <strong><em>porque  soy un pobre ser sin distinci&oacute;n</em></strong><br>
+        <strong><em>a  mi edad, las diferencias no son nada.</em></strong><br>
+        <strong><em>&iexcl;La  grandeza est&aacute; en amar sin condici&oacute;n!</em></strong></p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><em>Dodecas&iacute;labo de verso simple o continuo </em><br>
+      <em>En esta nueva clase de  verso, los hemistiquios, isostiquios o heterostiquios, no se toman en cuenta,  pues esto, alterar&iacute;a su m&eacute;trica. Acentos r&iacute;tmicos en las s&iacute;labas&hellip; 3-7-11</em></p>
+    <p align="center"><strong><em><SPAN lang="ES">&nbsp;</SPAN></em></strong></p>
+    <p><em><strong><em><strong><em><strong><u><u><u><u><img src="estrellita%20blanca.gif" alt="" width="31" height="31"></u></u></u></u></strong></em></strong></em></strong></em><strong><u><em>VOY BUSCANDO&nbsp; V. S.</em></u></strong></p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><strong><em>Voy buscando algo que busco,  sin hallarlo;<br>
+  y si lo hallo, me confunde la raz&oacute;n<br>
+  porque, m&aacute;s que poseerlo y alcanzarlo,<br>
+  se me pierde en la llamada sinraz&oacute;n.<br>
+      <br>
+      Es un mundo ranurado, de ficciones<br>
+      en mi vago caminar ya si saz&oacute;n<br>
+      las estr&iacute;as de mi vida, pretensiones <br>
+      de respuestas que no tienen conclusi&oacute;n.<br>
+      <br>
+      Los misterios de  la vida &iexcl;Cu&aacute;ntos a&ntilde;os<br>
+      transitando sin tener la soluci&oacute;n!<br>
+      Ya cansados van mis pies en sus calca&ntilde;os<br>
+      por tratar de dar sentido a la intenci&oacute;n<br>
+      <br>
+      de esas cosas, tan extra&ntilde;as, que so&ntilde;amos<br>
+      o que existen por estricta decisi&oacute;n;<br>
+      se evaporan a la hora que nos vamos<br>
+      y nos vamos sin siquiera una versi&oacute;n.<br>
+      <br>
+      Pienso a veces:  &iquest;Es verdad que s&oacute;lo estamos<br>
+      en un mundo donde somos ilusi&oacute;n;<br>
+      que es un sue&ntilde;o que llevamos y acercamos<br>
+      con preguntas sin respuestas hasta, Dios?<br>
+      <br>
+&iexcl;Con la carne y el esp&iacute;ritu forjamos<br>
+      esta vida, que al final, se parte en dos!<br>
+      El esp&iacute;ritu se eleva&hellip; festejamos<br>
+      y en la tierra se nos queda el coraz&oacute;n.</em></strong></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p><em><strong>&nbsp;<u>A Los Indigentes</u>. </strong></em></p>
+    <p><strong><em>Deambulando por las calles <BR>
+      o por orillas de acera <BR>
+      meditan sobre los   bultos, <BR>
+      bultos de basura vieja.</em></strong></p>
+    <p><strong><em>Se encuentran al final de mis dos ojos<BR>
+      los ciclos de dolor   humedecido<BR>
+      por la injusticia de no haber crecido <BR>
+      en opulencia. &iexcl;Vivo   entre despojos!</em></strong></p>
+    <p><strong><em>&nbsp;No tuvieron fragancia mis antojos<BR>
+      sino el vulgar hedor del mal nacido, <BR>
+      un pasado, un presente enmohecido <BR>
+      en ese suplicante andar de hinojos. </em></strong></p>
+    <p><strong><em>&iquest;Nunca podr&eacute; saber qu&eacute; mal destino <BR>
+  se ensa&ntilde;o en mi doliente y vana vida? <BR>
+  Viv&iacute; sin conocer el buen camino... </em></strong></p>
+    <p><strong><em>enfrascado en las luchas tan tempranas <BR>
+      ni siquiera un amor tuvo cabida, <BR>
+      ni un recuerdo feliz en las ma&ntilde;anas </em></strong></p>
+    <p><strong><em>MIENTRAS HAYA UNA L&Aacute;GRIMA EN EL MUNDO&hellip;</em></strong></p>
+    <p><strong><em>No son versos&hellip; ni poes&iacute;a lo que me sale del alma, es el dolor de los&nbsp; d&iacute;as,   de verlos sin esperanzas... </em></strong></p>
+    <p><strong><em>Dedico este intento de soneto a aquellas seres   humanos, que por su condici&oacute;n <br>
+      o apariencia f&iacute;sica, muchas personas, consideran   que no lo SON.</em></strong></p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><strong><em><strong><em><strong><em><strong><u><u><u><u><img src="estrellita%20blanca.gif" alt="" width="31" height="31"></u></u></u></u></strong></em></strong></em></strong><U><SPAN lang="ES">A   VECES</SPAN></U></em></strong></p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><strong><em><SPAN lang="ES">Y a   sus labios, </SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">ya   sin calor y sin respuesta, </SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">un&iacute;   los m&iacute;os, </SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">confirmando nuestro amor,</SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">&nbsp;en g&eacute;lido finito.<U></U></SPAN></em></strong></p>
+    <p align="center"><em><SPAN lang="ES">_ _ _ </SPAN></em></p>
+    <p align="center"><strong><em><SPAN lang="ES">Desde   entonces&hellip; al elevarme,</SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">en el   serpeado resplandor</SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">de la   alborada;</SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">o,   cuando declino cual luz del d&iacute;a,</SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">entre   rendijas,</SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">sobre   el cuerpo de la tarde </SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">como   gota extendida de roc&iacute;o,</SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">y   absorbo los colores del crep&uacute;sculo;</SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">esparzo el pensamiento</SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">enrollado en &nbsp;las estrellas   vespertinas,</SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">conciliado con la magnificencia espectral</SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">en   l&aacute;ctea inmensidad del universo:</SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">A   veces, difusi&oacute;n de distancias solamente;</SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">otras, soledad que abraza al beso.</SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">&iexcl;P&oacute;stuma caricia de amor&hellip;</SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">en el   portal del infinito!</SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">&nbsp;</SPAN></em></strong></p>
+    <p align="center"><strong><em><SPAN lang="ES">Gallnnet</SPAN></em></strong></p>
+    <DIV align="center"><strong><em><SPAN lang="ES">Enero   2013</SPAN></em></strong></DIV>
+    <p align="center">&nbsp;</p>
+    <p align="center">&nbsp;</p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><SPAN lang="ES"><em><strong><em><strong><u><u><u><u><img src="estrellita%20blanca.gif" alt="" width="31" height="31"></u></u></u></u></strong></em><u>EN LAS NIEVES DE LA EDAD,</u></strong></em></SPAN><u><strong><em><SPAN lang="ES">CUELGAN GUIRNALDAS V.S</SPAN></em><SPAN lang="ES"></SPAN></strong></u><SPAN lang="ES">.</SPAN></p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><em><SPAN lang="ES">Dodecas&iacute;labo de verso simple o continuo...</SPAN></em> <SPAN lang="ES">&nbsp;<em>En esta nueva clase de verso, creado por su servidor,   los hemistiquios o isostiquios y heterostiquios, no se toman en cuenta, pues   esto, alterar&iacute;a su m&eacute;trica.&nbsp;&nbsp;&nbsp;&nbsp; Acentos r&iacute;tmicos en las s&iacute;labas&hellip;   3-7-11.</em></SPAN></p>
+    <p align="center"><SPAN lang="ES">&nbsp;</SPAN></p>
+    <p align="center"><SPAN lang="ES"><strong><em>Son las nieves de la edad, en mis   praderas</em></strong></SPAN></p>
+    <p align="center"><em><strong><SPAN lang="ES">donde un tiempo fulguraron los   ardores</SPAN></strong></em></p>
+    <p align="center"><em><strong><SPAN lang="ES">hoy mi pecho solo siente los temores</SPAN></strong></em></p>
+    <p align="center"><em><strong><SPAN lang="ES">del final que se refleja en las   quimeras.</SPAN></strong></em></p>
+    <p align="center"><em><strong><SPAN lang="ES">&nbsp;</SPAN></strong></em></p>
+    <p align="center"><em><strong><SPAN lang="ES">Es la vida catarata de las eras</SPAN></strong></em></p>
+    <p align="center"><em><strong><SPAN lang="ES">donde inician el cantar los   trovadores</SPAN></strong></em></p>
+    <p align="center"><em><strong><SPAN lang="ES">recordando los hechizos&hellip; los amores</SPAN></strong></em></p>
+    <p align="center"><em><strong><SPAN lang="ES">que se guardan en las viejas   primaveras.</SPAN></strong></em></p>
+    <p align="center"><em><strong><SPAN lang="ES">&nbsp;</SPAN></strong></em></p>
+    <p align="center"><em><strong><SPAN lang="ES">Hay ventiscas de secretos.&nbsp; Hay   listones</SPAN></strong></em></p>
+    <p align="center"><em><strong><SPAN lang="ES">de pasiones que parecen olvidadas.</SPAN></strong></em></p>
+    <p align="center"><em><strong><SPAN lang="ES">Tras un p&oacute;rtico de alm&iacute;bar&nbsp; hay   fisgones</SPAN></strong></em></p>
+    <p align="center"><em><strong><SPAN lang="ES">&nbsp;</SPAN></strong></em></p>
+    <p align="center"><em><strong><SPAN lang="ES">apostados en ribetes de esmeraldas:</SPAN></strong></em></p>
+    <p align="center"><em><strong><SPAN lang="ES">son sonrisas, largos besos y   canciones</SPAN></strong></em></p>
+    <p align="center"><em><strong><SPAN lang="ES">que construyen con recuerdos mis   guirnaldas.</SPAN></strong></em></p>
+    <p align="center">&nbsp;</p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><em><strong><em><strong><u><u><u><u><img src="estrellita%20blanca.gif" width="31" height="31"></u></u></u></u></strong></em></strong></em><U><SPAN lang="ES-PA"><strong><em>YA PAS&Oacute; LA TARDE</em></strong></SPAN></U></p>
+    <p><SPAN lang="ES-PA">&nbsp;</SPAN></p>
+    <p><SPAN lang="ES-PA"><strong><em>Ya pas&oacute; la tarde</em></strong></SPAN></p>
+    <p><em><strong><SPAN lang="ES-PA">pas&oacute; sintiendo el eco de mi   respiraci&oacute;n</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">anudando como siempre </SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">los espacios de luz</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">en alg&uacute;n rinc&oacute;n de los tejados;</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">cuadricul&aacute;ndose en mis ventanas</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">mientras pierde sus colores</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">y desviste los &aacute;rboles de su   verdor.</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">&nbsp;En la mesita con bordes de   historia</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">flagela con el roce de su caricia   gris</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">los zapatitos blancos que vinieron de   Suecia.</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">La tarde va mutando los jazmines y las   gladiolas</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">al resbalar sobre el jard&iacute;n </SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">el hilado que borda en los espacios de   oscuridad</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">y las mantillas &nbsp;esmaltadas de luz de   luna.</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">Escribo&nbsp; tratando de evadir&nbsp;   el miedo</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">ese miedo que afronto a diario frente a la   vida</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">al mundo que derrama su lava</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">como volc&aacute;n herido en su cumbre</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">y va arrasando, encendido en   impiedad</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">las facetas de una paz que sigue   germinando</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">en&nbsp; los corazones &nbsp;de hombres   y mujeres</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">que a diario se levantan con   esperanza</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">de un mundo mejor&hellip; el mismo que ans&iacute;a   ver</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">tu coraz&oacute;n y el m&iacute;o&hellip;</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">&iexcl;Qu&eacute; hermoso el platinado de la Luna   !</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">Sobre el charquito que reposa&nbsp;   inocente</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">entre las ra&iacute;ces del abeto&hellip;.</SPAN></strong></em></p>
+    <p><em><strong><SPAN lang="ES-PA">&nbsp;</SPAN></strong></em></p>
+    <p><U><strong><em>A MIS MADRUGADAS</em></strong></U></p>
+    <DIV></DIV>
+    <DIV>
+      <p align="center"><strong><BR>
+  (Dodecas&iacute;labo 7 -5) <BR>
+        <BR>
+        <em>&iexcl;Oh!   Madrugada virgen que me acompa&ntilde;as <BR>
+          en los tortuosos bosques de mi sapiencia <BR>
+          mientras la luna pinta con sus pesta&ntilde;as <BR>
+          el manantial oscuro de mi   conciencia. <BR>
+          <BR>
+          Tienes el grito henchido de mis entra&ntilde;as <BR>
+          que rasga aquel   silencio con insistencia <BR>
+          sacando aquellos versos con telara&ntilde;as <BR>
+          y   denunciando errores de la insapiencia.* <BR>
+          <BR>
+          En ti, recuesto al sue&ntilde;o que se   revela <BR>
+          y si el cansancio aturde mis pensamientos <BR>
+          t&uacute;, con sereno cubres,   mi noche en vela. <BR>
+          <BR>
+          Eres el verde negro sobre la piedra <BR>
+          donde se   arraigan cuitas y sentimientos <BR>
+          como en los duros muros la verde hiedra. <BR>
+          <BR>
+          Carlos Alberto/Gallnnet <BR>
+          <BR>
+          Agto. 2003</em><BR>
+      </strong></p>
+    </DIV>
+    <p><BR>
+    </p>
+    <p align="center">&nbsp;</p>
+    <p><BR>
+    </p>
+  </div>
+</DIV>
+<p align="center"><em><strong><u><u><u><u><img src="estrellita%20blanca.gif" width="31" height="31"></u></u></u></u></strong></em><U><STRONG><em>CON AQUELLA PLACIDEZ   III</em></STRONG></U><em><STRONG> <BR>
+</STRONG><BR>
+</em></p>
+<p align="center"><em><STRONG>Disuelvo el lapso de la noche <BR>
+  en que pasivo de   amor&hellip; dorm&iacute;a. <BR>
+  &iexcl;Ahora , envuelto en la airosa luz albina , <BR>
+  me aferro con   infinita gratitud, <BR>
+  a los bordes que le dan la forma al d&iacute;a! <BR>
+  <br>
+  Sus labios,   con aquella placidez <BR>
+  de ancianidad, que guarda <BR>
+  en la frescura del ayer&hellip;   esa sonrisa. <BR>
+  Latidos blancos entre s&aacute;banas <BR>
+  y calor de vida en cada mano <BR>
+  en cada caricia &hellip; en cada espacio <BR>
+  de ese incontrolable momento <BR>
+  cuando las almas hablan en los cuerpos <BR>
+  para entrar en esa uni&oacute;n que nos   subyuga. <BR>
+  <br>
+  Se opaca , entonces, como levitando <BR>
+  la luz con forma de ventana <BR>
+  y se encienden la lumbre del amor <BR>
+  en el placer de cada beso&hellip; </STRONG></em><BR>
+  <BR><em><strong><u><u><u><u><img src="estrellita%20blanca.gif" width="31" height="31"></u></u></u></u></strong></em><strong><em><u>AMANECER </u><br>
+    <br>
+    </em></strong><em>IV </em><strong><em><br>
+    <br>
+    Tiene estr&iacute;as de luz el firmamento <br>
+  nubes rojas y estrellas apagadas <br>
+  es paisaje com&uacute;n de madrugadas <br>
+  que al pintor o al poeta dan aliento. <br>
+  <br>
+  En las trenzas del alba el dulce acento <br>
+  de las brisas, que llevan engarzados <br>
+  los trinos de las aves con bronceados <br>
+  temblores de una aurora en nacimiento. <br>
+  <br>
+  Las flores abren su frescor al d&iacute;a, <br>
+  hay vientos alfombrados de esperanza, <br>
+  cielos azules con mi fantas&iacute;a: <br>
+  <br>
+  Un mundo que despierta en alabanza <br>
+  para ofrecerle a Dios, esa alegr&iacute;a <br>
+  al decirle, Se&ntilde;or, s&iacute; hay semejanza <br>
+  <br>
+  </em></strong><em>. . .</em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><u><u><u><u><img src="estrellita%20blanca.gif" width="31" height="31"></u></u></u>SUPUESTAMENTE</u></strong></em></p>
+<p align="center"> </p>
+<p align="center"><em>El Mundo</em></p>
+<p align="center"><em>un m&aacute;gico espejo de ilusi&oacute;n</em></p>
+<p align="center"><em>con sus colores </em></p>
+<p align="center"><em>con sus sonidos</em></p>
+<p align="center"><em>danzando libres</em></p>
+<p align="center"><em>rozando el tiempo</em></p>
+<p align="center"><em>yo, en mi Parnaso</em></p>
+<p align="center"><em>rondo los cielos</em></p>
+<p align="center"><em> y escarbo abismos </em></p>
+<p align="center"><em>busco respuestas</em></p>
+<p align="center"><em>la que debieron surgir</em></p>
+<p align="center"><em>en el camino </em></p>
+<p align="center"><em>cuando llegaba</em></p>
+<p align="center"><em>a este lugar.</em></p>
+<p align="center"><em>Ya estoy por irme </em></p>
+<p align="center"><em>sigo esperando</em></p>
+<p align="center"><em>haciendo al tiempo</em></p>
+<p align="center"><em>una sobrilla donde esperar</em></p>
+<p align="center"><em>hasta el momento</em></p>
+<p align="center"><em>supuestamente</em></p>
+<p align="center"><em>en que suponga</em></p>
+<p align="center"><em>que fui en el mundo una realidad.</em></p>
+<p align="center">. . .</p>
+<p></p>
+<p align="center"><em><strong>ME AGRADA JUGAR CON LAS FORMAS, SI TENGO POR LIENZO 
+  EL ALMA...</strong> </em></p>
+<p align="center"><em><strong><u><u><u><u><img src="estrellita%20blanca.gif" width="31" height="31"></u></u></u>SOLAMENTE 
+  VERSOS III </u></strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>El agua sec&oacute; su humedad en la roca <br>
+  y el perfume de la flor <br>
+  se desprend&iacute;a en un silencio saturado de ambros&iacute;a <br>
+  en gaseosas pinceladas de &oacute;leo lila <br>
+  en el lienzo virgen en que se estira el paisaje <br>
+  como un pensamiento casto. <br>
+  &iexcl;Presunto siempre en la primea entrega! </strong></em></p>
+<p align="center"><em><strong>Tejiendo versos de seda con rayos de luz dormidos 
+  <br>
+  Mis ojos vest&iacute;an las olas y mis besos lazarillos <br>
+  se arrastraban a tus pies Y en las c&uacute;spides de arena <br>
+  mis sue&ntilde;os eran caminos que adornaba con tu nombre <br>
+  mientras llegaba el Domingo. </strong></em></p>
+<p align="center"><em><strong>Esos p&aacute;lidos semblantes de tus alientos dormidos 
+  <br>
+  son mi regazo en las noches&#8230; <br>
+  Las flores del pensamiento sufren oscuro albedr&iacute;o <br>
+  buscando en la luz del alba tus ojos junto a los m&iacute;os <br>
+  la noche es un laberinto de lazos y piedras negras <br>
+  por donde ir&aacute; mi destino. <br>
+  Y vislumbrar esa aurora que tomaste al infinito </strong></em></p>
+<p align="center"><em><strong>. . .</strong></em></p>
+<p align="center"> </p>
+<p align="center"> </p>
+<p align="center"><em><strong><u><u><u><u><img src="estrellita%20blanca.gif" width="31" height="31"></u></u></u>SIETE 
+  L&Iacute;NEAS III</u></strong></em></p>
+<p align="center"> </p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Se va rastreando el tiempo con recuerdos</strong></em></p>
+<p align="center"><em><strong>de insomnio son los versos de los dos</strong></em></p>
+<p align="center"><em><strong>escritos en las s&aacute;banas de invierno</strong></em></p>
+<p align="center"><em><strong>guardados con temblor de adoraci&oacute;n</strong></em></p>
+<p align="center"><em><strong>son versos que no llevan un te quiero</strong></em></p>
+<p align="center"><em><strong>sino un silencio efusivo de interior</strong></em></p>
+<p align="center"><em><strong>que queman, ahogando el fr&iacute;o de invierno</strong></em></p>
+<p align="center"><em><strong>la piel del sexo curtida en el amor.</strong></em></p>
+<p align="center"> </p>
+<p align="center"><em><strong>. . .</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"> </p>
+<p align="center"><em><strong><u><u><u><u><img src="estrellita%20blanca.gif" width="31" height="31"></u></u></u>NO 
+  QUIERO III</u></strong></em></p>
+<p align="center"> </p>
+<p align="center"><em><strong>No quiero que el viento se lleve mis palabras</strong></em></p>
+<p align="center"><em><strong>en sordomuda expresi&oacute;n del no so&ntilde;ar.</strong></em></p>
+<p align="center"><em><strong>Quiero que sepas que hay un sue&ntilde;o</strong></em></p>
+<p align="center"><em><strong>un sue&ntilde;o que amarro </strong></em></p>
+<p align="center"><em><strong>a la grupa salvaje de mi alma</strong></em></p>
+<p align="center"><em><strong>hasta estar contigo y dejar de sollozar</strong></em></p>
+<p align="center"><em><strong>lejos, muy lejos de mis crep&uacute;sculos </strong></em></p>
+<p align="center"><em><strong>donde no hay aves, ni sol quemando el rojo</strong></em></p>
+<p align="center"><em><strong>s&oacute;lo esp&iacute;ritus de pesar y cantos de 
+  silencio</strong></em></p>
+<p align="center"><em><strong>que cuelgan de los rayos en p&oacute;stumos declives 
+  </strong></em></p>
+<p align="center"><em><strong>ya sin casi sin luz</strong></em></p>
+<p align="center"><em><strong>en el boquete de un oscuro azar&#8230;</strong></em></p>
+<p align="center"><em><strong>El alba amarra bucles de colores </strong></em></p>
+<p align="center"><em><strong>en la cintura desnuda del amanecer;</strong></em></p>
+<p align="center"><em><strong>el mar deja sus l&aacute;grimas de espuma</strong></em></p>
+<p align="center"><em><strong>en las plantas so&ntilde;adas de tus pies&#8230;</strong></em></p>
+<p align="center"><em><strong>No, no quiero que el viento se lleve mis palabras</strong></em></p>
+<p align="center"><em><strong>cosiendo versos sin voz, donde est&aacute; todo</strong></em></p>
+<p align="center"><em><strong>sin decir nada</strong></em></p>
+<p align="center"><em><strong>sin poder elogiarte a ti, mujer&#8230;</strong></em></p>
+<p align="center"></p>
+<p align="center">&nbsp;</p>
+<div align="center"> 
+  <table width="60%" border="0" align="right">
+    <tr> 
+      <td><p align="center"><em><strong>Llegan nuevos cantares en la brisa<br>
+          despejan la tormenta que ya pasa<br>
+          y aunque el rayo cabalgue muy de prisa<br>
+          su rebelde intenci&oacute;n se queda en casa.</strong></em></p></td>
+    </tr>
+  </table>
+</div>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"></p>
+<p align="center"> </p>
+<p align="center"><em><strong>Carlos Alberto/Gallnnet </strong> </em></p>
+<p align="center"><em><br>
+  </em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><u>PARA TRUNCARLE </u></strong><u><strong>AL MUNDO</strong></u><strong>&#8230;</strong></em></p>
+<p align="center"> </p>
+<p align="center"><em><strong>Hay cristales que duermen en mi frente </strong></em></p>
+<p align="center"><em><strong>llevo espejos dormidos en el alma </strong></em></p>
+<p align="center"><em><strong>hay cantares que escucho solamente </strong></em></p>
+<p align="center"><em><strong>si ya la tempestad pas&oacute; a ser calma. </strong></em></p>
+<p align="center"> </p>
+<p align="center"><em><strong>El cielo que era esta&ntilde;o se ha encendido </strong></em></p>
+<p align="center"><em><strong>el mar que estaba oscuro se ha dorado </strong></em></p>
+<p align="center"><em><strong>y en la ventana el p&eacute;talo dormido </strong></em></p>
+<p align="center"><em><strong>se viste con la luz esperanzado.</strong></em></p>
+<p align="center"> </p>
+<p align="center"><em><strong>Yo dejo de so&ntilde;ar, pintar desvelos </strong></em></p>
+<p align="center"><em><strong>en esa soledad de cuatro esquinas </strong></em></p>
+<p align="center"><em><strong>y en luz de libertad levanto vuelos </strong></em></p>
+<p align="center"><em><strong>para truncarle al mundo las espinas. </strong></em></p>
+<p align="center"> </p>
+<p align="center"><em><strong>El canto de Zorzal, llevo por dentro</strong></em></p>
+<p align="center"><em><strong>el color de las flores en la vista </strong></em></p>
+<p align="center"><em><strong>en los labios los versos que me encuentro </strong></em></p>
+<p align="center"><em><strong>a tono con la acci&oacute;n que es imprevista. </strong></em></p>
+<p align="center"> </p>
+<p align="center"><em><strong>Preludio del amor naci&oacute; en pesebre </strong></em></p>
+<p align="center"><em><strong>llenando de esperanza el mundo entero </strong></em></p>
+<p align="center"><em><strong>y quema el coraz&oacute;n ver tanta fiebre </strong></em></p>
+<p align="center"><em><strong>buscando en la impiedad su derrotero. </strong></em></p>
+<p align="center"> </p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><font size="2">N del A: Fiebre, en su expresi&oacute;n lugare&ntilde;a 
+  o modismo quiere decir desesperaci&oacute;n por algo. Ej. Tienes fiebre de mariscos&#8230;al 
+  menos as&iacute; lo utilizamos<br>
+  en el pa&iacute;s donde resido</font></em></p>
+<p align="center"><em><font size="2"><strong>. . .</strong></font></em></p>
+<p align="center"><em><strong><u><br>
+  A MIS NI&Ntilde;OS POBRES...</u></strong></em></p>
+<p align="center"><em><strong><br>
+  </strong></em></p>
+<p align="center"><em><strong>Se acent&uacute;a en el recuerdo esa mirada<br>
+  <br>
+  cobijada por el n&aacute;car de sus ojos<br>
+  <br>
+  son migajas de expresi&oacute;n, o son antojos<br>
+  <br>
+  en un c&aacute;ntaro de luz sin alborada. </strong></em></p>
+<p align="center"><em><strong><br>
+  <br>
+  Lleva sombra de una voz, encadenada<br>
+  <br>
+  al cansancio de sentir tantos sonrojos <br>
+  <br>
+  pierden tono de infantil sus labios rojos<br>
+  <br>
+  y en su rostro la sonrisa es barajada. </strong></em></p>
+<p align="center"><em><strong><br>
+  <br>
+  Llevo caldo de dolor en la apartada<br>
+  <br>
+  soledad donde el crujir, voz de festejos <br>
+  <br>
+  es la m&uacute;sica del alma desgarrada. </strong></em></p>
+<p align="center"><em><strong><br>
+  <br>
+  Y pregunto al vasto azul de los espejos <br>
+  <br>
+  paladeando aquel color de madrugada.<br>
+  <br>
+  &iquest;Qu&eacute; tan cerca estoy de Dios...o qu&eacute; tan lejos?<br>
+  </strong></em></p>
+<p align="center"><em><strong>. . .</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><u><strong>ME QUED&Eacute; III</strong></u></em></p>
+<p align="center"> </p>
+<p align="center"><em>Me qued&eacute; en el minuto que no vuelve</em></p>
+<p align="center"><em>en los pucheros que fung&iacute; cuando beb&eacute;</em></p>
+<p align="center"><em>en la talla del crecer que qued&oacute; atr&aacute;s </em></p>
+<p align="center"><em>pulgada menos pulgada m&aacute;s</em></p>
+<p align="center"><em>en el verso que escrib&iacute; cuando peque&ntilde;o</em></p>
+<p align="center"><em>en la voz con que llamaba a mi pap&aacute;</em></p>
+<p align="center"><em>en el sue&ntilde;o que se fue desvaneciendo</em></p>
+<p align="center"><em>en la oruga que esper&eacute; a ver volar</em></p>
+<p align="center"><em>en la di&aacute;fana mirada de la abuela</em></p>
+<p align="center"><em>en el beso que le daba a mi mam&aacute;</em></p>
+<p align="center"><em>en las manos arrugadas del abuelo</em></p>
+<p align="center"><em>en los pasos con que pude aqu&iacute; llegar</em></p>
+<p align="center"><em>me qued&eacute;, me qued&eacute;, me qued&eacute; atr&aacute;s.</em></p>
+<p align="center"> </p>
+<p align="center"><em>Gallnnet</em></p>
+<p align="center"><em><strong><a href="index.html">Volver</a><br>
+  </strong></em></p>
+<p align="center">&nbsp;</p>
+<div align="center">
+  <table width="91%" border="0" align="center">
+    <tr> 
+      <td width="85%" height="650" rowspan="2"><div align="center"><em><strong><u>Autobiograf&iacute;a</u> 
+          </strong></em></div>
+        <p></p>
+        <p align="center"><em><strong>GALLNNET es el seud&oacute;nimo de Carlos 
+          Alberto Gallardo Chambonnet, nacido en Panam&aacute; el 14 de Abril 
+          de 1930. </strong></em></p>
+        <p align="center"><em><strong>De cuna humilde, comenz&oacute; sus estudios 
+          primarios colegio La Salle que por motivos econ&oacute;micos tuvo que 
+          culminar en la escuela Rep&uacute;blica de M&eacute;xico, donde su madre 
+          ejerc&iacute;a como maestra. Comenz&oacute; sus estudios secundarios 
+          en el el Instituto Nacional, donde termin&oacute; el primer ciclo, gradu&aacute;ndose 
+          luego de Perito Mercantil en la escuela Isabel Herrera de Obald&iacute;a. 
+          Comenz&oacute; estudios universitarios en la facultad de Humanidades 
+          abandonando los mismos por razones de fuerza mayor.<br>
+          Desde temprana edad escribi&oacute; poemas con el seud&oacute;nimo de 
+          Alma Bohemia. Durante 37 a&ntilde;os labor&oacute; en la Caja de Seguro 
+          Social con diferentes cargos siendo el &uacute;ltimo desempe&ntilde;ado 
+          por m&aacute;s de veinte a&ntilde;os el de Analista Programador de Computadoras 
+          I.B.M.</strong></em></p>
+        <p align="center"><em><strong>Como experiencia personal, particip&oacute; 
+          en diversos concursos de novela y poes&iacute;a en los a&ntilde;os 1990, 
+          2000, 2001 y 2002.</strong></em></p>
+        <p align="center"><em><strong>Durante sus estudios en la escuela Profesional, 
+          particip&oacute; en un concurso de cuentos donde ocup&oacute; el tercer 
+          lugar con&quot;La Rosa Blanca&quot;. </strong></em></p>
+        <p align="center"><em><strong>Ha tomado cursos de &quot;Cuenta Cuentos&quot; 
+          y ha desempe&ntilde;ado el cargo asistiendo a bibliotecas bajo la direcci&oacute;n 
+          de la Biblioteca Nacional E.J.C.R. Tambi&eacute;n, recientemente tom&oacute; 
+          un curso de Palabra Abierta, dictado por el profesor y poeta nacional 
+          H&eacute;ctor M. Collado y est&aacute; gestionando la asistencia a un 
+          curso para componer d&eacute;cimas. </strong></em></p>
+        <p align="center"><em><strong>Su Pensamiento favorito: &quot;La Humildad 
+          es la mayor virtud&quot; </strong></em></p></td>
+      <td width="15%"><div align="center"><em><strong><img src="gallnnet.jpg" width="78" height="90"> 
+          </strong></em></div>
+        <div align="center"></div></td>
+    </tr>
+    <tr> 
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><br>
+  <font size="2"><br>
+  *Soy partidario del uso de las licencias m&eacute;tricas, las considero necesarias 
+  para la elasticidad del verso.<br>
+  </font></strong></em></p>
+<p align="center"><em><strong><a href="index.html">Volver</a><br>
+  <br>
+  </strong></em></p>
+<!-- Inserted by miarroba -->
+</script></noframes></noembed></noscript>
+<script type="text/javascript" src="https://hosting.miarroba.info/?__muid=c2e9db11ccffac284005e19eee350bacd85a36b0&amp;h=1395044&amp;t=1614823889&amp;k=90b2731b1f2c65336ceee65c09fd243b"></script><noscript><img alt="beacon" border="0" width="1" height="1" src="https://hosting.miarroba.info/?__muid=c2e9db11ccffac284005e19eee350bacd85a36b0&amp;h=1395044&amp;t=1614823889&amp;k=90b2731b1f2c65336ceee65c09fd243b&amp;img=1" /></noscript>
+<script type="text/javascript">var s=document.createElement("script");var t="//des.smartclip.net/ads?type=dyn&plc=75133&elementId=c2e9db11ccffac284005e19eee350bacd85a36b0&sz=400x320&rnd="+Math.round(Math.random()*1e8);s.type="text/javascript";s.src=t;document.body.appendChild(s);</script><div id="c2e9db11ccffac284005e19eee350bacd85a36b0"></div>
+<div id="ads_HEZRL65RXYI2"></div>
+<script defer="" language="javascript" type="text/javascript">
+(function(){
+var newscript= document.createElement('script');
+newscript.type = 'text/javascript';
+newscript.async = true;
+lz_elem = (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]);
+lz_elem.appendChild(newscript);
+newscript.onload = function(ev){
+var lz_url="https://play.sunmediaads.com/red/zone.php?code=HEZRL65RXYI2&a=&pubid=&lgid="+((new Date()).getTime() % 2147483648) + Math.random();
+var lz_target = "ads_HEZRL65RXYI2";
+var lz_sync_mode=false;
+lz_loadads(lz_url ,lz_target,lz_sync_mode);
+}
+newscript.src= "https://img.sunmediaads.com/ads/lz_loader.js?ver=1.4";
+})();
+</script>
+<!-- Inserted by miarroba -->
+</body>
+</html>

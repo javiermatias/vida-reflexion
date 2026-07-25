@@ -1,0 +1,460 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<!-- Inserted by miarroba -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org' . concat('/choice/', 'd5x2uDVHd7ALE', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+  firstScript.parentNode.insertBefore(element, firstScript);
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+      var payload = json.__tcfapiCall;
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+  makeStub();
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+<!-- Inserted by miarroba -->
+<title>miguellongarini</title>
+<meta http-equiv="" content="text/html; charset=iso-8859-1">
+<meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"></head>
+
+<body bgcolor="#660033" text="#CCFFFF" link="#FF9900" vlink="#9966FF" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Inserted by miarroba -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2VG59" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Inserted by miarroba -->
+<p><em><strong><a href="index.html">Volver </a></strong></em></p>
+<p> 
+  <embed src="hojas_muertas_Peter_1_.mid" width="8" height="9"></embed><font size="2"></font></p>
+<p>&nbsp;</p>
+<p align="center"><strong><em>&quot;<u>Con los pies en la tierra</u>&quot;</em></strong></p>
+<p align="center">&nbsp;</p>
+<table width="88%" border="1" align="center">
+  <tr>
+    <td width="41%"><div align="center">
+        <p><em><font size="2"><img src="origen_de_Graciela_Mar%EDa_Casartelli.jpg" width="293" height="458"> 
+          </font></em></p>
+        <p>&nbsp;</p>
+        <p><em><font size="2">&quot;Origen&quot; de Graciela Mar&iacute;a Casartelli<br>
+          Acr&iacute;lico</font></em> <em><font size="2">sobre tela.</font></em><em><font size="2"> 
+          </font></em></p>
+      </div></td>
+    <td width="59%"><p align="center"><br>
+        <em><strong>Abajo y por debajo est&aacute; la tierra.</strong></em></p>
+      <p align="center"><em><strong>Piso sabi&eacute;ndote madre, pachamama</strong></em></p>
+      <p align="center"><em><strong>Ra&iacute;z en el tiempo.</strong></em></p>
+      <p align="center"> </p>
+      <p align="center"><em><strong>No concibo la vida</strong></em></p>
+      <p align="center"><em><strong>sin saber lo que piso</strong></em></p>
+      <p align="center"><em><strong>sin saber d&oacute;nde piso;</strong></em></p>
+      <p align="center"><em><strong>De no saberlo ser&iacute;a un producto,</strong></em></p>
+      <p align="center"><em><strong>un simple soldado del imperio,</strong></em></p>
+      <p align="center"><em><strong>listo para matar, listo para destruir</strong></em></p>
+      <p align="center"><em><strong>sin la m&aacute;s m&iacute;nima conciencia</strong></em></p>
+      <p align="center"><em><strong>de mis pies y mis hermanos.</strong></em></p>
+      <p align="center"> </p>
+      <p align="center"><em><strong>Caminante soy y caminante voy</strong></em></p>
+      <p align="center"><em><strong>dando gracias a la vida</strong></em></p>
+      <p align="center"><em><strong>hacia el fin de los d&iacute;as.</strong></em></p>
+      <p align="center"><em><strong>No apresuro la marcha,</strong></em></p>
+      <p align="center"><em><strong>demasiado apuro existe</strong></em></p>
+      <p align="center"><em><strong>sin m&aacute;s horizonte que el abismo.</strong></em></p>
+      <p align="center"> </p>
+      <p align="center"><em><strong>Voy hacia la espera</strong></em></p>
+      <p align="center"><em><strong>hacia tu coraz&oacute;n de nobles manos,</strong></em></p>
+      <p align="center"><em><strong>de urgente semilla.</strong></em></p>
+      <p align="center"> </p>
+      <p align="center"><em><strong>Camino poblado de sue&ntilde;os fundantes</strong></em></p>
+      <p align="center"><em><strong>reverdeciendo la distancia.</strong></em></p>
+      <p align="center"><em><strong>Igual que siempre, desde siempre&#8230;</strong></em></p>
+      <p align="center"><em><strong>Con los pies en mi tierra.</strong></em></p>
+      <p align="center"> </p>
+      <p align="center"><em><strong>Poeta Pueblo</strong></em></p>
+      <p align="center"><em><strong>14/07/07</strong></em></p>
+      <p></p>
+  </td>
+  </tr>
+</table>
+<p align="left"><em><font size="2"><br>
+  </font></em></p>
+<div align="center">
+  <p>&nbsp;</p>
+</div>
+<table width="51%" border="0" align="center">
+  <tr>
+    <td width="10%"><img src="Miguellongarini1.jpg" width="73" height="83"></td>
+    <td width="90%"><div align="center"><strong><em>Autor: Miguel Angel Longarini<br>
+        Libre pensador y poeta argentino.<br>
+        <font size="2"><br>
+        </font></em></strong><a href="mailto:miguel.longarini@gmail.com"><em>miguel.longarini@gmail.com</em></a><em><br>
+        <a href="http://apurocorazon.blog.com.es/">http://apurocorazon.blog.com.es/</a><font size="2"><br>
+        </font></em><strong><font size="2"><br>
+            </font></strong> </div></td>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+<p align="center"><strong>&nbsp;</strong></p>
+<p align="center"><BR>
+</p>
+<DIV>
+  <p align="center" id="yui_3_7_2_1_1378222201015_14159"><span id="yui_3_7_2_1_1378222201015_14226"><strong><em>Tanto hablar de la gran crisis, una vez me pesqu&eacute; una y escrib&iacute; este poema que dada la &lsquo;&rsquo; crisis de humanidad&rdquo; se los comparto.</em></strong></span> <em><strong><span id="yui_3_7_2_1_1378222201015_14229">En crisis</span></strong></em></p>
+  <p align="center" id="yui_3_7_2_1_1378222201015_14155">&nbsp;</p>
+  <p align="center" id="yui_3_7_2_1_1378222201015_14153">&nbsp;</p>
+  <p align="center" id="yui_3_7_2_1_1378222201015_14151"><em><strong> <font color="#FF0000" size="2">&iexcl;Nuevo!<img src="estrellita%20blanca.gif" width="31" height="31"></font></strong></em><strong><em><u>Maestra: Siembrasol del horizonte</u></em></strong></p>
+  <p align="center">&nbsp;</p>
+  <p align="center"><em><strong>Sos tan importante.</strong></em></p>
+  <p align="center"><em><strong>tan abrazo,</strong></em></p>
+  <p align="center"><em><strong>tan Mamaescuela</strong></em></p>
+  <p align="center"><em><strong>tan nomeolvides</strong></em></p>
+  <p align="center"><em><strong>tan necesaria&hellip;</strong></em></p>
+  <p align="center"><em><strong>que pintas el coraz&oacute;n</strong></em></p>
+  <p align="center"><em><strong>con luz de la esperanza.</strong></em></p>
+  <p align="center"><em><strong>Maestra: aroma que me abraza,</strong></em></p>
+  <p align="center"><em><strong>que me sigue y siempre</strong></em></p>
+  <p align="center"><em><strong>llegas a mis ma&ntilde;anas.</strong></em></p>
+  <p align="center"><em><strong>Mamamasa de los tiempos</strong></em></p>
+  <p align="center"><em><strong>Padremadre de mi casa.</strong></em></p>
+  <p align="center"><em><strong>d&eacute;jame que te bese</strong></em></p>
+  <p align="center"><em><strong>hasta llegar a la monta&ntilde;a,</strong></em></p>
+  <p align="center"><em><strong>d&eacute;jame que te abrace</strong></em></p>
+  <p align="center"><em><strong>desde mi origen y mi causa.</strong></em></p>
+  <p align="center"><em><strong>Maestra de mi tierra</strong></em></p>
+  <p align="center"><em><strong>Siembrasol del horizonte</strong></em></p>
+  <p align="center"><em><strong>aqu&iacute; te evoco urgente</strong></em></p>
+  <p align="center"><em><strong>formadora de mi raza</strong></em></p>
+  <p align="center"><em><strong>Aqu&iacute;&hellip;te nombro Cielo</strong></em></p>
+  <p align="center"><em><strong>con toda la voz del alma.</strong></em></p>
+  <p align="center">&nbsp;</p>
+  <p align="center"><em><strong>Miguel Longarini </strong></em></p>
+  <p align="center"><em><strong>9 de Julio- Pcia de Bs.As</strong></em></p>
+  <p align="center"><em><strong>miguel.longarini@gmail.com </strong></em></p>
+  <p>&nbsp;</p>
+  <p align="center" id="yui_3_7_2_1_1378222201015_14163">&nbsp;</p>
+</DIV>
+<p align="center"><A title="mailto:miguel.longarini@gmail.com" href="/mc/compose?to=miguel.longarini@gmail.com" rel="nofollow" target="_blank" ymailto="mailto:miguel.longarini@gmail.com"><em>miguel.longarini@gmail.com</em></A></p>
+<p align="center"><em>&nbsp;</em></p>
+<p align="center"><em><A title="http://degeneradostiempos.blogspot.com/" href="http://degeneradostiempos.blogspot.com/" rel="nofollow" target="_blank">http://degeneradostiempos.blogspot.com/</A></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><A title="http://apurocorazon.blog.com.es/" href="http://apurocorazon.blog.com.es/" rel="nofollow" target="_blank">http://apurocorazon.blog.com.es/</A></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em>&nbsp;colaborador <A title="http://elclubdelpluma.bligoo.com.ar/ blocked::http://elclubdelpluma.bligoo.com.ar/" href="http://elclubdelpluma.bligoo.com.ar/" rel="nofollow" target="_blank"><SPAN title="http://elclubdelpluma.bligoo.com.ar/ blocked::http://elclubdelpluma.bligoo.com.ar/">http://elclubdelpluma.bligoo.com.ar</SPAN></SPAN></A></em></p>
+<p align="center"><em><strong><a href="index.html">Volver </a></strong></em> </p>
+<p align="center"><em><strong><u>Algunos aportes anteriores</u></strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><strong><em><u>Si puedes, no me olvides</u></em></strong></p>
+<p align="center">&nbsp;</p>
+<table width="299" border="1" align="center">
+  <tr>
+    <th width="289" scope="col"><p>&nbsp;</p>
+        <p><em>Hijo,  esc&uacute;chame esta vez siquiera:</em><br>
+            <em>Soy tu  padre, el que nunca te olvida,</em><br>
+            <em>El mismo  que escuchabas cuando ni&ntilde;o.</em><br>
+            <em>Eras d&eacute;bil  y necesitabas abrigo,</em><br>
+            <em>Deb&iacute;a  protegerte de tus fantasmas</em><br>
+            <em>Y  fant&aacute;sticas visiones.</em><br>
+            <em>Es verdad&hellip;  fuiste creciendo</em><br>
+            <em>Y yo fui  para viejo.</em><br>
+            <em>Siempre me  arregl&eacute; solo; </em><br>
+            <em>Qu&eacute; si no ven&iacute;as,</em><br>
+            <em>Hasta pude  comprender tus tiempos</em><br>
+            <em>donde todo  corre y casi nada vale,</em><br>
+            <em>Mucho  menos la visita a un viejo.</em><br>
+            <em>Pero se me  acort&oacute; el plazo de ser fuerte,</em><br>
+            <em>&hellip;estoy tan  d&eacute;bil y falto de tu amor</em><br>
+            <em>Como vos  cuando peque&ntilde;o.</em><br>
+            <em>Es por eso  que te pido,</em><br>
+            <em>Quiz&aacute; por  &uacute;ltima vez</em><br>
+            <em>Que me  quites de estos d&iacute;as&hellip;</em><br>
+            <em>El  Fantasma del Olvido&hellip;</em></p>
+      <p><em>Miguel  Longarini</em><br>
+            <em>17/06/2012</em><br>
+            <em>D&iacute;a del  padre </em></p></th>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><font color="#FF0000" size="2"><img src="estrellita%20blanca.gif" width="31" height="31"></font></strong></em><strong><u><em>A los   j&oacute;venes de mi tierra</em></u></strong></p>
+<p align="center">&nbsp;</p>
+<p align="center"><strong><em>&ldquo;Desciende   a las profundidades de ti mismo, y logra ver tu alma buena . La felicidad la   hace solamente uno mismo con la buena conducta&rdquo; </em></strong><em><strong>S&oacute;crates   . Fil&oacute;sofo griego .</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>E</strong>xiste un   manantial que alimenta ese torrente de energ&iacute;a que indefectiblemente llega con   la juventud .<br> 
+El poseerlo o ser joven, no siempre determina que se pueda saber   que se&nbsp; es portador de lo que significa esa etapa .</em></p>
+<p align="center"><em>Sentir que falta mucho tiempo para   llegar a verse como vuestros padres, en edad y costumbres; no tener conciencia   de que la experiencia llega en la medida que se<br> 
+acumulan acontecimientos que   trascurren desde que se comienza a crecer hasta que se tiene vida, tambi&eacute;n es   natural en el aprendizaje por vivir .<br> 
+Creerse casi invencible ante   circunstancias peligrosas o riesgosas&nbsp; que le suceden a otras personas, forma   parte del poderlo-todo que TODOS sentimos alguna vez .<br> 
+As&iacute;, podr&iacute;a enumerar un   sin fin de situaciones que algunas veces hasta se pone en permanente riesgo la   propia integridad f&iacute;sica y ps&iacute;quica de cada uno . </em></p>
+<p align="center"><em>Tratando de comprenderlos desde el   amor que existe en mi consecuente humanidad, es que decido escribirles este   pensamiento a modo de acompa&ntilde;amiento<br>
+ante la ausencia de claras manifestaciones   de soporte desde los mayores, &uacute;nicos responsables de vuestras incertidumbres   .</em></p>
+<p align="center"><em>Nada es claro cuando la confusi&oacute;n es   promocionada y ofrecida como una salida m&aacute;gica desde los grandes medios de   informaci&oacute;n, ante la ausencia de figuras<br> 
+referentes y carentes de la   responsabilidad de ejercer el rol asignado . </em></p>
+<p align="center"><em>La indelegable funci&oacute;n de padres o   mayores ha dejado paso a la&nbsp; declamada independencia, m&aacute;s all&aacute; de su justa e   inobjetable necesidad de practicarla <br>
+en su justo tiempo . </em></p>
+<p align="center"><em>Mis queridos j&oacute;venes, tal vez lo   escrito por este eterno so&ntilde;ador y buscador de lo humano por sobre todas las   cosas, parezca ser un mensaje de los tantos que<br>
+  abundan en el mundo virtual o   escrito, pero perm&iacute;tanme decirles que en mi constante y placentero trabajo de   escribir mis simples pensamientos, el motivo<br>
+fundamental de hacerlo, son   ustedes: &Uacute;nicos e irrepetibles due&ntilde;os del futuro incierto que se vislumbra, por   responsabilidad insoslayable de nosotros (los mayores) . </em></p>
+<p align="center"><em>El presente que hemos construido,   goza de una marcada des-humanizaci&oacute;n y reafirmaci&oacute;n del materialismo como eje   fundamental de la propia existencia, que sin entrar<br>
+  en las teor&iacute;as que cada uno   adopta por convicci&oacute;n, conveniencia o seguir nada m&aacute;s a la gran masa . A mi   modesto entender, deber&iacute;amos corregir el rumbo, <br>
+si entendemos que cada uno somos   una peque&ntilde;a parte de esta maravilla que llamamos universo . </em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em>El escritor argentino Don Ernesto   S&aacute;bato <strong>(1),</strong> nos dice en   un p&aacute;rrafo de su libro &ldquo;Antes del Fin&rdquo; <strong>(2)</strong> lo   siguiente: &ldquo;<strong>Si   bien los optimistas impert&eacute;rritos arguyen que<br> 
+la humanidad ha sabido siempre   sobreponerse a los b&aacute;rbaros acontecimientos, de ninguna manera estamos en   condiciones de poder confiar en esta clase de sofismas .<br> 
+En primer lugar, porque   hay civilizaciones enteras que jam&aacute;s se recuperaron, y en segundo, porque   atravesamos una crisis total y planetaria&rdquo;</strong> <strong>.</strong><br> 
+Como pueden observar este grande de   la literatura universal y nuestro, hace tiempo que alerta sobre la degradaci&oacute;n   global y sus consecuencias .</em></p>
+<p align="center"><em>Los convoco a que cada d&iacute;a que   suceda, puedan comprender que la libertad est&aacute; en cada uno de vosotros . No hace   falta que sigan los consejos ni los mensajes que utilizan<br> 
+algunos medios, con el   fin de ofrecerles una meta, que el precio que se paga por llegar no permite   darse cuenta de lo esclavo que los convierte .</em></p>
+<p align="center"><em>Sepan que existen mujeres y hombres   en todo el mundo que los aman y trabajan para reconstruir el presente y   consolidar un futuro cierto, donde el hombre no sea nunca<br> 
+m&aacute;s &ldquo;Lobo del Hombre&rdquo;   . </em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><SPAN lang="PT-BR"><A href="http://ar.mc593.mail.yahoo.com/mc/compose?to=miguellongarini@speedy.com.ar" target="_blank" rel="nofollow" ymailto="mailto:miguellongarini@speedy.com.ar"></A></SPAN></em></p>
+<p align="center"><em><strong><font size="2">(1)&nbsp; </font></strong><font size="2"><SPAN lang="PT-BR">Ernesto S&aacute;bato <strong>(</strong></SPAN><strong>1911 -) . Novelista y ensayista argentino   .</strong></font><strong></strong></em></p>
+<p align="center"><em><font size="2">(2)&nbsp; <strong>Antes del Fin (Ensayo 1999)&nbsp;   Seix Barral .</strong></font><strong></strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em>He visto al pobre sobreponerse de su humillaci&oacute;n, m&aacute;s no   he podido ver al rico sobreponerse de su&nbsp;miseria . . . Miguel   Longarini</em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em>. . .</em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><strong><font color="#FF0000" size="2"><strong><img src="estrellita%20blanca.gif" width="31" height="31"></strong></font></strong></strong><u>El 
+  muro</u></em></p>
+<p align="center"><em><br>
+  En el muro,<br>
+  las manos del ni&ntilde;o<br>
+  quedaron encarceladas.<br>
+  Cuando bombardearon su casa,<br>
+  su cuerpecito vol&oacute;.<br>
+  Sus manitas<br>
+  Est&aacute;n estampadas<br>
+  en la muralla<br>
+  que los hombres construyen<br>
+  para que nadie pase,<br>
+  para que nadie mire;<br>
+  Para que nadie&#8230; de los nadies<br>
+  intente ser hermano.<br>
+  En los muros<br>
+  a veces<br>
+  -las manos-<br>
+  de los pobres<br>
+  cansados de esperar<br>
+  Reclaman &iexcl;Paz!</em></p>
+<p align="center"><em><br>
+  12-01-09</em><br>
+</p>
+<p align="center"><em>. . . . .</em></p>
+<p align="center">&nbsp; </p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><u>Siempre se est&aacute; a tiempo</u>.<br>
+  <br>
+  <br>
+  Para quienes se resisten, o le surgen dudas en ver que una naci&oacute;n necesita 
+  de hombres y mujeres<br>
+  comprometidos en el m&aacute;s puro sentido humano, de trabajar todos los d&iacute;as 
+  por las cuestiones que hagan <br>
+  a una vida digna para todos: <br>
+  En la inclusi&oacute;n, en la equidad, en la igualdad de oportunidades, en la 
+  justicia, en el amor hacia <br>
+  el pr&oacute;jimo, en desterrar el hambre en una tierra que produce alimentos 
+  para millones de seres humanos.<br>
+  <br>
+  Por lo mismo, si te ronda alguna corazonada de formar parte de los necesarios, 
+  aqu&iacute;, simplemente, te <br>
+  comparto unas palabras de nuestro Atahualpa Yupanqui, que por ah&iacute;, le 
+  echa una le&ntilde;a m&aacute;s al fuego. <br>
+  <br>
+  <br>
+  Yupanqui dec&iacute;a:<br>
+  <br>
+  &quot;Si t&uacute; eres elegido, si has sentido el reclamo de la tierra, si 
+  comprendes su sombra, te espera una tremenda responsabilidad.<br>
+  Puede perseguirte la adversidad, aquejarte el mal f&iacute;sico, empobrecerte 
+  el medio, desconocerte<br>
+  el mundo, pueden burlarse y negarte los otros, pero es in&uacute;til, nada apagar&aacute; 
+  la lumbre de tu antorcha, por que<br>
+  no es s&oacute;lo tuya.<br>
+  Es la tierra, que te ha se&ntilde;alado&quot;. </em></p>
+<p align="center"><em>. . .</em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><u>LIMPIANDO</u>&#8230;</em></p>
+<p> </p>
+<p align="center"><em>CUANDO UNO DECIDE LIMPIAR CON PALABRAS, EL MOHO DE LA INSEGURIDAD, 
+  PUEDE<br>
+  OCURRIR QUE ESAS SE&Ntilde;ALES SALPIQUEN A LOS SEGUROS Y FUTUROS MORTALES.</em></p>
+<p align="center"> </p>
+<p align="center"><em>NADIE QUIERE &#8220;OIR&#8221; EL SILENCIO QUE SE NECESITA 
+  PARA LA ACCI&Oacute;N DE SANAR LAS<br>
+  HERIDAS DE LOS DESENCUENTROS; MUCHAS VECES SE PREFIERE SEGUIR ARDIENDO CON MARCADO 
+  DISIMULO.</em></p>
+<p align="center"> </p>
+<p align="center"><em>HAY ETAPAS DE SOLES NUEVOS QUE PRODUCEN INCIERTOS ATARDECERES, 
+  LEJANOS HORIZONTES DE NIEBLA CONSTANTE, DONDE LA PRISA TE ARROJA AL ABISMO. 
+  </em></p>
+<p align="center"> </p>
+<p align="center"><em>SI TE ENCUENTRAS DE LIMPIEZA, PUES, NO AHORRES EN TIRAR 
+  HASTA EL &Uacute;LTIMO TRAPO.<br>
+  NO CEDAS A LOS PREGUNTONES.<br>
+  AL&Eacute;JATE DE LOS SABIOS DE RECETAS ARCHIVADAS Y COMIENZA A MIRAR CADA ESTRELLLA, 
+  CADA LUNA ENAMORADA. </em></p>
+<p align="center"> </p>
+<p align="center"><em>SI SIENTES QUE HAS PODIDO EN LA PARTIDA .GUARDA SILENCIO&#8230;SUELE 
+  SER MUY LARGO EL CAMINO HASTA ENCONTRAR LA CALMA.</em></p>
+<p align="center"></p>
+<p align="center"><em> <br>
+  Mis temas: <a href="http://www.apurocorazon.blog.com.es">www.apurocorazon.blog.com.es</a><br>
+  </em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><font size="2"><em>(1) La musicalizaci&oacute;n es gentileza 
+  para esta Web de Pedro Bustamante y su piano m&aacute;gico...</em></font></p>
+<p align="center"><em><a href="index.html">Volver </a></em> </p>
+<!-- Inserted by miarroba -->
+</script></noframes></noembed></noscript>
+<script type="text/javascript" src="https://hosting.miarroba.info/?__muid=367713cd8dd2e59510b5addf287bdf506c77f357&amp;h=1395044&amp;t=1614098564&amp;k=82bc7157c0baddecbbbcb026856c9c36"></script><noscript><img alt="beacon" border="0" width="1" height="1" src="https://hosting.miarroba.info/?__muid=367713cd8dd2e59510b5addf287bdf506c77f357&amp;h=1395044&amp;t=1614098564&amp;k=82bc7157c0baddecbbbcb026856c9c36&amp;img=1" /></noscript>
+<script type="text/javascript">var s=document.createElement("script");var t="//des.smartclip.net/ads?type=dyn&plc=75133&elementId=367713cd8dd2e59510b5addf287bdf506c77f357&sz=400x320&rnd="+Math.round(Math.random()*1e8);s.type="text/javascript";s.src=t;document.body.appendChild(s);</script><div id="367713cd8dd2e59510b5addf287bdf506c77f357"></div>
+<div id="ads_HEZRL65RXYI2"></div>
+<script defer="" language="javascript" type="text/javascript">
+(function(){
+var newscript= document.createElement('script');
+newscript.type = 'text/javascript';
+newscript.async = true;
+lz_elem = (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]);
+lz_elem.appendChild(newscript);
+newscript.onload = function(ev){
+var lz_url="https://play.sunmediaads.com/red/zone.php?code=HEZRL65RXYI2&a=&pubid=&lgid="+((new Date()).getTime() % 2147483648) + Math.random();
+var lz_target = "ads_HEZRL65RXYI2";
+var lz_sync_mode=false;
+lz_loadads(lz_url ,lz_target,lz_sync_mode);
+}
+newscript.src= "https://img.sunmediaads.com/ads/lz_loader.js?ver=1.4";
+})();
+</script>
+<!-- Inserted by miarroba -->
+</body>
+</html>

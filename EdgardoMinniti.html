@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Inserted by miarroba -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org' . concat('/choice/', 'd5x2uDVHd7ALE', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+  firstScript.parentNode.insertBefore(element, firstScript);
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+      var payload = json.__tcfapiCall;
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+  makeStub();
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+<!-- Inserted by miarroba -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Edgardo Minniti</title>
+<style type="text/css">
+<!--
+.Estilo1 {font-size: 12px}
+body,td,th {
+	color: #660066;
+}
+body {
+	background-color: #CCCCFF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.Estilo4 {font-size: 12px; font-style: italic; }
+a:link {
+	color: #FF9900;
+}
+a:visited {
+	color: #9933CC;
+}
+a:hover {
+	color: #FFFF00;
+}
+a:active {
+	color: #FF0000;
+}
+.Estilo5 {
+	font-style: italic;
+	font-weight: bold;
+}
+.Estilo6 {font-size: 16px}
+-->
+</style>
+</head>
+
+<body>
+<!-- Inserted by miarroba -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2VG59" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Inserted by miarroba -->
+<p><a href="index.html"><em><strong>Volver</strong></em></a></p>
+<p>
+  <embed src="castillo.mid" width="20" height="16"></embed>
+</p>
+<p align="center"><strong><em><u>POES&Iacute;A</u></em></strong></p>
+<p align="center"><strong><em>(Un mundo  insospechado)</em></strong></p>
+<p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p align="center"><strong><em><u>SOBRE LA POES&Iacute;A DE TODOS LOS&nbsp; TIEMPOS</u></em></strong></p>
+<p align="center">&nbsp;</p>
+<table width="529" border="1" align="right">
+  <tr>
+    <td><strong><em><span class="Estilo1">Autor</span>: Edgardo Ronald Minniti Morgan</em></strong> <span class="Estilo4">(C&oacute;rdoba, Argentina) </span></td>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<table width="977" border="1" align="center">
+  <!--DWLayoutTable-->
+  <tr>
+    <td width="579" height="688" valign="top"><h1 align="center"><span class="Estilo6"><em><u>FUGA&nbsp; ORQUESTAL</u></em>&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+          <span class="Estilo1">&nbsp;Al amigo V&iacute;ctor Gallino,  poeta y m&uacute;sico</span></em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h1>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <div align="center"><em>El piano  saltaba<br />
+        de piedra en piedra<br />
+        para salvar la corriente      </em>
+      </div>
+      <p align="center" class="Estilo6"><em>la trompeta <br />
+        le puso el pie</em></p>
+      <p align="center" class="Estilo6"><em>rieron los timbales<br />
+        con mucho esmero</em></p>
+      <p align="center" class="Estilo6"><em>vientos ce&ntilde;udos<br />
+        impusieron orden<br />
+        de cobre y bronce</em></p>
+      <p align="center"><span class="Estilo6"><em>restablecida la armon&iacute;a<br />
+  la melod&iacute;a joven, incansable<br />
+  </em></span><em>prosigui&oacute; con su ritmo alegre</em>&nbsp;&nbsp;&nbsp;</p>
+      <p align="center">&nbsp;&nbsp;<span class="Estilo6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+      <div align="center"><strong><em><u>HE&nbsp; PLANTADO</u></em></strong>      </div>
+      <p align="center"><strong><em>&nbsp;</em></strong><em>He plantado aquel &aacute;rbol<br />
+        lo he visto crecer <br />
+        junto con mis hijos<br />
+        siento que por entre sus ramas<br />
+      todo se me escapa</em></p>
+      <p align="center" class="Estilo5">&nbsp;</p>    </td>
+    <td width="382" valign="top"><p>&nbsp;</p>
+      <p><img src="final_camino-graciela_maria_casartelli.jpg" width="382" height="512" /></p>      <p align="center"><em>&quot;Final del camino&quot; Pintura en acr&iacute;lico.<br /> 
+    Graciela Mar&iacute;a Casartelli</em></p></td>
+  </tr>
+</table>
+<p align="center" class="Estilo1">&nbsp;</p>
+<table width="988" border="1" align="center">
+  <tr>
+    <th width="978" scope="col"><p>&nbsp;<em>&nbsp;El autor, nacido en San  Javier, provincia de Santa Fe, Argentina y radicado en C&oacute;rdoba, es poeta,  escritor, historiador especializado en la historia regional y de la astronom&iacute;a,  divulgador cient&iacute;fico - Ex docente del Observatorio Astron&oacute;mico de la  Biblioteca Popular Constancio C. Vigil de Rosario; como as&iacute; Director del  Bolet&iacute;n Astron&oacute;mico de ese Observatorio y de la revista &ldquo;Hoja Astron&oacute;mica&rdquo;, que  alcanzaran divulgaci&oacute;n internacional. Actualmente es Miembro de la Red Mundial  de Escritores en Espa&ntilde;ol e integrante del Grupo de Investigaci&oacute;n en Ense&ntilde;anza,  Difusi&oacute;n e Historia de la Astronom&iacute;a - Observatorio Astron&oacute;mico de C&oacute;rdoba  &ndash;&nbsp; Universidad Nacional de C&oacute;rdoba,  Argentina. Se ha preocupado en sus trabajos por el hombre, el contexto y su  enfrentamiento con la realidad diversa; la adquisici&oacute;n del conocimiento y sus  respuestas, a veces inteligentes, otras caprichosas e irracionales, pero  profundamente humanas. <br />
+&nbsp; Ha publicado cuatro novelas (&ldquo;Salvajes  Palmeras del P&aacute;jaro Blanco&rdquo;, &ldquo;Dicen que fue el &Uacute;ltimo&rdquo; &ldquo;Los Solitarios&rdquo; y &ldquo;El  Flaco&rdquo;); tres libros de poes&iacute;a (&ldquo;Mandato Cumplido&rdquo;, &ldquo;Madrugales&rdquo; y &ldquo;Una Rosa  Roja&rdquo;), un libro de cuentos (&ldquo;Para Leer en el Tren Bala&rdquo;); cuatro libros  ilustrados con pinturas de&nbsp; Nydia Del  Barco&nbsp; (&ldquo;&Oacute;leos para Leer&rdquo;, &ldquo;Palabras para  Pintar&rdquo;, &ldquo;Con Acento&rdquo; y &ldquo;El Mensaje&rdquo;); este ensayo po&eacute;tico (&ldquo;Poes&iacute;a&rdquo;); dos  obras sobre la historia de su regi&oacute;n natal (&ldquo;Cabalgando en la Memoria&rdquo; y &ldquo;San  Javier&rdquo;), diversas monograf&iacute;as; siendo coautor de un libro de divulgaci&oacute;n  astron&oacute;mica (&ldquo;Infinito&rdquo;-Maravillas del Cielo Austral) y dos obras de historia  del Observatorio Nacional Argentino (&ldquo;Uranometr&iacute;a 2001&rdquo; y &ldquo;C&oacute;rdoba Estelar) &ndash;  estas tres &uacute;ltimas en coautor&iacute;a; entre otros m&uacute;ltiples trabajos literarios y de  investigaci&oacute;n hist&oacute;rica en libros, revistas y diarios del pa&iacute;s y el extranjero;  como as&iacute; trabajos historiogr&aacute;ficos y astron&oacute;micos en la Webb (Lidea, en la  LIADA -&nbsp; (Laboratorio Hispano Americano  de Astronom&iacute;a); HistoLIADA, e historiadelaastronom&iacute;a.wordpress.com). </em></p>
+      <div><em><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ha sido objeto de diversos premios  nacionales e internacionales por su obra. Destac&aacute;ndose el premio internacional &nbsp;Herbert  C. Pollock - 2005. </em></div>
+    <p><em>&nbsp;</em></p></th>
+  </tr>
+</table>
+<p align="center"><a href="index.html"><em><strong>Volver</strong></em></a></p>
+<p align="center" class="Estilo1"><em>Musicalizaci&oacute;n: Castillo midi </em></p>
+<p class="Estilo1">&nbsp;</p>
+<p class="Estilo1">&nbsp;</p>
+<!-- Inserted by miarroba -->
+</script></noframes></noembed></noscript>
+<script type="text/javascript" src="https://hosting.miarroba.info/?__muid=140d28cda263a5f857f342f8af81bebd2ba4361e&amp;h=1395044&amp;t=1614122427&amp;k=552da79f2b6a6847c8cc53acd143a278"></script><noscript><img alt="beacon" border="0" width="1" height="1" src="https://hosting.miarroba.info/?__muid=140d28cda263a5f857f342f8af81bebd2ba4361e&amp;h=1395044&amp;t=1614122427&amp;k=552da79f2b6a6847c8cc53acd143a278&amp;img=1" /></noscript>
+<script type="text/javascript">var s=document.createElement("script");var t="//des.smartclip.net/ads?type=dyn&plc=75133&elementId=140d28cda263a5f857f342f8af81bebd2ba4361e&sz=400x320&rnd="+Math.round(Math.random()*1e8);s.type="text/javascript";s.src=t;document.body.appendChild(s);</script><div id="140d28cda263a5f857f342f8af81bebd2ba4361e"></div>
+<div id="ads_HEZRL65RXYI2"></div>
+<script defer="" language="javascript" type="text/javascript">
+(function(){
+var newscript= document.createElement('script');
+newscript.type = 'text/javascript';
+newscript.async = true;
+lz_elem = (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]);
+lz_elem.appendChild(newscript);
+newscript.onload = function(ev){
+var lz_url="https://play.sunmediaads.com/red/zone.php?code=HEZRL65RXYI2&a=&pubid=&lgid="+((new Date()).getTime() % 2147483648) + Math.random();
+var lz_target = "ads_HEZRL65RXYI2";
+var lz_sync_mode=false;
+lz_loadads(lz_url ,lz_target,lz_sync_mode);
+}
+newscript.src= "https://img.sunmediaads.com/ads/lz_loader.js?ver=1.4";
+})();
+</script>
+<!-- Inserted by miarroba -->
+</body>
+</html>

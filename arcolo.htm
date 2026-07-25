@@ -1,0 +1,301 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<!-- Inserted by miarroba -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org' . concat('/choice/', 'd5x2uDVHd7ALE', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+  firstScript.parentNode.insertBefore(element, firstScript);
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+      var payload = json.__tcfapiCall;
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+  makeStub();
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+<!-- Inserted by miarroba -->
+<title>arcolo</title>
+<meta http-equiv="" content="text/html; charset=iso-8859-1">
+<meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"></head>
+
+<body bgcolor="#663399" text="#FFFFFF" link="#FF9900" vlink="#CC99FF" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Inserted by miarroba -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2VG59" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Inserted by miarroba -->
+<p align="left"><em><strong><font color="#FFFFFF"><a href="index.html">Volver 
+  </a></font></strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><font color="#FFFFFF"><u>Dilema</u></font></strong></em></p>
+<p align="center"><em><strong><font color="#FFFFFF"><u><img src="dilema.jpg" width="245" height="359"></u></font></strong></em></p>
+<p align="center"><em><strong><font color="#FFFFFF">Autor: </font></strong><font size="3"><strong>D.R.&nbsp;&nbsp; Rafael Paredes Balderrama. </strong></font><strong><font color="#FFFFFF"> (M&eacute;xico)</font></strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><font color="#FFFFFF">
+  <embed src="UnLugarenelTiempo.mid" width="20" height="16" align="left"></embed>
+</font></strong></em></p>
+<p align="center">&nbsp;</p>
+<div align="center">
+  <table width="63%" border="0" align="right">
+    <tr> 
+      <td><div align="center"><em><strong><font color="#FFFFFF">&quot;Creemos 
+          saber qui&eacute;nes somos y para qu&eacute; estamos aqu&iacute;;<br>
+          pero no est&aacute; a nuestro alcance comprender el maravilloso<br>
+          misterio de la vida...&quot;</font></strong></em></div></td>
+    </tr>
+  </table>
+</div>
+<p align="center"><em><strong><font color="#FFFFFF"><br>
+  </font></strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><font color="#FFFF00" size="2">&iexcl;Nuevo!  
+  </font></em><u><strong><em><font color="#000066" size="3"><strong><em><img src="estrellita%20blanca.gif" width="31" height="31"></em></strong></font></em></strong></u><em><strong><u>ULTIMO PASEO MATUTINO </u></strong></em></p>
+<p align="center">&nbsp;</p>
+<div align="center">
+  <table width="84%" border="0" align="center">
+    <!--DWLayoutTable-->
+    <tr> 
+      <td width="717" height="952" valign="top"><p align="center"><em><strong>&nbsp;   
+          </strong>
+        </em>
+        <p align="center"><em><strong>Hace unos tres d&iacute;as sal&iacute;a caminando por los   jardines de la escuela donde trabajo. El sendero, tiene un paso  de adoquines y a ambos lados hay   pinos bastante altos y bellos. Hacia mi mano derecha&nbsp; justo al   poniente, hay un gran jard&iacute;n con pasto esmeralda, poco antes de llegar a la   entrada de un sal&oacute;n de clase y del otro lado&nbsp; un edificio con   aulas. All&iacute;, tengo las mesas de la cafeter&iacute;a a mi derecha, que est&aacute; pleno de juventudes   toman refrescos y comen cosas chatarras, como es lo normal en ellos. Casi todos, est&aacute;n  vestidos con pantalones jens, m&aacute;s que pegados a sus muslos y caderas, sus   camisas coloridas y las blusas, otros con sus chamarras o su&eacute;teres,&nbsp;   principalmente las jovencitas delgadas, pero delgadas en serio; en fin,   el colorido es muy diverso. Tambi&eacute;n, fuman bastante , pero m&aacute;s que nada sonr&iacute;en y   gritan, escuchan m&uacute;sica, y otros&nbsp; a unos pasos de las mesitas se   sientan alrededor de la fuente. S&iacute;, hay una fuente redonda, su pedestal al   centro y otro c&iacute;rculo a cierta altura, el agua en la punta sale constantemente y   se ve muy linda, de hecho en las ma&ntilde;anas a eso de las 7.15 , cuando llego, la   encienden junto con otras tres fuentes m&aacute;s que existen entre los   edificios&nbsp; en jardines peque&ntilde;os.</strong></em>   
+          <p>&nbsp;   
+              <p align="center"><em><strong>Cada ma&ntilde;ana me siento en una silla de las   mesitas, claro antes la limpio, ya que est&aacute;n bajo una estructura bastante amplia   y el techo es de l&aacute;minas de metal. En fin, sentado contemplo&nbsp; el   agua de la fuente y el jard&iacute;n por casi 45&nbsp; minutos; escucho el   murmullo del agua relajante, que se deja caer en las dos partes de la fuente. Son momentos bell&iacute;simos y los disfruto al m&aacute;ximo. Principalmente ahora, que estoy   escribiendo en una de las mesitas  estas letras; es muy especial el   momento porque es el &uacute;ltimo d&iacute;a de clase. Los chicos han terminado un semestre   m&aacute;s; el lunes entrante inician sus ex&aacute;menes ordinarios y estar&aacute;n listos para ir   de vacaciones. Asimismo iniciar&aacute;n al regreso un semestre nuevo y han avanzado   hacia su meta personal. Estoy feliz, el asunto que me tiene emocionado esto es   que, no imaginan el gran cari&ntilde;o que les tengo, son como mis nietos y uno que   otro como un hij@, en fin, les quiero mucho y los veo progresar y eso me hace   ser parte de ellos y ellos de mi vida&hellip;por esto es que les comparto estos bellos   momentos. </strong>
+              </em>
+        <p align="center"><em><strong>&nbsp;   
+              </strong>
+              </em>
+        <p align="center"><em><strong>Estas cosas tan simples que contemplo hacen   de mi vida algo espectacular.   
+              </strong></em><strong>      </strong>
+        <p align="center"><strong><em>&nbsp;   
+          </em></strong>
+        <p align="center"><em><strong>Reciban un abrazo   fraterno.   
+        </strong>
+        </em>
+        <p align="center"><em><strong>&nbsp;   
+          </strong>
+        </em>
+        <p align="center"><em><strong>Rafael Paredes Balderrama&nbsp;&nbsp;&nbsp;   &Aacute;rcolo. Junio 2010 </strong></em></p>
+        <p align="center">&nbsp;</p>
+      <p>&nbsp;</p>        <p align="center">&nbsp;</p></td>
+      <td width="375" align="center" valign="top"><div align="center"><img src="Rafael.jpg" width="153" height="314" align="top"></div></td>
+    </tr>
+  </table>
+  <BR>
+  <p>Anterior
+  
+  <p><em><strong><u>El verdadero silencio </u></strong></em></p>
+  <p align="center"><em><strong>Vino originalmente como todo, creado en lo profundo 
+          de una cuna celestial azul. <br>
+          <br>
+S&iacute;mbolo de la vida misma.<br>
+<br>
+Su propia intemporalidad pertenece a la fuente eterna de la creaci&oacute;n.<br>
+<br>
+Es necesario que comprendamos el profundo significado, de poder escuchar nuestro 
+          interior en el silencio m&aacute;ximo. <br>
+En &eacute;l, aprender a observar y analizar las almas del mundo exterior, para 
+          concebirlo desde dentro de s&iacute;.<br>
+De esta manera clarificamos, poco a poco, nuestra creaci&oacute;n y recreaci&oacute;n 
+  de la verdad interior. </strong></em></p>
+  <p align="center"><em><strong> Nuestro Silencio es aqu&iacute;, ahora y siempre, 
+    para arribar a las playas de la reflexi&oacute;n. </strong></em></p>
+  <p align="center"><em><strong> Penetrar en los dominios de nuestra conciencia, 
+    g&eacute;nesis del universo interior, imperio de la mente divina, generadora 
+    del bien constante de manera ascendente y eterna.<br>
+    Resurgir de la verdad de nuestro profundo silencio rehaciendo nuestra realidad, 
+    para esparcir infatigablemente bendiciones y vibraciones de amor universal, 
+    paz, espiritualidad y armon&iacute;a. </strong></em></p>
+  <p align="center"><em><strong>Las manifestaciones renovadas en lo profundo, ahora 
+    constituyen un trabajo real, efectivo, necesario y precioso para cooperar a 
+    la superaci&oacute;n del mundo. <br>
+    Aprendamos entonces a desear que nos suceda todo aquello, conveniente y bueno 
+    para el alma y, no lo superficialmente agradable. </strong></em></p>
+  <p align="center"><em><strong>Si deseamos conocer a la gente, guardemos silencio, 
+    tomando su lugar para observar su verdadero pensamiento.</strong></em></p>
+  <p align="center"><em><strong> Si deseamos conocernos a nosotros mismos, escuchemos 
+    razonadamente nuestros di&aacute;logos interiores, evalu&eacute;moslos para 
+    pensar, sentir, expresar y actuar congruentemente con ellos.<br>
+    Si deseamos conocer nuestra alma y capacidad de amor, guardemos un total y profundo 
+    silencio. <br>
+            <br>
+    Este es el estadio de la felicidad del alma, donde todo se da y nada se requiere. <br>
+    La libertad y la felicidad van de la mano en este perfecto silencio. <br>
+    Camino que plantea el reto de detenerse ante el miedo o de avanzar hacia la 
+    iluminada divinidad.<br>
+            <br>
+    El silencio siempre ha estado, es intemporal y representa la inmortalidad de 
+    la mentalidad divina, recre&aacute;ndola en nuestra verdad, cada vez que entramos 
+    en &eacute;l.<br>
+            <br>
+    Gracias, no por su tiempo, sino por su invaluable existencia.</strong></em><em>&nbsp; </em></p>
+  <p align="center"><em><font size="3"><strong><br>
+    Arcolo&nbsp;&nbsp;</strong></font></em></p>
+  <p align="center"><em><font size="3"><strong>&nbsp;&nbsp;&nbsp; <a href="http://ar.mc1254.mail.yahoo.com/mc/compose?to=carring@hotmail.com" target="_blank">carring@hotmail.com</a> </strong></font></em></p>
+  <p align="center"><em><strong><font color="#FFFFFF"><a href="index.html">Volver </a></font></strong></em></p>
+   
+  <p align="center">
+  <p align="center">&nbsp;</p>
+</div>
+<p align="center"><em><strong><font color="#FFFFFF"><br>
+  <br>
+  </font></strong></em></p>
+<p align="center">&nbsp; </p>
+<!-- Inserted by miarroba -->
+</script></noframes></noembed></noscript>
+<script type="text/javascript" src="https://hosting.miarroba.info/?__muid=9363c77213fe38d8b6985575ca46e708b6b7d29f&amp;h=1395044&amp;t=1614124403&amp;k=99d71399aa33786e99a0889c68e51bb9"></script><noscript><img alt="beacon" border="0" width="1" height="1" src="https://hosting.miarroba.info/?__muid=9363c77213fe38d8b6985575ca46e708b6b7d29f&amp;h=1395044&amp;t=1614124403&amp;k=99d71399aa33786e99a0889c68e51bb9&amp;img=1" /></noscript>
+<script type="text/javascript">var s=document.createElement("script");var t="//des.smartclip.net/ads?type=dyn&plc=75133&elementId=9363c77213fe38d8b6985575ca46e708b6b7d29f&sz=400x320&rnd="+Math.round(Math.random()*1e8);s.type="text/javascript";s.src=t;document.body.appendChild(s);</script><div id="9363c77213fe38d8b6985575ca46e708b6b7d29f"></div>
+<div id="ads_HEZRL65RXYI2"></div>
+<script defer="" language="javascript" type="text/javascript">
+(function(){
+var newscript= document.createElement('script');
+newscript.type = 'text/javascript';
+newscript.async = true;
+lz_elem = (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]);
+lz_elem.appendChild(newscript);
+newscript.onload = function(ev){
+var lz_url="https://play.sunmediaads.com/red/zone.php?code=HEZRL65RXYI2&a=&pubid=&lgid="+((new Date()).getTime() % 2147483648) + Math.random();
+var lz_target = "ads_HEZRL65RXYI2";
+var lz_sync_mode=false;
+lz_loadads(lz_url ,lz_target,lz_sync_mode);
+}
+newscript.src= "https://img.sunmediaads.com/ads/lz_loader.js?ver=1.4";
+})();
+</script>
+<!-- Inserted by miarroba -->
+</body>
+</html>

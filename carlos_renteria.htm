@@ -1,0 +1,322 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<!-- Inserted by miarroba -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org' . concat('/choice/', 'd5x2uDVHd7ALE', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+  firstScript.parentNode.insertBefore(element, firstScript);
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+      var payload = json.__tcfapiCall;
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+  makeStub();
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+<!-- Inserted by miarroba -->
+<title>carlos_renteria</title>
+<meta http-equiv="" content="text/html; charset=iso-8859-1">
+<meta http-equiv="" content="text/html; charset=iso-8859-1">
+<meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"></head>
+
+<body bgcolor="#333366" text="#CCCCFF" link="#FF9900" vlink="#9933FF" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Inserted by miarroba -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2VG59" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Inserted by miarroba -->
+<p><a href="index.html"><em><strong>Volver </strong></em></a></p>
+<p>
+  <embed src="A%20Love%20so%20Beautiful.mid" width="17" height="12"></embed></p>
+<p align="center"><strong><u><em><strong><em><img src="estrellita%20blanca.gif" width="31" height="31"></em></strong>Escribir 
+  un poema</em></u></strong>...</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table width="78%" border="0" align="center">
+  <tr>
+    <td width="68%"><div align="center"><strong><em>Autor: <br>
+      <br>
+      <br>
+      <br>
+      Carlos Manuel Renter&iacute;a de 
+    la Cruz</em></strong><em><font size="2"> (Colombia)</font></em></div></td>
+    <td width="32%"><img src="carlosmrenteria2012.jpg" width="100" height="201"></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<table width="64%" border="0" align="center">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td width="845" height="451" valign="top"><div align="center"> 
+        <p><em><font color="#FFFF00" size="2"><br>
+          <br>
+        &iexcl;Nuevo!</font></em><strong><em> </em><u><em>Palabras de Navidad</em></u></strong></p>
+        <div></div>
+        <p>&nbsp;</p>
+    </div>      
+      <div id="yui_3_13_0_ym1_1_1385992398807_28067">
+        <p align="center"><br>
+          <em><strong>Noche fr&iacute;a, velas escendidas<br>
+        Suenan las campanas anunciando su venida<br>
+        Noche de navidad, botas con regalos&nbsp;<br>
+        Colgadas una tras otra alrededor de la chimenea<br>
+        Ni&ntilde;as y ni&ntilde;os jugando alrededor de una fogata<br>
+        Un &aacute;rbol con guirnaldas y luces de colores<br>
+        Una estrella en la cima del &aacute;rbol da el aviso&nbsp;<br>
+        Cae la nieve, son las 12 y la noche no da espera&nbsp;<br>
+        Tradiciones de colores, platos en la mesa<br>
+        Viandas deliciosos, tortas, uvas y chocolates<br>
+        La uni&oacute;n de la familia al rededor del ni&ntilde;o<br>
+        Junto a su madre y anunciando su llegada<br>
+        Entonando c&aacute;nticos en su honor todos unidos<br>
+        Luces en el pesebre decoradas se&ntilde;alando el camino<br>
+        El asno, la res y los tres reyes vigilantes<br>
+        Regalos, ofrendas y obsequios presentes&nbsp;&nbsp;<br>
+        Es la navidad donde las penas se olvidan<br>
+        Donde las alegr&iacute;as siempre est&aacute;n&nbsp;<br>
+        Los familiares, amigos y vecinos nos acompa&ntilde;an<br>
+        Valen los sue&ntilde;os, fantas&iacute;as e ilusiones para hacerlos realidad<br>
+        Son las 12 y el ni&ntilde;o Dios yace en su cuna<br>
+        Todos contentos, todos felices porque ha nacido un nuevo ser<br>
+        Que una lluvia de estrellas ilumine su camino<br>
+        Es navidad, hay muchas razones para homenajear<br>
+        Y que todos los anhelos de tu coraz&oacute;n se hagan realidad.<br>
+        </strong></em></p>
+      </div>
+      <div id="yui_3_13_0_ym1_1_1385992398807_28101">
+        <div align="center"><em><strong>Olvidemos los rencores, olvidemos las amarguras&nbsp;<br>
+          </strong></em></div>
+      </div>
+      <div id="yui_3_13_0_ym1_1_1385992398807_28099">
+        <div align="center"><em><strong>Disfrutemos en familia &eacute;sta &eacute;poca de paz y regocijo.<br clear="all">
+          </strong></em></div>
+      </div>
+      <div id="yui_3_13_0_ym1_1_1385992398807_28075">
+        <div dir="ltr" id="yui_3_13_0_ym1_1_1385992398807_28074">
+          <div id="yui_3_13_0_ym1_1_1385992398807_28097"><em><strong>&nbsp;</strong></em></div>
+          <div id="yui_3_13_0_ym1_1_1385992398807_28095"><em><strong>&nbsp;</strong></em></div>
+          <div id="yui_3_13_0_ym1_1_1385992398807_28088">
+            <div align="center"><em><strong><span id="yui_3_13_0_ym1_1_1385992398807_28087">Un Abrazo de amistad y de Cari&ntilde;o </span></strong></em></div>
+          </div>
+        </div>
+    </div></td>
+  </tr>
+</table>
+<table width="85%" border="0" align="center">
+  <tr>
+    <td><div align="center">
+      <p>&nbsp;</p>
+      <table width="200" border="1">
+        <tr>
+          <td><img src="Carlos-renteria2012.jpg" width="285" height="336"></td>
+          </tr>
+      </table>
+      <p>&nbsp;</p>
+      <p><em>Carlos Manuel Renter&iacute;a de la Cruz nace 
+        el 27 de Noviembre de 1958 en la ciudad de Bogot&aacute;. Desde muy joven 
+        se inclin&oacute; por las artes y las letras merced al apoyo de sus padres 
+        que se lo inculcaron desde ni&ntilde;o y adem&aacute;s en su familia su 
+        t&iacute;o R&oacute;mulo Renter&iacute;a Cruz, que public&oacute; en los 
+        a&ntilde;os 60&#8217;s a 70&#8217;s un compendio de normas ortogr&aacute;ficas 
+        el cual titul&oacute; Nov&iacute;sima Ortograf&iacute;a de la Lengua Castellana, 
+        publicaci&oacute;n que sirvi&oacute; para educar a muchas personas entre 
+        ellos ni&ntilde;os y adultos del municipio de La Uni&oacute;n<br>
+        (Valle del Cauca-Colombia).<br>
+        Adem&aacute;s en su familia existieron familiares lejanos y cercanos dedicados 
+        de tiempo completo a escribir y a ense&ntilde;ar. En el a&ntilde;o 1977 
+        termin&oacute; su educaci&oacute;n secundaria en la ciudad de Bogot&aacute; 
+        D.C. y desde esas &eacute;pocas hasta nuestros d&iacute;as se ha dedicado 
+        en los ratos libres a escribir ya sea en prosa y/o en poes&iacute;a. Ha 
+        transitado por diferentes trabajos durante cinco o seis a&ntilde;os seguidos 
+        pero sinti&oacute; que carec&iacute;a de formaci&oacute;n profesional 
+        por lo que se prepar&oacute; como Ingeniero Industrial. Durante los 5 
+        a&ntilde;os de universidad perteneci&oacute; a grupos de poes&iacute;a 
+        y escritura, participando activamente durante esos a&ntilde;os en todo 
+        tipo de actividades. </em></p>
+    </div>
+      <p align="center"><em>En esa &eacute;poca comenz&oacute; a escribir la colecci&oacute;n 
+        de poemas &#8220;Escribir un poema&#8221; que fue titulando a medida que 
+        corr&iacute;an los a&ntilde;os y a medida que conoc&iacute;a nuevas personas 
+        y nuevos amores circundaban su existencia. Todas estas personas que pasaron 
+        en alg&uacute;n momento por su vida, todas ellas son mujeres: mujeres 
+        que le dieron alegr&iacute;as, mujeres que le ocasionaron tristezas, pero 
+        al fin al cabo mujeres, que le inspiraron para sentarse a escribir sobre 
+        encuentros furtivos y sobre vidas pasadas pero no pasajeras.</em></p>
+      <p align="center"><em>Luego a finales de mayo del corriente, por sugerencia 
+        de su amiga uruguaya Ruthy, (a quien tambi&eacute;n le gustan las letras), 
+        comenz&oacute; a dar a conocer sus poemas al p&uacute;blico. <br>
+        Cuenta con un bagaje personal de poemas de diferentes autores algunos 
+        conocidos otros no tanto, pero que le han dejado huella, los cuales se 
+        encuentran en su p&aacute;gina Web <A href="http://escribirunpoema.blogspot.com/" target="_blank" rel="nofollow">http://escribirunpoema.blogspot.com/</A><br>
+        Entre sus autores preferidos se encuentran algunos europeos como: Federico 
+        Garc&iacute;a Lorca, Gustavo Adolfo Becker; de los latinoamericanos: Pablo 
+        Neruda, Rub&eacute;n Dar&iacute;o y colombianos: Alvaro Mutis y Jorge 
+        Rojas.<br>
+        </em><em> Aparte de la poes&iacute;a que es su mayor pasi&oacute;n ha 
+        escrito algunas prosas cortas, participaciones muy significativas en peri&oacute;dicos 
+        universitarios que dieron a luz otras cualidades no conocidas del autor.<br>
+        <A href="http://ar.mc593.mail.yahoo.com/mc/compose?to=carlosmrenteria@hotmail.com" target="_blank" rel="nofollow" ymailto="mailto:carlosmrenteria@hotmail.com"><font size="2">carlosmrenteria@hotmail.com</font></A><br>
+        </em> </p>
+    </td>
+  </tr>
+</table>
+<p align="center"><em><font size="2">Musicalizaci&oacute;n: A Love so Beautiful.mid</font></em></p>
+<p>&nbsp;</p>
+<p align="center"><a href="index.html"><em><strong>Volver </strong></em></a> </p>
+<!-- Inserted by miarroba -->
+</script></noframes></noembed></noscript>
+<script type="text/javascript" src="https://hosting.miarroba.info/?__muid=6d3e4da54cd1c44879dc0b83aefe0187eb528f7d&amp;h=1395044&amp;t=1614112441&amp;k=84074ccbec2a6e6b80b7938bb580a4b3"></script><noscript><img alt="beacon" border="0" width="1" height="1" src="https://hosting.miarroba.info/?__muid=6d3e4da54cd1c44879dc0b83aefe0187eb528f7d&amp;h=1395044&amp;t=1614112441&amp;k=84074ccbec2a6e6b80b7938bb580a4b3&amp;img=1" /></noscript>
+<script type="text/javascript">var s=document.createElement("script");var t="//des.smartclip.net/ads?type=dyn&plc=75133&elementId=6d3e4da54cd1c44879dc0b83aefe0187eb528f7d&sz=400x320&rnd="+Math.round(Math.random()*1e8);s.type="text/javascript";s.src=t;document.body.appendChild(s);</script><div id="6d3e4da54cd1c44879dc0b83aefe0187eb528f7d"></div>
+<div id="ads_HEZRL65RXYI2"></div>
+<script defer="" language="javascript" type="text/javascript">
+(function(){
+var newscript= document.createElement('script');
+newscript.type = 'text/javascript';
+newscript.async = true;
+lz_elem = (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]);
+lz_elem.appendChild(newscript);
+newscript.onload = function(ev){
+var lz_url="https://play.sunmediaads.com/red/zone.php?code=HEZRL65RXYI2&a=&pubid=&lgid="+((new Date()).getTime() % 2147483648) + Math.random();
+var lz_target = "ads_HEZRL65RXYI2";
+var lz_sync_mode=false;
+lz_loadads(lz_url ,lz_target,lz_sync_mode);
+}
+newscript.src= "https://img.sunmediaads.com/ads/lz_loader.js?ver=1.4";
+})();
+</script>
+<!-- Inserted by miarroba -->
+</body>
+</html>

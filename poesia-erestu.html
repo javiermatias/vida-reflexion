@@ -1,0 +1,1497 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Inserted by miarroba -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org' . concat('/choice/', 'd5x2uDVHd7ALE', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+  firstScript.parentNode.insertBefore(element, firstScript);
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+      var payload = json.__tcfapiCall;
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+  makeStub();
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+<!-- Inserted by miarroba -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Poesia eres tu</title>
+<style type="text/css">
+<!--
+.Estilo2 {
+	font-size: 24px;
+	font-style: italic;
+}
+.Estilo4 {
+	font-size: 12px;
+	font-style: italic;
+}
+body,td,th {
+	color: #000099;
+}
+body {
+	background-color: #99CCCC;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.Estilo7 {font-size: 10px}
+.Estilo8 {font-style: italic}
+.Estilo9 {font-size: 12px}
+.Estilo10 {
+	font-style: italic;
+	font-weight: bold;
+}
+.Estilo11 {font-style: italic}
+.Estilo12 {font-style: italic}
+.Estilo15 {
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+}
+.Estilo17 {font-size: 16px}
+.Estilo18 {
+	color: #FFFF00;
+	font-style: italic;
+}
+.Estilo20 {color: #000066}
+.Estilo23 {font-style: italic}
+.Estilo24 {
+	font-weight: bold;
+	font-size: 12px;
+}
+.Estilo25 {
+	font-size: 10px;
+	font-style: italic;
+}
+.Estilo29 {font-size: 12px; color: #FF3300; }
+.Estilo47 {
+	font-weight: bold;
+	font-style: italic;
+}
+.Estilo50 {font-size: x-small}
+.Estilo51 {
+	font-size: 9px;
+	font-style: italic;
+	color: #FF6600;
+}
+.Estilo54 {font-style: italic}
+a:link {
+	color: #FF9900;
+}
+a:visited {
+	color: #9966CC;
+}
+a:hover {
+	color: #006633;
+}
+a:active {
+	color: #FF0000;
+}
+.Estilo55 {
+	font-size: 9px;
+	font-style: italic;
+}
+.Estilo56 {font-style: italic}
+.Estilo57 {
+	font-size: medium;
+	font-style: italic;
+	font-weight: bold;
+}
+.Estilo58 {font-size: medium}
+-->
+</style>
+</head>
+
+<body>
+<!-- Inserted by miarroba -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2VG59" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Inserted by miarroba -->
+<p><em><a href="index.html"><strong>Volver</strong></a></em></p>
+<p>&nbsp;</p>
+<p>
+  <embed src="midi.mid" width="20" height="18"></embed>
+</p>
+<table width="901" border="1" align="center">
+  <tr class="Estilo54">
+    <th width="446" scope="col"><span class="Estilo2"><font color="#000066"><strong><em><img src="estrellita%20blanca.gif" width="31" height="31" /></em></strong></font>Poes&iacute;a, eres t&uacute;... </span></th>
+    <th width="439" scope="col"><p><strong>&iquest;Qu&eacute; Es Poes&iacute;a?</strong><br />
+            <br />
+      &iquest;Qu&eacute; es poes&iacute;a?, dices mientras clavas<br />
+      En mi   pupila tu pupila azul.</p>
+        <p><em>&iexcl;Qu&eacute; es poes&iacute;a! &iquest;Y t&uacute; me lo preguntas?<br />
+          Poes&iacute;a eres t&uacute;.</em></p>
+      <p class="Estilo4">Gustavo Adolfo B&eacute;cquer</p></th>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="center" id="p1">&nbsp;</p>
+<p align="center" class="Estilo9"><em>Poes&iacute;a, &iquest;qu&eacute; es poes&iacute;a? poes&iacute;a es m&aacute;s que palabras, oraciones y   rimas. Poes&iacute;a es hablar con el coraz&oacute;n en la mano, poes&iacute;a es expresar los   sentimientos al m&aacute;ximo, hacer que<br /> 
+la corriente de sentimientos se apodere de tu   coraz&oacute;n, haciendo que poco a poco tu pluma se mueva mas r&aacute;pido y haga que las   palabras no sean palabras, sean sentimientos<br /> 
+y hagan sentir a quien las lee el   sentimiento que transmites al papel; el papel que absorbe todo, que gentilmente   se presta como medio para bien o para mal, &eacute;se, el que puedes<br /> 
+borrar y borrar   pero siempre dejar&aacute;s una mancha. Pero la poes&iacute;a no est&aacute; escrita en papel, est&aacute;   escrita en el coraz&oacute;n de quien la escribe y de quien la lee, y deja huellas en<br />   
+los corazones,  
+tanto o m&aacute;s que en el papel, los corazones son como una hoja de   papel, se escriben historias y se dejan recuerdos, se escriben promesas y se   dejan angustias;<br /> 
+se alimenta de palabras,  
+haci&eacute;ndolo m&aacute;s grande cada vez que le   dicen un te quiero, cada vez que le hacen palpitar con fuerza. La poes&iacute;a nace y   crece de dos formas, cuando<br /> 
+est&aacute;s muy feliz tan feliz que piensas  
+que no est&aacute;s   en ese momento, o cuando est&aacute;s tan triste que quieres olvidar los amargos   recuerdos. As&iacute; lo logro, dejando que el suave<br /> 
+papel se impregne de sentimientos   y causen  
+un raro efecto en quien lo lee... porque el papel siempre ser&aacute; papel y   los sentimientos siempre se har&aacute;n poemas... </em></p>
+<p align="center" class="Estilo9" id="p3"><em>Daniel Reni-Anzola</em></p>
+<p align="center" class="Estilo9"><span class="Estilo18">&iexcl;Nuevo!</span> <em><strong><em><strong><U><em><em><strong><u><em><strong><img src="estrellita%20blanca.gif" width="31" height="31" /></strong></em></u></strong></em></em></U></strong></em><span class="Estilo58"><u>La vida</u>, por Caia Cantarelli</span></strong></em></p>
+<p align="center" class="Estilo9">&nbsp;</p>
+<table width="1059" border="1" align="center">
+  <tr>
+    <td width="657"><div align="center">
+      <p><img src="escandalo-graciela_maria_casartelli.jpg" width="605" height="480" /></p>
+      <p><em>Pintura de autor&iacute;a de Graciela Mar&iacute;a Casartelli (2013), t&iacute;tulo &quot;Esc&aacute;ndalo&quot;, acr&iacute;lico sobre bastidor de tela, 40 x 50 cm</em></p>
+    </div></td>
+    <td width="386"><div align="right" id="yui_3_13_0_ym1_1_1385992398807_46451"><strong id="yui_3_13_0_ym1_1_1385992398807_46450"><em id="yui_3_13_0_ym1_1_1385992398807_46449"><span id="yui_3_13_0_ym1_1_1385992398807_46448">Ciertas veces la vida</span></em></strong></div>
+      <div align="right" id="yui_3_13_0_ym1_1_1385992398807_46453"><em><strong>es un puente roto</strong></em></div>
+      <div align="right" id="yui_3_13_0_ym1_1_1385992398807_46463"><em id="yui_3_13_0_ym1_1_1385992398807_46462"><strong id="yui_3_13_0_ym1_1_1385992398807_46461"><span id="yui_3_13_0_ym1_1_1385992398807_46460">entre el pasado y el futuro.</span></strong></em></div>
+      <div align="right" id="yui_3_13_0_ym1_1_1385992398807_46468"><strong id="yui_3_13_0_ym1_1_1385992398807_46467"><em id="yui_3_13_0_ym1_1_1385992398807_46466"><span id="yui_3_13_0_ym1_1_1385992398807_46465">Sin respuesta total,</span></em></strong></div>
+      <div align="right" id="yui_3_13_0_ym1_1_1385992398807_46473"><strong id="yui_3_13_0_ym1_1_1385992398807_46472"><em id="yui_3_13_0_ym1_1_1385992398807_46471"><span id="yui_3_13_0_ym1_1_1385992398807_46470">estamos ahora enfrentadas</span></em></strong></div>
+      <div align="right"><strong><em>mir&aacute;ndonos de frente,</em></strong></div>
+      <div align="right" id="yui_3_13_0_ym1_1_1385992398807_46478"><strong id="yui_3_13_0_ym1_1_1385992398807_46477"><em id="yui_3_13_0_ym1_1_1385992398807_46476"><span id="yui_3_13_0_ym1_1_1385992398807_46475">tratando de ser medulares</span></em></strong></div>
+      <div align="right"><strong><em>y transparentes...</em></strong></div>
+      <div align="right" id="yui_3_13_0_ym1_1_1385992398807_46481"><strong><em>Yo te reprocho, vida,</em></strong></div>
+      <div align="right"><strong><em>ser tan ambivalente,</em></strong></div>
+      <div align="right"><strong><em>cambiante e impredecible,</em></strong></div>
+      <div align="right"><strong><em>alterando sin previo aviso</em></strong></div>
+      <div align="right"><em><strong>los colores cotidianos.</strong></em></div>
+      <div align="right"><strong><em>Este vivir enredado entre</em></strong><strong></strong></div>
+      <div align="right"><em><strong>comedia y drama,</strong></em><strong></strong></div>
+      <div align="right"><em><strong>mirando sin m&aacute;scara alguna</strong></em><strong></strong></div>
+      <div align="right"><em><strong>una platea de aplauso err&aacute;tico</strong></em><strong></strong></div>
+      <div align="right"><em><strong>y exigencias extremas,</strong></em><strong></strong></div>
+      <div align="right"><em><strong>agota cuerpo y alma</strong></em><strong></strong></div>
+      <div align="right"><em><strong>y no da tregua...</strong></em><strong></strong></div>
+      <div align="right"><strong><em>Tantas veces me enamor&eacute; de t&iacute;</em></strong></div>
+      <div align="right" id="yui_3_13_0_ym1_1_1385992398807_46510"><strong id="yui_3_13_0_ym1_1_1385992398807_46509"><em id="yui_3_13_0_ym1_1_1385992398807_46508"><span id="yui_3_13_0_ym1_1_1385992398807_46507">y tantas otras me llevaste</span></em></strong></div>
+      <div align="right" id="yui_3_13_0_ym1_1_1385992398807_46515"><strong id="yui_3_13_0_ym1_1_1385992398807_46514"><em id="yui_3_13_0_ym1_1_1385992398807_46513"><span id="yui_3_13_0_ym1_1_1385992398807_46512">a los p&aacute;ramos m&aacute;s desolados</span></em></strong></div>
+      <div align="right" id="yui_3_13_0_ym1_1_1385992398807_46505"><strong id="yui_3_13_0_ym1_1_1385992398807_46504"><em id="yui_3_13_0_ym1_1_1385992398807_46503"><span id="yui_3_13_0_ym1_1_1385992398807_46502">de mi alma y del mundo.</span></em></strong></div>
+      <div align="right"><strong><em>Hoy me escrutas como</em></strong></div>
+      <div align="right"><strong><em>tu obra inacabada, incompleta</em></strong></div>
+      <div align="right"><strong><em>mientras por dentro siento</em></strong></div>
+      <div align="right"><strong><em>que mi&nbsp;eternidad &nbsp;depende de tu finitud.</em></strong></div>
+      <div align="right"><strong><em>Al mirarte profundamente,</em></strong></div>
+      <div align="right"><strong><em>con ins&oacute;lita fuerza,</em></strong></div>
+      <div align="right" id="yui_3_13_0_ym1_1_1385992398807_46500"><strong id="yui_3_13_0_ym1_1_1385992398807_46499"><em id="yui_3_13_0_ym1_1_1385992398807_46498"><span id="yui_3_13_0_ym1_1_1385992398807_46497">generosamente te regalo</span></em></strong></div>
+      <div align="right"><strong><em>toda mi pasi&oacute;n a cada paso;</em></strong></div>
+      <div align="right"><strong><em>sin dejar de preguntarte</em></strong></div>
+      <div align="right" id="yui_3_13_0_ym1_1_1385992398807_46495"><strong id="yui_3_13_0_ym1_1_1385992398807_46494"><em>si a&nbsp;pesar de no haberme doblegado</em></strong></div>
+      <div align="right"><strong><em>a&uacute;n me amas...</em></strong></div>
+      <div align="right" id="yui_3_13_0_ym1_1_1385992398807_46490">&nbsp;</div>
+      <div align="right" id="yui_3_13_0_ym1_1_1385992398807_46488"></div>
+      <div align="right"><strong><em>29/5/2012</em></strong></div>
+    </td>
+  </tr>
+</table>
+<p align="center" class="Estilo57"><a href="index.html">Volver</a></p>
+<p align="center" class="Estilo9">&nbsp;</p>
+<p align="center"><em><strong>Anteriores</strong></em></p>
+<p align="center" class="Estilo9"></p>
+<p align="center" class="Estilo9">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<table width="1062" border="1" align="center">
+  <!--DWLayoutTable-->
+  <tr>
+    <th width="446" height="526" rowspan="2"><p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em></p>
+      <p>&nbsp;</p>
+      <p><em><strong><u><em><strong><em><strong><em><strong><em><u><em><strong><em><strong><em><strong><em><img height="31" src="estrellita%20blanca.gif" width="31" /></em></strong></em></strong></em></strong></em></u></em></strong></em></strong></em></strong></em></u></strong>&nbsp;* <strong><u>Cosiendo  luna al reflejo</u></strong></em></p>
+      <p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em></p>
+      <p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I</em></p>
+      <p><em>Dibuja el cielo Graciela<br />
+        con un pincel que levanta;<br />
+        el verdiazul que amamanta<br />
+        s&iacute;lfides de la acuarela.<br />
+        Pintas el mar y la vela,<br />
+        un&nbsp; coraz&oacute;n que se agita,<br />
+        horizontes y la ermita<br />
+        reflejados en las nubes, <br />
+        y los brumosos querubes,<br />
+        una luna que levita.</em></p>
+      <p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; II</em></p>
+      <p><em>Describe tanto Mar&iacute;a<br />
+  tu &nbsp;c&aacute;lamo bendecido,<br />
+  es un c&aacute;ntico venido<br />
+  de &aacute;ngeles&nbsp;&nbsp; y alegor&iacute;a.<br />
+  Graciela Mar&iacute;a el d&iacute;a<br />
+  que cant&oacute; la madrugada,<br />
+        se deshizo la enramada<br />
+        desde tu verso al momento;<br />
+        olear de sentimiento<br />
+        arribando a la alborada. </em></p>
+      <p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; III</em></p>
+      <p><em>Y la espiral que gir&oacute;<br />
+        con el arpa de tus manos,<br />
+        gaviota en los rellanos<br />
+        del alma que se inspir&oacute;.<br />
+        Paloma que descendi&oacute;<br />
+        sus alas en el espejo,<br />
+        cuando el limpio y azulejo<br />
+        decantar de tu armon&iacute;a,<br />
+        te halla Graciela Mar&iacute;a;<br />
+        cosiendo luna al reflejo </em></p>
+    <p><em>Domingo Hern&aacute;ndez</em> <em>(Cuba) </em></p>
+    <p>&nbsp;</p></th>
+    <th width="600" valign="top" scope="col"><p><img src="reposo-graciela-maria_casartelli.jpg" width="600" height="450" /></p>
+      <p>&nbsp;</p>
+      <p class="Estilo7"><em>&quot;Reposo&quot; Pintura en acr&iacute;lico de Graciela Maria Casartelli<br />
+    Medidas mini formato, 16x20 cm</em></p>    </th>
+  </tr>
+  <tr>
+    <th valign="top" scope="col"><table width="200" border="1" align="center">
+      <tr>
+        <td><div class="Estilo47">
+            <div align="center"><u><em><strong><em><strong><em><strong><em><u><em><strong><em><strong><em><strong><em><img height="31" src="estrellita%20blanca.gif" width="31" /></em></strong></em></strong></em></strong></em></u></em></strong></em></strong></em></strong></em>Bordeando</u></div>
+        </div>
+            <div>&nbsp;</div>
+          <div>
+              <div align="center"><em><strong>Ao final da senda,</strong></em></div>
+          </div>
+          <div class="Estilo47">
+              <div align="center">perguntamos pelo nome</div>
+          </div>
+          <div class="Estilo47">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div align="center">de todas as coisas.</div>
+          </div>
+          <div><em><strong>&nbsp;</strong></em></div>
+          <div class="Estilo47">
+              <div align="center">Algumas amadas, indifrentes, aborrecidas.</div>
+          </div>
+          <div class="Estilo47">
+              <div align="center">E todas, em realidade, ocultas.</div>
+          </div>
+          <div class="Estilo47">
+              <div align="center">Ser&aacute; que muitas s&oacute; nos atam e prejulgam,</div>
+          </div>
+          <div class="Estilo47">
+              <div align="center">enquanto outras nos desatam a as temos?</div>
+          </div>
+          <div class="Estilo47">
+              <div align="center">Ser&aacute; que s&oacute; nos falam de desamor,</div>
+          </div>
+          <div class="Estilo47">
+              <div align="center">de algum loda&ccedil;al tardio,</div>
+          </div>
+          <div class="Estilo47">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          <div><em><strong>&nbsp;</strong></em></div>
+          <div class="Estilo47">
+              <div align="center">Ao final d senda,</div>
+          </div>
+          <div class="Estilo47">
+              <div align="center">s&oacute; ficamos n&oacute;s,</div>
+          </div>
+          <div class="Estilo47">
+              <div align="center">bordeando esperan&ccedil;as.</div>
+          </div>
+          <div><em><strong>&nbsp;</strong></em></div>
+          <div><em><strong>&nbsp;</strong></em></div>
+          <div class="Estilo47">
+              <div align="center" class="Estilo4">GRACIELA MAR&Iacute;A CASARTELLI</div>
+          </div>
+          <div class="Estilo47">
+              <div align="center" class="Estilo24"><span class="Estilo18">Traducci&oacute;n al portugu&eacute;s gentileza de Perp&eacute;tua Flores</span><br />
+              </div>
+          </div>
+          <div align="center"><span class="Estilo9"><strong><em><a href="http://www.am1010perpetuaflores.blogspot.com/" rel="nofollow" target="_blank">www.am1010perpetuaflores.blogspot.com</a>&nbsp;<a href="http://www.blogsdelagente.com/perpetuaflores" rel="nofollow" target="_blank">www.blogsdelagente.com/perpetuaflores</a></em></strong></span></div></td>
+      </tr>
+    </table></th>
+  </tr>
+</table>
+<table width="1060" border="1" align="center">
+  <tr>
+    <th width="497" scope="col"><p align="center">&nbsp;</p>
+      <p align="center">&nbsp;</p>
+      <p align="center"><em><strong><u><em><strong><em><strong><em><strong><em><u><em><strong><em><strong><em><strong><em><img height="31" src="estrellita%20blanca.gif" width="31" /></em></strong></em></strong></em></strong></em></u></em></strong></em></strong></em></strong></em></u></strong><u>LA POES&Iacute;A Y SUS POETAS</u><br />
+        <br />
+        <br />
+        <br />
+        Somos cual c&eacute;lulas de una piel que a la  poes&iacute;a,<br />
+        Se le caemos y renovamos, los poetas;<br />
+        Los de ayer, que a los de hoy nos alimentan;<br />
+        Y los de hoy; que tiramos m&aacute;s semillas...<br />
+        <br />
+        Impelidos ha escribir pulsamos liras,<br />
+        Donde cosas del amor se vuelvan perlas;<br />
+        Que es el alma quien quiere sean n&eacute;ctar,<br />
+        Que en gotas de pasi&oacute;n caigan fundidas...<br />
+        <br />
+        <br />
+        Y esas alas en la nada suspendidas,<br />
+        Nos llevan por eternas fantas&iacute;as<br />
+        Y transmut&aacute;ndonos en aire, nos sustentan.<br />
+        <br />
+        Que en esa amplia facultad que  ella nos presta,<br />
+        Nos adue&ntilde;amos de sendas escondidas,<br />
+        Donde la vida nos queda en cada letra.-<br />
+        <br />
+        EMILIO PABLO<span class="Estilo9">(Argentina)</span><br />
+        <br />
+      Jueves, 18 de Marzo de 2010</em></p>
+      <p>&nbsp;</p>
+    <p class="Estilo4">&nbsp;</p>
+    <p class="Estilo7">&nbsp;</p></th>
+    <th width="547" scope="col"><p>&nbsp;</p>
+      <p class="Estilo8"><span lang="ES-CO" xml:lang="ES-CO"><u><em><strong><u><em><strong><em><strong><em><strong><em><u><em><strong><em><strong><em><strong><em><img height="31" src="estrellita%20blanca.gif" width="31" /></em></strong></em></strong></em></strong></em></u></em></strong></em></strong></em></strong></em></u></strong></em>*A GRACIELA   MAR&Iacute;A</u></span></p>
+      <div></div>
+      <p><em><span lang="ES-CO" xml:lang="ES-CO">A ti, tendr&iacute;amos   que levantarte un templo,</span><br />
+        <span lang="ES-CO" xml:lang="ES-CO">porque por   cierto que lo tuyo es de valor;</span><br />
+        <span lang="ES-CO" xml:lang="ES-CO">pues que grano   a grano la arena de tu amor</span><br />
+      <span lang="ES-CO" xml:lang="ES-CO">a la poes&iacute;a le   has construido un templo.</span></em></p>
+      <p><em><span lang="ES-CO" xml:lang="ES-CO">Paso ha pasado,   avanzando en el tiempo,</span><br />
+        <span lang="ES-CO" xml:lang="ES-CO">dejaste huellas   que nos dicen tu raz&oacute;n;</span><br />
+        <span lang="ES-CO" xml:lang="ES-CO">que hacen m&aacute;s la   constancia y el tes&oacute;n,</span><br />
+      <span lang="ES-CO" xml:lang="ES-CO">que detenerse a   criticar lo de otros hecho...</span></em></p>
+      <p><em><span lang="ES-CO" xml:lang="ES-CO">Soy un reflejo   de tantos, que en sus versos</span><br />
+        <span lang="ES-CO" xml:lang="ES-CO">van al amparo de   tu amistad y tu protecci&oacute;n;</span><br />
+      <span lang="ES-CO" xml:lang="ES-CO">buscando   necesaria proyecci&oacute;n.</span></em></p>
+      <p><em><span lang="ES-CO" xml:lang="ES-CO">Uno de tantos   dando gracias por tu esfuerzo;<br />
+      que a nuestros   versos los transforma en una flor,</span><br />
+        <span lang="ES-CO" xml:lang="ES-CO">del ramo m&aacute;s   perfecto;(relleno con un beso).-</span></em></p>
+      <p><em><span lang="ES-CO" xml:lang="ES-CO">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /> 
+      EMILIO PABLO</span></em> <span class="Estilo9"><em>(Argentina)</em></span></p>
+      <div></div>
+      <p class="Estilo4"><span lang="ES-CO" xml:lang="ES-CO">Espero lo   disfrutes y lo aprueben los poetas amigos, que creo&nbsp;hablar en el   nombre de todos ellos...<br />
+  Un beso con todo mi coraz&oacute;n.<br /> 
+    EMILIO PABLO</span></p>    </th>
+  </tr>
+</table>
+<table width="1071" border="1" align="center">
+  <!--DWLayoutTable-->
+  <tr>
+    <th width="369" rowspan="3" valign="top" scope="col"><div id="ecxyiv1701252171">
+      <p class="Estilo10"><u><em><strong><u><em><strong><em><strong><em><strong><em><u><em><strong><em><strong><em><strong><em><img height="31" src="estrellita%20blanca.gif" width="31" /></em></strong></em></strong></em></strong></em></u></em></strong></em></strong></em></strong></em></u></strong></em>POES&Iacute;A</u></p>
+    </div>
+      <p><em><strong>&nbsp;</strong> </em></p>
+      <p><em>&iquest;Qu&eacute; es   poes&iacute;a? </em><br />
+        <em>Respuestas   brotan <br />
+        </em><em>&nbsp;de   la caja de sorpresas. </em><br />
+        <em>La primera,<br />
+        </em><em>salida del   vientre: <br />
+        </em><em>Dios la cre&oacute;   a imagen y semejanza <br />
+        </em><em>haci&eacute;ndola   vibrar como el viento. <br />
+        </em><em>Soplo sin   atisbo.<br />
+        </em><em>S&oacute;lo se   siente en piel y alma.<br />
+        </em><em>Representa el   c&oacute;digo oculto <br />
+        </em><em>portador en   su esencia<br />
+        </em><em>de la oda del   alba,<br />
+        </em><em>la risa del   mar, </em><br />
+        <em>el lamento de   un muro, <br />
+        </em><em>la l&aacute;grima   del escombro<br />
+        </em><em>y el placer   de saberla tan viva<br />
+        </em><em>como el grito   del reci&eacute;n nacido. </em><br />
+        <em>En versos con   rimas o sin ellas <br />
+        </em><em>despliega su   encanto.<br />
+        </em><em>Se sue&ntilde;a en   colores. </em><br />
+        <em>Enluta   desv&iacute;os. </em><br />
+        <em>Fronteras del   coraz&oacute;n traspasa </em><br />
+        <em>para abrirse   camino entre jardines de amor.<br />
+        </em><em>Y es su   canto <br />
+        </em><em>el m&aacute;s   di&aacute;fano de la naturaleza <br />
+        </em><em>donde se   hallan presencias </em><br />
+        <em>tan m&aacute;gicas   como gnomos, delfos,<br />
+        </em><em>pegasos,   genios y otros personajes,<br />
+        </em><em>redentores de   sentimientos. <br />
+        </em><em>La libertad   abre sus alas. </em><br />
+        <em>Teje el nido   de la paz.<br />
+        </em><em>Su rumor,   sonido del r&iacute;o en su cauce.<br />
+        </em><em>La plegaria   de la mano en alto. <br />
+        </em><em>La figura de   una Energ&iacute;a divina <br />
+        </em><em>colada en   cada roc&iacute;o.<br />
+        </em><em>Notas&nbsp;de   tierra, agua, fuego y aire. </em><br />
+        <em>Son vientos   hadando <br />
+        </em><em>el mundo   desde su fantas&iacute;a <br />
+        </em><em>cuando   recupera el para&iacute;so de la palabra. <br />
+        </em><em>Secreto de   met&aacute;foras <br />
+        </em><em>para   salmodiarle al hombre <br />
+      </em><em>su m&uacute;sica   interior. </em></p>
+    <p>&nbsp;</p>      <p><span class="Estilo4">Autor:</span><em> Bella Clara Ventura</em> <span class="Estilo4">(Bogot&aacute;, Colombia)</span> </p></th>
+    <th width="327" height="197"><img src="graciela_maria_Casartelli.jpg" width="138" height="193" /></th>
+    <th width="344" rowspan="2" valign="top"><p><em><span lang="ES-AR" xml:lang="ES-AR"><br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      Aqueixa&nbsp;salutaci&oacute; matinera,            <br />
+            <br />
+que no aguaita si   &eacute;s&nbsp; respost.</span></em></p>
+      <p><em><span lang="ES-AR" xml:lang="ES-AR">Mirades que es creuen&nbsp;amb gest amable.</span></em><em></em></p>
+      <p><em><span lang="ES-AR" xml:lang="ES-AR">Sorpresa grata de qui menys&nbsp;t'ho esperaves.</span> </em></p>
+      <p><em><span lang="ES-AR" xml:lang="ES-AR">Bes franc com barrilet entremaliat.</span></em><em></em></p>
+      <p><em><span lang="ES-AR" xml:lang="ES-AR">      Milers de colors en globus esparsos;</span></em><em><span lang="ES-AR" xml:lang="ES-AR">en cerca </span></em></p>
+      <p><em><span lang="ES-AR" xml:lang="ES-AR">d'horitzons,&nbsp;amb&nbsp;uns altres matisos   &hellip;<br />
+      </span></em></p>
+      <p><em><span lang="ES-AR" xml:lang="ES-AR">Aix&iacute; la poesia vola, escodrinyant un rac&oacute;</span></em></p>
+      <p><span lang="ES-AR" xml:lang="ES-AR"><em>on puga arrecerar-se&nbsp;i tornar a volar&hellip;</em></span></p>
+      <p>&nbsp;</p>
+      <p><em>Traducci&oacute;n al catal&aacute;n, gentileza del poeta <br />
+      </em></p>
+    <div><em>Pere Bess&oacute; i Gonz&aacute;lez</em> <span class="Estilo9"><em>(Espa&ntilde;a) </em></span></div></th>
+  </tr>
+  <tr>
+    <th height="492" valign="top"><p class="Estilo11"><span lang="ES-AR" xml:lang="ES-AR"><br />
+      Ese saludo ma&ntilde;anero,    </span></p>
+      <p class="Estilo11"><span lang="ES-AR" xml:lang="ES-AR">que no aguarda si es&nbsp;   respondido.</span></p>
+      <p><em><span lang="ES-AR" xml:lang="ES-AR">Miradas que se cruzan con gesto   amable.</span></em></p>
+      <p><em><span lang="ES-AR" xml:lang="ES-AR">Sorpresa grata de quien menos lo   esperabas.</span></em></p>
+      <p><em><span lang="ES-AR" xml:lang="ES-AR">Beso franco cual barrilete travieso.</span> </em></p>
+      <p><em><span lang="ES-AR" xml:lang="ES-AR">Miles de colores en globos   dispersos;</span></em></p>
+      <p><em><span lang="ES-AR" xml:lang="ES-AR">en b&uacute;squeda de&nbsp; horizontes, con otros   matices &hellip;</span></em></p>
+      <p><em><span lang="ES-AR" xml:lang="ES-AR">As&iacute; la poes&iacute;a vuela, escudri&ntilde;ando un   rinc&oacute;n</span> </em></p>
+      <p><em><span lang="ES-AR" xml:lang="ES-AR">donde pueda cobijarse y volver a   volar&hellip;</span></em><em><span lang="ES-AR" xml:lang="ES-AR">&nbsp;</span> </em></p>
+      <div></div>
+      <p><em><span lang="ES-AR" xml:lang="ES-AR"><span class="Estilo9">Para el d&iacute;a internacional de la poes&iacute;a 2010</span><br />
+        Graciela Mar&iacute;a Casartelli<br />
+        <span class="Estilo9">Unquillo, C&oacute;rdoba,   Argentina.</span></span> </em></p>      
+      <div></div></th>
+  </tr>
+  <tr>
+    <th height="552" colspan="2" valign="top"><div>
+      <p>&nbsp;</p>
+        <p><em><strong><u><em><strong><em><strong><em><strong><em><u><em><strong><em><strong><em><strong><em><img height="31" src="estrellita%20blanca.gif" width="31" /></em></strong></em></strong></em></strong></em></u></em></strong></em></strong></em></strong></em></u></strong><u>T&uacute;...me preguntas si escribo</u>...</em></p>
+    </div>
+      <div>
+        <p>&nbsp;</p>
+        <p><em>No has visto anidar las rosas en mis ojos con est&iacute;o   ?</em><br />
+          <em>No has visto llorar mis manos por un ni&ntilde;o   incomprendido ?</em><br />
+          <em>No has visto arrojarme intr&eacute;pido al hambriento, al   despose&iacute;do ?</em></p>
+      </div>
+      <div></div>
+      <div></div>      <div>
+        <div><em>T&uacute;...me preguntas si escribo...</em></div>
+        <div><em>No has visto mi pluma vana vacilar&nbsp;blanco papel ?</em></div>
+        <div><em>No has visto aquella mirada ins&oacute;lita, pretendida de cincel ?</em></div>
+        <div><em>No has visto como atormentan de noche mil besos y un espinel ?</em></div>
+        <div>
+          <div><em><br />
+          T&uacute;...me preguntas si escribo...</em></div>
+          <div><em>No has visto el&nbsp;viento crecer&nbsp;?</em></div>
+          <div><em>No has visto el mar preguntando cosas que no se saben de &eacute;l ?</em></div>
+          <div><em>No has visto el brillo del vino madrugando amanecer ?</em></div>
+          <div>
+            <div>
+              <div><em><br />
+              T&uacute;...me preguntas si escribo...</em></div>
+              <div><em>eso...querida amiga...no lo puedo responder.</em></div>
+              <div><em>&nbsp;</em></div>
+              <div><em>tu amigo, el huron</em></div>
+              <div><em>Oscar Roque Ruiz</em></div>
+              <div></div>
+              <div class="Estilo9"><em>Adolfo Gonzales Chaves</em></div>
+              <div class="Estilo9"><em>Pcia. de Buenos Aires</em> <em>(Argentina) </em></div>
+            </div>
+          </div>
+        </div>
+      </div></th>
+  </tr>
+</table>
+<table width="1043" border="1" align="center">
+  <tr>
+    <td><p align="center" class="Estilo9">&nbsp;</p>
+        <p align="center"><img src="pajarosvolandpo.gif" width="100" height="89" /></p>
+      <p align="center">&nbsp;</p>
+      <p align="center"><em><strong><em><strong><u><em><em><strong><u><em><strong><img src="estrellita%20blanca.gif" width="31" height="31" /></strong></em></u></strong></em></em></u></strong></em></strong><strong><u>GESTO  D&rsquo;AMORE</u></strong></em></p>
+      <p align="center"><em><strong>Due  uccellini volano tra i rami&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Dos pajaritos vuelan entre ramas<br />
+        cinguettando  progettano il domani,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  gorjean proyectando el ma&ntilde;ana.<br />
+        ma  uno sparo arresta il futuro&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M&aacute;s uno, vol&oacute; hacia el futuro<br />
+        che  ormai non &egrave; pi&ugrave; sicuro,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; que  ya no es seguro:<br />
+        lei,  &egrave; la tra i rami ferita&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ella  est&aacute; entre los ramas herid;<br />
+        lentamente  le sfugge la vita&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lentamente  le huye la vida.<br />
+        l&rsquo;uccellino  si sente perduto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; El  pajarito se siente perdido<br />
+        nel  suo cuore un dolore acuto&hellip;..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; en  el coraz&oacute;n un dolor agudo,<br />
+        allora vola, vola su verso Dio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; entonces vuela, vuela hacia Dios<br />
+        Signore,  salva Tu l&rsquo;amore mio!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&iexcl;Se&ntilde;or,  salva T&uacute; al amor m&iacute;o!<br />
+        Lui  paternamente sorride, lo rincuora&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &Eacute;l paternalmente sonr&iacute;e, lo consuela<br />
+        nulla  muore, &nbsp;lei vivr&agrave; ancora&hellip;.. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nada muere, ella  vivir&aacute; todav&iacute;a&hellip;<br />
+        allora  Padre la ritrovo in Paradiso?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Entonces  Padre: &iquest;la reecontrar&eacute; en el Para&iacute;so?<br />
+        Gli  fa cenno di s&igrave;, con un sorriso&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; El  dice s&iacute;, con una sonrisa,<br />
+        Il  dolore sordo gli lacera il petto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; el  dolor le desgarra el pecho<br />
+        ma  ripensa a quel che Dio ha detto&hellip;..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mas  repensa aquello que Dios ha dicho&hellip;<br />
+        se Dio mi ha detto la verit&agrave;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; si Dios me ha dicho la verdad<br />
+        voglio vivere con lei per l&rsquo;eternit&agrave;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; quiero  vivir con ella por la eternidad,<br />
+        e in un disperato gesto d&rsquo;amore&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; en un desesperado gesto de amor<br />
+        vol&ograve;  sereno, davanti al cacciatore.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vol&ograve;  sereno delante del cazador.<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+        (dedicato  a chi sa amare)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(para quien sabe amar)</strong></em></p>
+      <p align="center">Autor: <em><strong>Carla Di Salvo</strong></em> (Italia)</p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="1067" border="1" align="center">
+  <tr>
+    <td><div align="center"><em><strong><em><strong><U><em><em><strong><u><em><strong><img src="estrellita%20blanca.gif" width="31" height="31" /></strong></em></u></strong></em></em></U></strong></em><u>RAYO</u></strong></em><br />
+        <br />
+        <em><strong>En rayo segmentado<br />
+        baj&oacute; la vida diversa,<br />
+        de sus fulgores algunos<br />
+        los enmarca la tormenta.<br />
+  <br />
+        Es el espacio la escena<br />
+        para la luz de los astros<br />
+        y las antorchas flameantes<br />
+        de las &iacute;gneas salamandras<br />
+        que multiplican sus rayos<br />
+        sobre preciosos metales<br />
+        e incesantes se repiten<br />
+        en las gemas rutilantes.<br />
+  <br />
+        Brilla el l&aacute;ser manejado<br />
+        en poder del cirujano,<br />
+        y cautines refulgentes<br />
+        en manos del soldador.<br />
+  <br />
+  &iquest;Por qu&eacute; la conciencia no brilla<br />
+        en su espacio el coraz&oacute;n,<br />
+        y s&oacute;lo resplandece<br />
+        en el hermano mayor?<br />
+  <br />
+        De la muerte impacta el rayo<br />
+        sin que sea neutralizado:<br />
+  &iquest;D&oacute;nde est&aacute; la victoria?,<br />
+  &iquest;en la vida o el pante&oacute;n?<br />
+  <br />
+        Arel Jos&iacute;as Berdella De la Espriella (P.I.P.)<br />
+    Ceret&eacute;, Colombia, 21 de Junio de 2.013.</strong></em></div></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="1072" border="1" align="center">
+  <tr>
+    <th width="601" height="923" scope="col"><p><img src="en-el-bosque-graciela_maria_casartelli.jpg" width="600" height="450" /><br />
+      <span class="Estilo4">&quot;En el bosque&quot; Miniformato 16 x 20 cm. Pintura en acr&iacute;lico de Graciela Mar&iacute;a Casartelli </span></p>
+    <p><em><strong><u><em><strong><em><strong><em><strong><em><u><em><strong><em><strong><em><strong><em><img height="31" src="estrellita%20blanca.gif" width="31" /></em></strong></em></strong></em></strong></em></u></em></strong></em></strong></em></strong></em></u></strong><u>MUERTE DE LA  POES&Iacute;A</u><br />
+&nbsp;<br />
+</em></p>
+    <p><em>Poetas los hombres, mujeres poetas<br />
+      sembrando semillas<br />
+      que huelen a suerte.<br />
+  &nbsp;<br />
+      Las palabras hablan, entre s&iacute; enlazadas,<br />
+      son voces sonoras<br />
+      son cantos del alma.<br />
+  &nbsp;<br />
+      Las palabras queman y arden<br />
+      si se sienten esclavas<br />
+      mueren de fastidio,<br />
+  &nbsp;<br />
+      lloran enlutadas sin voz ni sonido,<br />
+      p&aacute;nico por verse<br />
+      as&iacute; maltratadas.<br />
+  &nbsp;<br />
+      Llora un mundo sin voces<br />
+      cantadas, de luto,<br />
+  &nbsp;cautivas, olvidadas.<br />
+  &nbsp;<br />
+      Hombres y mujeres sin voces, silentes,<br />
+      ruedan por la vida:<br />
+      emociones muertas.-<br />
+      ............................................................<br />
+      NELLY&nbsp; ANTOKOLETZ <span class="Estilo9">(Carlos Paz, C&oacute;rdoba, Argentina) </span><br />
+  <span class="Estilo9">En el D&iacute;a de la poes&iacute;a<br />
+    21-03-10<br />
+  &nbsp;</span><br />
+  <br />
+  &nbsp;<span class="Estilo9">Para ver mi p&aacute;gina Web,  haga click aqui!!!<br />
+    Aqui te envio el link para que descargues un poema y lo puedas escuchar :<br />
+  <a href="http://www.lospajarosdefuego.com/efimera.zip" target="_blank">http://www.lospajarosdefuego.com/efimera.zip</a></span><br />
+  &hellip;<br />
+  <span class="Estilo9"><a href="http://www.lospajarosdefuego.com/" target="_blank">http://www.lospajarosdefuego.com</a><br />
+  <a href="http://el-gallo-en-alpargatas.blogspot.com/" target="_blank">http://el-gallo-en-alpargatas.blogspot.com/</a><br />
+  <a href="http://www.quehacerenquillota.cl/nelly/" target="_blank">http://www.quehacerenquillota.cl/nelly/</a>&nbsp;<br />
+  <a href="http://www.cabaniasmonteazul.com/" target="_blank">http://www.cabaniasmonteazul.com</a></span></em></p></th>
+    <th width="455" scope="col"><p><em><strong><U><span lang="ES-TRAD" xml:lang="ES-TRAD"><br />
+      </span><em><strong><em><strong><em><strong><em><u><em><strong><em><strong><em><strong><em><img height="31" src="estrellita%20blanca.gif" width="31" /></em></strong></em></strong></em></strong></em></u></em></strong></em></strong></em></strong></em><span lang="ES-TRAD" xml:lang="ES-TRAD">La   Tierra, mi poes&iacute;a</span></U></strong> </em></p>
+      <p><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">&nbsp;</span></strong> </p>
+      <p class="Estilo12"><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Desnudar tus encantos,   realizarme en tu suelo</span></strong> <br />
+      <em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Descubrir tus figuras en   r&iacute;os de fuegos</span></strong> </em><br />
+      <em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Perseguirte en la noche,   perderme en tus sue&ntilde;os</span></strong> </em></p>
+      <p><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Libar de tu n&eacute;ctar, vagar   por senderos</span></strong> <br />
+      </em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Correr en tus costas   recibir tus consejos<br />
+      </span></strong></em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Escapar de la nada   cobijarme en tus senos</span></strong> </em></p>
+      <p><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Escuchar tus susurros en   compases de vientos</span></strong> </em><br />
+      <em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Perderme en tus labios   vivir de tus besos</span></strong><br />
+      </em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Disfrutar las alturas   leerte a lo lejos</span></strong></em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">&nbsp;</span></strong> </em></p>
+      <p><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Complacerme contigo   sentirte beberte</span></strong><br />
+      </em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Notar que eres pura como lo   es la vertiente<br />
+      </span></strong></em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Que mana de rocas, de   dioses celestes</span></strong></em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">&nbsp;</span></strong> </em></p>
+      <p><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">No quiero da&ntilde;arte eres   fr&aacute;gil y fuerte<br />
+      </span></strong></em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Quisiera ayudarte poder   defenderte</span></strong> <br />
+      </em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">No encuentro la forma y tus   l&aacute;grimas ceden</span></strong></em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">&nbsp;</span></strong> </em></p>
+      <p><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Tus mejillas rosadas   descansan ardientes</span></strong><br />
+      </em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Tus suelos se queman, tu   aire enrarece</span></strong> <br />
+      </em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Tu piel se reseca tu mar no   se mece</span></strong> </em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">&nbsp;</span></strong> </em></p>
+      <p><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">No quiero perderte percibo   tu ausencia</span></strong> <br />
+      </em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">No quiero te ignoren mi   tierra sedienta</span></strong><br />
+      </em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">No quiero te dejen morir   indefensa</span></strong></em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">&nbsp;</span></strong> </em></p>
+      <p><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Est&aacute;s tan cambiada, robaron   tu esencia<br />
+      </span></strong></em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Te siento desnuda y casi   desierta</span></strong> <br />
+      </em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">No encuentro los bosques,   tu vida se seca</span></strong> </em></p>
+      <p><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Y contigo la m&iacute;a, porque no   hay diferencia</span></strong> </em><br />
+      <em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Mis venas tus venas, mi   sangre tus mares<br />
+      </span></strong></em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Son parte del todo, tu luz,   mis pesares</span></strong> </em></p>
+      <p><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Mi tierra bendita, mi madre   divina</span></strong> </em><br />
+      <em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">No entiendo a los hombres   que da&ntilde;an tu espiga</span></strong> </em><br />
+      <em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Que quitan monta&ntilde;as por   solo monedas</span></strong></em></p>
+      <p><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Monedas doradas que no   valen nada</span></strong><br />
+      </em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Da&ntilde;ando tus soles tu vida   sagrada</span></strong> </em><br />
+        <em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Por unas migajas, tus ojos   se cierran</span></strong></em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">&nbsp;</span></strong> </em></p>
+      <p><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Mi tierra no mueras, mi   tierra no llores</span></strong><br />
+      </em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Permite que sienta otra vez   tus amores</span></strong> <br />
+      </em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">La flor el perfume, tus   finos acordes</span></strong> </em></p>
+      <p><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Tu canto tu risa, tus d&iacute;as,   tus noches</span></strong> <br />
+      </em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Mi tierra no llores que   rompes mi alma</span></strong><br />
+      </em><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Mi tierra no llores que se   apaga el alba</span></strong> </em></p>
+      <p><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">&nbsp;</span></strong> </em></p>
+      <p><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">Alejandro   Romero</span></strong> <br />
+      </em><span class="Estilo9"><em><strong>Unquillo   C&oacute;rdoba;Argentina</strong> </em></span></p>
+      <p><span class="Estilo9"><em><strong>&nbsp;</strong> </em><em><strong><a href="http://ar.mc593.mail.yahoo.com/mc/compose?to=calentamientoglobal@ymail.com" target="_blank" rel="nofollow" ymailto="mailto:calentamientoglobal@ymail.com">calentamientoglobal@ymail.com</a></strong> </em></span></p>
+      <p class="Estilo9"><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD"><a href="calentamientoglobalcba@gmail.com" target="_blank" rel="nofollow" ymailto="mailto:calentamientoglobalcba@gmail.com">calentamientoglobalcba@gmail.com</a></span></strong> </em></p>
+    <p><em><strong><span lang="ES-TRAD" xml:lang="ES-TRAD">&nbsp;</span></strong> </em></p></th>
+  </tr>
+</table>
+<table width="1063" border="1" align="center">
+  <!--DWLayoutTable-->
+  <tr>
+    <td width="446" height="956" valign="top"><p align="center"><em><strong><u><em><strong><em><strong><em><strong><em><u><em><strong><em><strong><em><strong><em><img height="31" src="estrellita%20blanca.gif" width="31" /></em></strong></em></strong></em></strong></em></u></em></strong></em></strong></em></strong></em>LA PEQUE&Ntilde;A LUNA Y T&Uacute;</u></strong></em></p>
+        <p align="center"><em><strong><br />
+          Una luna peque&ntilde;a, inquieta y brillante,<br />
+          &nbsp;bajo de los cielos con rostro inquietante.<br />
+          </strong></em><em><strong> Entr&oacute; en mi alcoba, encendi&oacute; mis ojos,&nbsp;<br />
+            se pos&oacute; a mi lado, me puso de hinojos.<br />
+            <br />
+            Me habl&oacute; de mi amada,<br />
+            &nbsp;con palabras tristes que no acostumbraba.&nbsp;<br />
+            Es que t&uacute; mi ni&ntilde;a, sumida en pena, <br />
+            derramabas l&aacute;grimas en triste verbena.<br />
+            <br />
+            Sabes&nbsp;una cosa; me dijo la luna,<br />
+            &nbsp;es que t&uacute; no has vuelto a tomar la pluma.&nbsp;<br />
+            Ella est&aacute; esperando que escribas lo bello,&nbsp;<br />
+            que desde tu alma produce destellos.<br />
+            <br />
+            Haci&eacute;ndole caso; a ti mi peque&ntilde;a,&nbsp;<br />
+            elevo mi canto que es cual una ense&ntilde;a.&nbsp;<br />
+            Acerco mis labios, seco tus mejillas,&nbsp;<br />
+            y por un instante todo es maravilla.</strong></em><br />
+        </p>
+      <p align="center"><em><strong> Nuevamente tomo tus manos en las m&iacute;as,<br />
+          </strong></em><em><strong>&nbsp;vuelve la ternura a ocupar los d&iacute;as.&nbsp;<br />
+            Los d&iacute;as que juntos con amor vivimos,</strong></em><br />
+        <em><strong>&nbsp;y tambi&eacute;n en noches as&iacute; nos sumergimos.</strong></em></p>
+      <p align="center">&nbsp;</p>
+      <div align="center"><em><strong>Autor: Juan Carlos Iribarren</strong></em><span class="Estilo7"><em> (Argentina)</em></span></div></td>
+    <td width="601" valign="top"><p align="center" class="Estilo47"><em><strong><u><em><strong><em><strong><em><strong><em><u><em><strong><em><strong><em><strong><em><img height="31" src="estrellita%20blanca.gif" width="31" /></em></strong></em></strong></em></strong></em></u></em></strong></em></strong></em></strong></em></u></strong></em><u>B&Uacute;SQUEDA</u></p>
+        <p align="center" class="Estilo47">Este   denso destino<br />
+            <em><strong>de vivir   buscando</strong></em><br />
+            <em><strong>aquello   que se nos niega...</strong></em><br />
+            <em><strong>este   subir y bajar</strong></em><br />
+            <em><strong>a   para&iacute;sos e infiernos,</strong></em><br />
+            <em><strong>siempre   buscando</strong></em><br />
+            <em><strong>lo que se   aleja...</strong></em></p>
+      <p align="center"><em><strong>&iquest;Ser&aacute; por   karma propio</strong></em><br />
+            <em><strong>o por   influencia ajena?</strong></em></p>
+      <p align="center"><em><strong>&iquest;Voluntad   divina</strong></em><br />
+            <em><strong>o   venganza mal&eacute;fica?</strong></em></p>
+      <p align="center"><em><strong>Quiz&aacute;s   sea herencia</strong></em><br />
+            <em><strong>de genes   tan lejanos<br />
+            </strong></em><em><strong>y   antiguos,</strong></em><br />
+            <em><strong>como   desconocidos...</strong></em></p>
+      <p align="center"><em><strong>Tal vez   actuamos</strong></em><br />
+            <em><strong>sin   saberlo,<br />
+            </strong></em><em><strong>una   tragedia&nbsp;in&eacute;dita,</strong></em><br />
+            <em><strong>cuya   trama escribimos</strong></em><br />
+            <em><strong>para un   libro ajeno.</strong></em></p>
+      <p align="center"><em><strong>Esta ruta   del no-amor</strong></em><br />
+            <em><strong>y del   no-tiempo</strong></em><br />
+            <em><strong>termina   en un desierto<br />
+            </strong></em><em><strong>donde&nbsp;ciertas   l&aacute;grimas</strong></em><br />
+            <em><strong>hacen   brotar rosas</strong></em><br />
+            <em><strong>&nbsp;sangrando&nbsp;un   desconsuelo...</strong></em></p>
+      <p align="center"><em><strong>Vivir   buscando, ansiando</strong></em><br />
+            <em><strong>lo que se   nos niega,</strong></em><br />
+            <em><strong>es morir   por morir...</strong></em><br />
+            <em><strong>es pagar   el precio del adi&oacute;s</strong></em><br />
+            <em><strong>a la   vida, que caprichosa...</strong></em><br />
+            <em><strong>casi   despiadada,</strong></em><br />
+            <em><strong>se nos   niega.</strong></em></p>
+      <p align="center">&nbsp;</p>
+      <p align="center"><em><strong>Autor :CAIA   CANTARELLI</strong></em> <span class="Estilo7"><em>(Argentina)</em></span><br />
+            <em><strong>27 Abril   2009</strong></em></p></td>
+  </tr>
+</table>
+<table width="1061" border="1" align="center">
+  <tr>
+    <td width="315"><img src="veronicadiaz-poesiaerestu.jpg" width="300" height="274" /></td>
+    <td width="730"><p align="center">&nbsp;</p>
+        <p align="center"><em><strong><em><strong><u><em><strong><em><strong><em><strong><em><u><em><strong><em><strong><em><strong><em><img height="31" src="estrellita%20blanca.gif" width="31" /></em></strong></em></strong></em></strong></em></u></em></strong></em></strong></em></strong></em></u></strong></em><u>Estoy</u></strong></em></p>
+      <p align="center"><em><strong>Estoy reflexiva, completa, alegre, sana, femenina,   emocionada, afectada,<br />
+        entera, creciendo, convertida, brillante, dura,   recuperando, descansada, agradable,<br />
+        suave, perfecta, consiente, libre , normal,   hermosa, expresiva, cambiando, creativa, <br />
+        elegante, sociable, tierna, paciente,   enojada, provocadora, aplicada, critica,<br />
+        transformada, relajada, pensante,   estimulada, dominante, diferente, flexible,<br />
+        recurrente, natural, positiva, leal,   moderna, optimista, sentimental, responsable, <br />
+        activa, enamorada, inteligente,   tensa, ausente, presionada,&nbsp;fr&aacute;gil, atractiva,<br />
+        fuerte, serena, centrada,   dolorida, enfadada, reprimida, interesada, adorable,<br />
+        sensible, equilibrada,   segura, realista, respirando, viva...</strong></em></p>
+      <p align="center"><em>Autor: <strong>Ver&oacute;nica D&iacute;az</strong> <span class="Estilo7">(Argentina)</span></em></p>
+      <p>&nbsp;</p>
+      <p class="Estilo25">(Im&aacute;gen enviada por Ver&oacute;nica D&iacute;az)</p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="1028" border="1" align="center">
+  <tr>
+    <td width="437"><p align="center"><em><strong><u><em><strong><em><strong><em><strong><em><u><em><strong><em><strong><em><strong><em><img height="31" src="estrellita%20blanca.gif" width="31" /></em></strong></em></strong></em></strong></em></u></em></strong></em></strong></em></strong></em>VEN A MI</u> </strong></em></p>
+        <p align="center"><em><strong>Ven a m&iacute;. <br />
+          Siente el calor de mis labios <br />
+          buscando tus besos. </strong></em></p>
+      <p align="center"><em><strong>Esta noche, <br />
+        de pasi&oacute;n&nbsp;desbordada, <br />
+        te dar&eacute; lo mejor de m&iacute;. </strong></em></p>
+      <p align="center"><em><strong>Envu&eacute;lveme en tus brazos <br />
+        y con tus caricias <br />
+        agota mi deseo. </strong></em></p>
+      <p align="center"><em><strong>Contigo cruzar&iacute;a <br />
+        mil mares infinitos <br />
+        de luna plateada. </strong></em></p>
+      <p align="center"> <em><strong>Autor:</strong></em> <em><strong>Mar&iacute;a Beatriz Pombo </strong><span class="Estilo50">(Argentina)</span></em></p>
+      <p align="center"></p></td>
+    <td width="522"><p align="center"><em><strong><u><em><strong><em><strong><em><strong><em><u><em><strong><em><strong><em><strong><em><img height="31" src="estrellita%20blanca.gif" width="31" /></em></strong></em></strong></em></strong></em></u></em></strong></em></strong></em></strong></em>SOLO ESPERA</u>&hellip; <br />
+                <br />
+      No preguntes c&oacute;mo, d&oacute;nde o cu&aacute;ndo. <br />
+      No quieras saber tanto... <br />
+      Cuando recorras el camino <br />
+      que lleva a mi mirada <br />
+      tendr&aacute;s todas las respuestas. </strong></em></p>
+        <p align="center"><em><strong>&iquest;Qui&eacute;n puede adivinar <br />
+          los designios del destino? <br />
+          &iexcl;Nunca es tarde para amar! <br />
+          S&oacute;lo espera, <br />
+          No&nbsp;rompas el hechizo...</strong></em></p>
+      <p align="center"><em><strong>Autor: Mar&iacute;a Beatriz Pombo </strong><span class="Estilo50">(Argentina)</span></em></p></td>
+  </tr>
+</table>
+<table width="1052" border="1" align="center">
+  <tr>
+    <th width="398" scope="col"><img src="premiocrisgarayandrade.JPG" width="387" height="356" /></th>
+    <th width="597" scope="col"><p align="center" class="Estilo18">&nbsp;</p>
+        <p align="center" class="Estilo18"><em><strong><u><span class="Estilo20">ESPERANZA</span></u><span class="Estilo20">&hellip;</span></strong></em></p>
+      <p align="center"><em><strong>&nbsp;</strong></em></p>
+      <p align="center"><em><strong>Como una escalera al cielo, que nunca llega&hellip;</strong></em><br />
+            <em><strong><br />
+              Pero te permite prefigurar las maravillas que nunca  encontrar&aacute;s&hellip;</strong></em></p>
+      <p align="center"><em><strong>Como recuerdos del futuro que dan sentido a tu  existencia.</strong></em></p>
+      <p align="center"><em><strong>&nbsp;</strong></em><em><strong>Escaleras tan usadas que tienen algunos pelda&ntilde;os  rotos&hellip;</strong></em></p>
+      <p align="center"><em><strong>Desde los cuales&nbsp;  vislumbras una existencia vac&iacute;a.</strong></em></p>
+      <p align="center"><em><strong>Escalera que aprendes a arreglar, para siempre poder  usarla.</strong></em></p>
+      <p align="center"><em><strong>Porque la esperanza es lo que nunca muere&hellip;</strong></em></p>
+      <p align="center"><em>Autor: <strong>Carlos Quaglia</strong><span class="Estilo9"> (Argentino radicado en Brasil) </span></em></p></th>
+  </tr>
+</table>
+<table width="1062" border="1" align="center">
+  <tr>
+    <td width="500"><p align="center"><em><strong><span lang="ES-AR" xml:lang="ES-AR"><u>HERMANOS</u>&nbsp;</span></strong></em></p>
+        <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">&nbsp;Dedicado a mi hermano Carlos Demetrio Pigazzini, artista pl&aacute;stico, que tanto am&oacute;</span> los animales y a su perro Tito, que de tristeza se fue con &eacute;l el 7 de septiembre de 2012.</em></p>
+      <p align="center"></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">No te vayas   hermano</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">No te   vayas</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">Tenemos tanto   para recordar</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">La ni&ntilde;ez&nbsp; la   juventud </span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">los   hijos</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">&nbsp;</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">A&uacute;n es temprano   los nietos esperan</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">El campo esta   solo</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">Los perros no   ladran</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">Aquel &ldquo; El   huesito&rdquo;</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">Que encontraste   un d&iacute;a</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">Tan flaco y   triste</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">Me mira a   distancia</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">&nbsp;</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">En este verano   que reci&eacute;n comienza</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">Me encuentro tan   sola</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">Perd&oacute;name   hermano</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">Ejemplo de padre   , el mejor amigo</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">Anda sin   temores&hellip;</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">Ya pronto   seremos aquellos que fuimos</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">Casi una novela   .Camin&eacute; a tu lado</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">Sembramos ,   so&ntilde;amos</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">&nbsp;&nbsp;En esta   acrobacia jugamos re&iacute;mos,</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">entre los   recuerdos un libro, un asado</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">&nbsp;</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">Solo dos   hermanos, con fe y un&nbsp; destino</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">Lo nuestro es   &nbsp;esfuerzo voluntad valor</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">Vida de   inmigrantes;&nbsp; amantes &nbsp;bohemios</span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">Aventura al   fin&nbsp; te dej&oacute; el poema, </span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">&nbsp;Pintaste mis   sue&ntilde;os </span></em></p>
+      <p align="center"><em><span lang="ES-AR" xml:lang="ES-AR">un&nbsp;   placer&nbsp;vivir</span></em>.</p>
+      <p align="center">&nbsp;</p>
+      <p align="center"><em>&nbsp;Autor: Nilda Antonia Pigazzini</em><br />
+            <em><a href="/mc/compose?to=n.pigazzini@hotmail.com" rel="nofollow" target="_blank" ymailto="mailto:n.pigazzini@hotmail.com"><strong><font size="2">n.pigazzini@hotmail.com</font></strong></a><font size="2"><br />
+            <a href="/mc/compose?to=n.pigazzini@yahoo.com.ar" rel="nofollow" target="_blank" ymailto="mailto:n.pigazzini@yahoo.com.ar"><strong>n.pigazzini@yahoo.com.ar</strong></a> <br />
+            <a href="http://www.psicodramayarte.com.ar/" rel="nofollow" target="_blank">www.psicodramayarte.com.ar</a> <br />
+            <a href="http://elduendelalunayyo.escribirte.com.ar/" rel="nofollow" target="_blank">http://elduendelalunayyo.escribirte.com.ar/</a><br />
+        <a href="http://www.youtube.com/user/nildapigazzini" rel="nofollow" target="_blank">http://www.youtube.com/user/nildapigazzini</a></font></em></p></td>
+    <td width="546" height="611"><p align="center">&nbsp;</p>
+        <p align="center"><span class="Estilo56"><strong>II</strong><br />
+              <strong>Reconocimiento</strong><br />
+          Forma parte de todos desde la misma  esencia<br />
+          y marcha con los ritmos de nuestra  propia vida.<br />
+          Se&nbsp;  integra&nbsp; en&nbsp; cada mente, ya despierta o dormida<br />
+          como un develamiento y a la vez una  ausencia.</span></p>
+      <p align="center"><em>Susurra en cada o&iacute;do&nbsp; su mensaje. Atrevida,<br />
+        nos tienta con&nbsp; Edenes y ensue&ntilde;os la conciencia.<br />
+        Retumba en cada pecho y marca la  falencia<br />
+        de estos seres complejos que somos , de  la herida</em></p>
+      <p align="center"><em>que est&aacute; abierta en nosotros desde la  propia herencia<br />
+        a trav&eacute;s del&nbsp; dualismo&nbsp;  que en nosotros anida<br />
+        como una paradoja contradictoria y  necia.</em></p>
+      <p align="center"><em>Invoca los esfuerzos&nbsp; del alma decidida<br />
+        a buscar horizontes&nbsp; y paliar la&nbsp;  carencia<br />
+        &iexcl;en el espacio eterno de la Paz&nbsp; encendida!</em></p>
+      <p align="center"><em><strong>II</strong><br />
+              <strong>Encuentro con la alborada</strong> <br />
+        &iquest;C&oacute;mo hallar el camino que conduzca a su  encuentro?<br />
+        &iquest;D&oacute;nde la ruta cierta? &iquest;D&oacute;nde el claro  sendero<br />
+        que llano y distendido cubra ese  derrotero<br />
+        y logre &iexcl;finalmente! el ansiado  reencuentro?</em></p>
+      <p align="center"><em>&iquest;Qu&eacute; frenos pone el hombre? &iquest;Cu&aacute;l juego  vil, artero,<br />
+        despliega con sus fichas el drama desde  adentro?<br />
+        &iquest;Qui&eacute;n no brinda su mano? &iquest;De qu&eacute; oscuro  epicentro<br />
+        brotan las decisiones del poder  traicionero?</em></p>
+      <p align="center"><em>&iexcl;Ay, el dolor del mundo! &iexcl;Ay, la&nbsp; triste cosecha<br />
+        que&nbsp;  aumenta los poderes, el triunfo y los&nbsp;  recursos&nbsp; <br />
+        divorciados del ser! Marte va, como  flecha</em></p>
+      <p align="center"><em>cruzando los espacios con sus  sangrientos cursos<br />
+        &iexcl;Frente al dolor y el odio&nbsp; hoy levanto mi endecha<br />
+        con po&eacute;tico fuego m&aacute;s all&aacute; de discursos!</em></p>
+      <p align="center"><em>Autor:<strong> Irene Mercedes Aguirre</strong> (Argentina)</em></p>
+      <div class="Estilo4">
+          <div align="center">Postulada&nbsp;al&nbsp;Premio Internacional Carlos Fuentes a la creaci&oacute;n literaria en iel idioma espa&ntilde;ol&nbsp;2012, por la Secretar&iacute;a de Cultura de Avellaneda, Buenos Aires, Argentina con la adhesi&oacute;n de numerosas entidades culturales del mundo&nbsp; y personalidades de la Cultura y las Letras</div>
+      </div>
+      <div class="Estilo4">&nbsp;</div>
+      <div class="Estilo4">
+          <div align="center">Escritora&nbsp; y Cr&iacute;tica de Arte argentina.&nbsp;</div>
+      </div>
+      <div class="Estilo4">&nbsp;</div>
+      <div class="Estilo4">
+          <div align="center">Docente e Investigadora&nbsp;&nbsp; y Miembro del Consejo Asesor de&nbsp; la Secretar&iacute;a de Investigaci&oacute;n e Innovaci&oacute;n Socio - productiva de UNDAV&nbsp;.</div>
+      </div>
+      <div class="Estilo4">&nbsp;</div>
+      <div class="Estilo4">
+          <div align="center">Miembro de la Red Argentina de Posgrados en Educaci&oacute;n Superior (REDAPES)</div>
+      </div>
+      <div class="Estilo4">&nbsp;</div>
+      <div class="Estilo4">
+          <div align="center">Directora del &Aacute;rea Acad&eacute;mica Multidisciplinaria de la Red Mundial de Juzgadores de Asuntos Familiares y de la Comisi&oacute;n Latinoamericana de Jueces (REDLAJ).</div>
+      </div>
+      <div class="Estilo4">&nbsp;</div>
+      <div class="Estilo4">
+          <div align="center">Miembro de la Sociedad Argentina de Escritores (SADE) Sede central Ciudad de Buenos Aires</div>
+      </div>
+      <div class="Estilo4">&nbsp;</div>
+      <div class="Estilo4">
+          <div align="center">Catedr&aacute;tica titular de &Eacute;tica y Deontolog&iacute;a Profesional del Instituto de Educaci&oacute;n Superior de la C&aacute;mara de Comercio, Industria y Producci&oacute;n de la Rep&uacute;blica Argentina</div>
+      </div>
+      <div class="Estilo4">&nbsp;</div>
+      <div class="Estilo4">
+          <div align="center">Miembro Fundador y Asesora Cultural Internacional de UNILETRAS</div>
+      </div>
+      <div class="Estilo4">
+          <div align="center">Presidente del Comit&eacute; Interinstitucional de la Asociaci&oacute;n Nacional&nbsp;&nbsp;de la &nbsp;Alianza de Mesas Redondas Panamericanas (reg. OEA)</div>
+      </div>
+      <div class="Estilo4">
+          <div align="center">Sonetista incorporada a la Biblioteca del Soneto Miguel de Cervantes Saavedra</div>
+      </div>
+      <div class="Estilo4">
+          <div align="center">Miembro de la Red&nbsp; Mundial de Escritores en Espa&ntilde;ol</div>
+      </div>
+      <div class="Estilo4">
+          <div align="center">Miembro de Honor ASOLAPO</div>
+      </div>
+      <div class="Estilo4">
+          <div align="center">Miembro de Honor &quot;Algo por Colombia&quot;</div>
+      </div>
+      <div class="Estilo4">
+          <div align="center">Miembro de la International Writters Association</div>
+      </div>
+      <div class="Estilo4">
+          <div align="center">Miembro del Movimiento Poetas del Mundo</div>
+      </div>
+      <div class="Estilo4">
+          <div align="center">Miembro Permanente de la Academia Virtual de Poetas y Escritores de Brasil (AVSPE)</div>
+      </div>
+      <div class="Estilo4">
+          <div align="center">Premio Plata 2011&nbsp; por el Movimiento Mundial por la Paz &quot;La Paz eres t&uacute;&quot;, cap&iacute;tulo Espa&ntilde;a, del C&iacute;rculo de Embajadores de la Paz, con sede en Ginebra, Suiza.</div>
+      </div>
+      <div class="Estilo4">
+          <div align="center">Embajadora de Paz Mil Milenios y Fundaci&oacute;n PEA</div>
+      </div>
+      <div class="Estilo4">
+          <div align="center">Delegada y Embajadora de Paz de IFLAC&nbsp; en Avellaneda</div>
+      </div>
+      <div class="Estilo4">
+          <div align="center">Incorporada a BILINGUALMCA Poetas por la Paz</div>
+      </div>
+      <p align="center"><br />
+      </p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="1056" border="1" align="center">
+  <tr>
+    <td width="443" rowspan="2"><p align="center" class="Estilo47"><strong>MUSA Y BARDO...&nbsp; AMANECE... AMIGA MIA...</strong></p>
+        <p align="center">&nbsp;</p>
+      <p align="center"><em><strong><u><em><strong><em><strong><em><strong><em><u><em><strong><em><strong><em><strong><em><img height="31" src="estrellita%20blanca.gif" width="31" /></em></strong></em></strong></em></strong></em></u></em></strong></em></strong></em></strong></em></u><strong>&nbsp;&nbsp;</strong><u>AMANECE</u></strong></em></p>
+      <p align="center"><em><strong>&iexcl;Oh! La fuerza del amor que   salva,</strong></em><br />
+            <em><strong>bendito amor de musa y   bardo</strong></em><br />
+            <em><strong>en traje de pincel y   pluma</strong></em><br />
+            <em><strong>entre rosas y sensibles   nardos.</strong></em></p>
+      <p align="center"><em><strong>El alma retoma los   paisajes</strong></em><br />
+            <em><strong>en un aire de   suspiros</strong></em><br />
+            <em><strong>a&ntilde;ora del beso el engranaje<br />
+          </strong></em><em><strong>de prisa va por los   caminos.</strong></em></p>
+      <p align="center"><em><strong>Desvela ya pintando   auroras.</strong></em></p>
+      <p align="center"><em><strong>Ven conmigo a danzar las   Horas.</strong></em></p>
+      <p align="center"><em><strong>Sembremos el azul del   sue&ntilde;o</strong></em><br />
+            <em><strong>el tibio nido tiene   due&ntilde;o</strong></em><br />
+            <em><strong>y en el tel&oacute;n de nuestra   vida <br />
+          </strong></em><em><strong>asoma dulce la canci&oacute;n   perdida.</strong></em></p>
+      <p align="center"><em><strong>Cantemos.</strong></em></p>
+      <p align="center"><em><strong>Joseph   Berolo</strong></em><br />
+            <span class="Estilo25">(Bogot&aacute;-Colombia)</span><br />
+            <span class="Estilo55"><a href="http://www.aveviajera.org/nacionesunidasdelasletras/id574.html">http://www.aveviajera.org/nacionesunidasdelasletras/id574.html</a></span><br />
+        </p>
+      <p align="center"><em><strong>2.28.2013&nbsp;&nbsp;&nbsp;&nbsp;</strong></em></p></td>
+    <td width="597"><p align="center" class="Estilo47"> <u><em><strong><u><em><strong><em><strong><em><strong><em><u><em><strong><em><strong><em><strong><em><img height="31" src="estrellita%20blanca.gif" width="31" /></em></strong></em></strong></em></strong></em></u></em></strong></em></strong></em></strong></em></u></strong></em>ESTACIONES</u></p>
+        <p align="center"><strong><em>El viernes ya es marzo<br />
+          y hay un &aacute;lgido anochecer,<br />
+          muy enorme por lo que el d&iacute;a tuvo de m&aacute;gico.<br />
+          Anochece. Anochecemos.<br />
+          En marzo la vida se nombra<br />
+          a veces. Brote del sobrevivivente brote, <br />
+          el palpitante coraz&oacute;n deshoja los latidos.<br />
+          El antiguo ensue&ntilde;o del verano se desbarata.<br />
+          ...<br />
+          Quique de Lucio</em></strong> <span class="Estilo25">(C&oacute;rdoba, Argentina)<br />
+            <a href="http://nosotrossomosquiensomos.blogspot.com.ar/" class="Estilo9">http://nosotrossomosquiensomos.blogspot.com.ar/</a><br />
+          </span></p>
+      <p></p></td>
+  </tr>
+  <tr>
+    <td><div align="center"><strong><em><br />
+                <strong><u><em><strong><em><strong><em><strong><em><u><em><strong><em><strong><em><strong><em><img height="31" src="estrellita%20blanca.gif" width="31" /></em></strong></em></strong></em></strong></em></u></em></strong></em></strong></em></strong></em></u></strong><u>Resurge la libertad</u><br />
+                <br />
+      de tu inocencia y desvela<br />
+      <br />
+      cuando se apega a la   tierra<br />
+      <br />
+      se cumplen las esperanzas<br />
+      <br />
+      en este estado del   alma.<br />
+      <br />
+      La vida duerme en la noche<br />
+      <br />
+      y algo elevada del   suelo<br />
+      <br />
+      vuela y salta los sentidos<br />
+      <br />
+      ese sue&ntilde;o   preventivo<br />
+      <br />
+      cercado con las medidas. <br />
+      <br />
+      <br />
+      <br />
+      Jos&eacute;   P&oacute;mez </em></strong><span class="Estilo25">(Espa&ntilde;a)</span><strong><em><br />
+        </em></strong><span class="Estilo7"><em><a href="http://pomez.net" target="_blank">http://pomez.net</a></em></span><strong><em><br />
+          <br />
+          </em></strong><br />
+    </div></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="1054" border="1" align="center">
+  <tr>
+    <th width="517" scope="col"><p align="center" class="Estilo23">&nbsp;</p>
+        <p align="center" class="Estilo23"><span lang="ES-TRAD" xml:lang="ES-TRAD"><u>UNA ROSA LLAMADA   PAZ</u><br />
+              <br />
+              <br />
+          Una rosa tiernamente llamada Paz<br />
+          vive en mi jard&iacute;n de   poetas,<br />
+          donde Mistral y Daudet<br />
+          hacen en versos, la charla&hellip;<br />
+          <br />
+          Cada vez   que la admiro, grande y bella,<br />
+          embellece mis jornadas y me da aliento para   re&iacute;r.<br />
+          Con su amarillo rosado, me invita, dulce centinela,<br />
+          a&nbsp;saborear   fragrancias de paz y me dice&hellip;&acute;&acute; &iexcl;Respira!...&acute;&acute;<br />
+          <br />
+          La rosa es un himno al   amor<br />
+          y&nbsp;por sus p&eacute;talos, ella es igual a un libro<br />
+          donde se esconden bellos   cantos de paz<br />
+          para el ser humano en serenidad,&nbsp;<br />
+          <br />
+          Una rosa llamada Paz   encanta mi coraz&oacute;n<br />
+          y&nbsp;convidar&aacute;, en una nube de flores, a Hugo y   Balzac</span></p>
+      <p align="center"><em><span lang="ES-TRAD" xml:lang="ES-TRAD">en una ronda de versos   encantadores,<br />
+        murmullo de ondas haciendo&nbsp;eco&hellip;<br />
+        <br />
+        Solitario y so&ntilde;ador,   Rimbaud les reunir&aacute;<br />
+        en este jard&iacute;n de rosas, donde Ronsard ya<br />
+        recit&oacute; su   oda&nbsp;so&ntilde;ando la bella emoci&oacute;n<br />
+        de su mona, y en el lugar de m&aacute;s   brillo&hellip;<br />
+        <br />
+        Hombres de Letras que nos regalaron un paseo<br />
+        por&nbsp;mi jard&iacute;n de   colores y silencios,<br />
+        gustando los placeres de la paz, y en   alborada,<br />
+        pintando al cotidiano con tolerante humanidad &hellip;<br />
+        <br />
+        Poetas que   han dicho sobre las provincias y Par&iacute;s,<br />
+        y las horrorosas guerras y la   paz&hellip;<br />
+        Mi jard&iacute;n de rosas donde tomo mi inspiraci&oacute;n,<br />
+        mi refugio po&eacute;tico para   todas las formas de paz&hellip;<br />
+        <br />
+        Fran&ccedil;oise Marie BERNARD<br />
+        <span class="Estilo9">El 15 de Oct&uacute;bre de   2009</span><br />
+        <span class="Estilo9"><strong>(Francia)</strong></span></span></em></p>
+      <p align="center"><em><span lang="ES-TRAD" xml:lang="ES-TRAD">&nbsp;</span></em></p>
+      <p align="center" class="Estilo24"><em><span lang="ES-TRAD" xml:lang="ES-TRAD">Corregido por Ernesto Kahan</span></em><br />
+            <strong><em><span lang="ES-TRAD" xml:lang="ES-TRAD">Premio Nobel de la Paz de 1985</span></em></strong><br />
+            <strong><em><span lang="ES-TRAD" xml:lang="ES-TRAD">Medico (Israel</span></em></strong>)</p>
+      <p><span lang="ES-TRAD" xml:lang="ES-TRAD"></span>&nbsp;</p></th>
+    <th width="521" scope="col"><p>&nbsp;</p>
+        <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><em><u>FUGAZ VUELO</u></em></p>
+      <p>&nbsp;</p>
+      <p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &ldquo;Tan peque&ntilde;as, all&aacute; arriba. Como yo<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  aqu&iacute; abajo&rdquo;&nbsp;&nbsp;&nbsp;&nbsp; Oscar L. Bondoni</em></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><em>Mis sentidos  duermen en sus vuelos<br />
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-seducen im&aacute;genes-</em></p>
+      <p><em>mensajeras de  aromas y colores<br />
+        bailan en mi  sombra una danza<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -arcano misterio-</em></p>
+      <p><em>&iexcl;Ellas all&aacute;  arriba tan peque&ntilde;as!</em></p>
+      <p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; de sue&ntilde;os ajenos se adue&ntilde;an<br />
+        silbido afilado  del viento<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -noche serena-<br />
+        emigran con  alas de rel&aacute;mpagos</em></p>
+      <p><em>&iexcl;Ellas all&aacute;  arriba tan peque&ntilde;as!</em></p>
+      <p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; como yo<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nostalgiosa &nbsp;alma<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;espera<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aqu&iacute;&nbsp;&nbsp; &nbsp;abajo</em></p>
+      <p>&nbsp;</p>
+      <p><em><span class="Estilo9">Autor:</span> Alicia Balista<br />
+              <span class="Estilo9">(Argentina)</span></em></p></th>
+  </tr>
+</table>
+<table width="1055" border="1" align="center">
+  <tr>
+    <td width="519"><p align="center" class="Estilo54">&nbsp;</p>
+        <p align="center" class="Estilo54"><strong><u>El libro de los recuerdos.</u></strong><br />
+        </p>
+      <p align="center" class="Estilo54">&nbsp;</p>
+      <p align="center" class="Estilo54">Andaba buscando el libro, que le&iacute; cuando peque&ntilde;o<br />
+        ese de tapas azules, con escritos y recuerdos.<br />
+        Jugaron con &eacute;l mis manos, y lo marqu&eacute; con los dedos<br />
+        al encontrar un pasado, entre las hojas y sue&ntilde;os...<br />
+        Al retirarlo surgi&oacute;, dentro del armario viejo,<br />
+        aquella arrugada carta, la que escribiste, hace tiempo;<br />
+        con ternura la tom&eacute;, el sobre ajado contemplo,<br />
+        y recuerdo que la vida, paso rauda con su vuelo.<br />
+        All&iacute;&nbsp; en&nbsp; esa carta dices, que a pesar de estar muy lejos,<br />
+        sue&ntilde;as, como si mi boca, de noche, te diera un beso,<br />
+        y que no te olvidas nunca, aquel calor de mi pecho<br />
+        que acurruco tu figura, cuando te fuiste del pueblo.<br />
+        El final est&aacute; borroso, manchada la hoja, leo,<br />
+        una frase entrecortada, la que me enviaras y espero....<br />
+        Por ella he pensado mucho, y llor&eacute; sobre el recuerdo,<br />
+        all&iacute; por donde dec&iacute;a.......juro volver....y te&nbsp; quiero.<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Para Graciela con todo mi <br />
+        agradecimiento por ser mi amiga.<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Pocho.<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  10/12/10</p>
+      <p align="center"><em><strong>Paulino Santander</strong> </em></p>
+      <p align="center"><em>&lt;pochosandes@yahoo.com.ar&gt;</em></p>
+      <p align="center">&nbsp;</p></td>
+    <td width="536" rowspan="2"><p align="center"><strong><em><u>LOS DOLORES DEL CORAZ&Oacute;N</u></em></strong><br />
+    </p>
+        <p align="center"><em>&iexcl;La vida te ha llevado</em><br />
+            <em>Lo que&nbsp;tienes como&nbsp;m&aacute;s apreciado!</em><br />
+            <em>&iexcl;Ha venido a trastornar muy temprano</em><br />
+            <em>Tus sentimientos lo m&aacute;s orgullosos!</em></p>
+      <p align="center"><em>El veneno de la muerte nos mata a todos,</em><br />
+            <em>&nbsp;Un d&iacute;a u otro;</em><br />
+            <em>Cada uno dentro de su cuerpo; con temor;</em><br />
+            <em>Para privarnos de amor.</em></p>
+      <p align="center"><em>Mi jard&iacute;n de flores encantadoras</em><br />
+            <em>Es una de mis felicidades actuales.</em><br />
+            <em>&iexcl;Ven a compartir conmigo</em><br />
+            <em>el dolor de tus emociones; dentro de tu abismo&hellip;!</em></p>
+      <p align="center"><em>Tu pena usa tus alegr&iacute;as; tus talentos;</em><br />
+            <em>Y tus l&aacute;grimas les ahogan sin detenerse&hellip;</em><br />
+            <em>Desarregla tus recuerdos, </em><br />
+            <em>los cuales se revuelven; sin agotarse&hellip;</em></p>
+      <p align="center"><em>&iexcl;T&uacute;, vuelves a ver pasar en tu mente,</em><br />
+            <em>Todos los mejores momentos&hellip;</em><br />
+            <em>Tienes miedo de olvidarte de ellos;</em><br />
+            <em>&nbsp;Pero, te pegas a cada instante!</em></p>
+      <p align="center"><em>&iexcl;No dejas la pesadumbre y la ausencia</em><br />
+            <em>quedando&nbsp;en el infierno</em><br />
+            <em>de tus j&oacute;venes a&ntilde;os de sufrimientos y  &nbsp;desconfianza,</em><br />
+            <em>para encerrarte en&nbsp;tu &nbsp;invierno&hellip;!</em></p>
+      <p align="center"><em>El destino ha borrado tu marca,</em><br />
+            <em>a&nbsp;la que estuvieras atado.</em><br />
+            <em>Tu coraz&oacute;n esta desgarrado, pero orgulloso,</em><br />
+            <em>te&nbsp;manifiesta seguir adelante, con toda tu  alma&hellip;</em></p>
+      <p align="center"><em>El camino sinuoso de tu vida</em><br />
+            <em>est&aacute; sembrado de trampas dolorosas.</em><br />
+            <em>Pero tu valor&nbsp;no da &nbsp;tregua,</em><br />
+            <em>para disfrutar una vida feliz llena de buenas  acciones&hellip;&nbsp; </em></p>
+      <p align="center"><em>El tiempo&nbsp;sanar&aacute; &nbsp;tu dolor y tu pena,</em><br />
+            <em>y&nbsp;cubrir&aacute; &nbsp;tu memoria</em><br />
+            <em>con un&nbsp;bello velo de dulzura,</em><br />
+            <em>para&nbsp;que olvides&nbsp;tu Historia&hellip;</em></p>
+      <p align="center"><em><strong>Fran&ccedil;oise Marie BERNARD</strong>&nbsp;&nbsp;</em><br />
+            <em>-Diciembre de 2001-</em></p></td>
+  </tr>
+  <tr>
+    <td><p align="center">&nbsp;</p>
+        <p align="center"><span class="Estilo51"><u><font color="#000066"><strong><em><img src="estrellita%20blanca.gif" alt="" width="31" height="31" /></em></strong></font></u></span><u><em><strong>Sesenta y cinco a&ntilde;os</strong></em></u></p>
+      <p align="center">&nbsp;</p>
+      <p align="center"><em>Esta ma&ntilde;ana, la aurora canto  despacito<br />
+        Tus sesenta y cinco oto&ntilde;os,<br />
+        Susurrando las melod&iacute;as de  anta&ntilde;o<br />
+        En tu jard&iacute;n mon&oacute;tono. </em></p>
+      <p align="center"><em>Los c&oacute;lquicos florecen las  calles<br />
+        De tu camino de vida,<br />
+        Donde el el&eacute;boro vendr&aacute;  encantar<br />
+        Los parterres de tus  preocupaciones&hellip;</em></p>
+      <p align="center"><em>Las nubes perezosas de esta  dulce estaci&oacute;n<br />
+        Navegar&aacute;n en tu cielo nublado<br />
+        Donde los recuerdos voluptuosos  bailar&aacute;n<br />
+        En las quimeras del tiempo  incierto&hellip;</em></p>
+      <p align="center"><em>Sesenta y cinco a&ntilde;os donde tu  vida<br />
+        Te dio emociones, buenas o  malas,<br />
+        Pero, tenaz, siempre te sonr&iacute;e<br />
+        Y te ordena dulcemente de  avanzar&hellip;</em></p>
+      <p align="center"><em><strong>Fran&ccedil;oise  Marie BERNARD</strong><br />
+        El  22 de septiembre &nbsp;de 2009</em></p>
+      <p align="center"><em>Dedicado a mi madre por su  cumplea&ntilde;os</em></p></td>
+  </tr>
+</table>
+<table width="1063" border="1" align="center">
+  <tr>
+    <th width="460" scope="col"><p align="center" class="Estilo47"><u>*Los poetas</u></p>
+        <p align="center"><em><strong>&nbsp;</strong></em></p>
+      <p align="center"><em><strong>Los poetas no inventan, &iexcl;crean, viven!</strong></em><br />
+            <em><strong>cada lugar, momento y emociones,</strong></em><br />
+            <em><strong>es veraz y es exacto lo que dicen,</strong></em><br />
+            <em><strong>y lo que oyes a trav&eacute;s de sus canciones.</strong></em></p>
+      <p align="center"><em><strong>&nbsp;</strong></em><em><strong>Las met&aacute;foras que insertan en sus versos,</strong></em><br />
+            <em><strong>ilustrando sus bellas inquietudes,</strong></em><br />
+            <em><strong>nos muestran en sus musas transparentes,</strong></em><br />
+            <em><strong>la innata realidad de sus virtudes.</strong></em><em><strong>&nbsp;</strong></em></p>
+      <p align="center"><em><strong>Ellos son como Juglares del pasado,</strong></em><br />
+            <em><strong>pregonando a los vientos la poes&iacute;a,</strong></em><br />
+            <em><strong>transmitiendo a los pueblos la palabra,</strong></em><br />
+            <em><strong>que perdura a lo largo de los d&iacute;as.</strong></em></p>
+      <p align="center"><em><strong>&nbsp;</strong></em><em><strong>Hay poetas que cantan al amor,</strong></em><br />
+            <em><strong>poniendo el coraz&oacute;n en cada verso,</strong></em><br />
+            <em><strong>otros cuentan la cruda realidad,</strong></em><br />
+            <em><strong>del dolor que hoy acosa al universo.</strong></em></p>
+      <p align="center"><em><strong>Pero todos por igual son creadores,</strong></em><br />
+            <em><strong>de m&aacute;gicos vocablos que al o&iacute;rlos,<br />
+            </strong></em><em><strong>el alma llena de emoci&oacute;n se ensancha</strong></em><br />
+            <em><strong>y experimenta el asombro de vivirlos.</strong></em></p>
+      <p align="center"><em><strong>Al compartir con otros cada obra,</strong></em><br />
+            <em><strong>comparten trozos de su misma vida,<br />
+            </strong></em><em><strong>nos entregan el ejemplo m&aacute;s hermoso,</strong></em><br />
+            <em><strong>de su pasi&oacute;n tan &iacute;ntima y sentida.</strong></em></p>
+      <p align="center"><em><strong>Si cada l&aacute;grima amarga y cada risa,</strong></em><br />
+            <em><strong>que vuelcan en sus versos tan intensos,</strong></em><br />
+            <em><strong>nos conmueven a trav&eacute;s de la lectura,</strong></em><br />
+            <em><strong>lograr&aacute; sus objetivos m&aacute;s excelsos.</strong></em><em><strong>&nbsp;</strong></em></p>
+      <p align="center"><em><strong>Los poetas no inventan, cada prosa,</strong></em><br />
+            <em><strong>es un legado m&aacute;ximo y valioso,</strong></em><br />
+            <em><strong>que de su mente cae a la hoja en blanco,</strong></em><br />
+            <em><strong>y &eacute;l nos lo brinda, altruista y generoso.</strong></em></p>
+      <p align="center"><em><strong>Los poetas son seres casi et&eacute;reos,<br />
+          </strong></em><em><strong>que fluyen por el aire, levemente&hellip;</strong></em><br />
+          <em><strong>y nos muestran a trav&eacute;s de su poes&iacute;a:</strong></em><br />
+          <em><strong>su forma de vivir... &iexcl;intensamente!</strong></em></p>
+      <p align="center"><em><strong><span class="Estilo9">Autor:</span>Marga Mangione</strong></em> <span class="Estilo15">(Buenos Aires, Argentina) </span></p>
+      <p align="center">&nbsp;</p></th>
+    <th width="587" scope="col"><div><u><em>*Reto&ntilde;o</em></u></div>
+        <div>&nbsp;</div>
+      <div><em>Quisiera hija</em></div>
+      <div><em>contarte mi historia</em></div>
+      <div><em>de agua</em></div>
+      <div><em>de luna</em></div>
+      <div><em>de viento</em></div>
+      <div><em>&nbsp;</em></div>
+      <div><em>Fuego perenne </em></div>
+      <div><em>que no se apaga</em></div>
+      <div><em>&nbsp;</em></div>
+      <div><em>Quisiera hoy hija</em></div>
+      <div><em>contarte mi historia</em></div>
+      <div><em>que es como la tuya</em></div>
+      <div><em>&nbsp;</em></div>
+      <div><em>Venimos un d&iacute;a </em></div>
+      <div><em>a la Madre Tierra</em></div>
+      <div><em>a la Pachamama</em></div>
+      <div><em>al reto de la vida</em></div>
+      <div><em>al gozo de la lluvia</em></div>
+      <div><em>&nbsp;</em></div>
+      <div><em>Gota que cae</em></div>
+      <div><em>en nuestra mano</em></div>
+      <div><em>&nbsp;</em></div>
+      <div><em>C&aacute;liz de la aurora</em></div>
+      <div><em>que viene en asombro</em></div>
+      <div><em>&nbsp;</em></div>
+      <div><em>Fragancia de esa miel</em></div>
+      <div><em>que brota de una rosa</em></div>
+      <div><em>Picaflor la fertiliza</em></div>
+      <div><em>&nbsp;</em></div>
+      <div><em>Quisiera mi peque&ntilde;a</em></div>
+      <div><em>contarte m&aacute;s: s&oacute;lo</em></div>
+      <div><em>-entre nosotras-</em></div>
+      <div><em>queda la vieja canci&oacute;n</em></div>
+      <div><em>de la vida y su reto&ntilde;o.</em></div>
+      <div><em>&nbsp;</em></div>
+      <div class="Estilo9">
+          <p><em>(Secci&oacute;n: Tendido de sol maduro. p. 79-80)</em></p>
+        <p><em>Autor: <span class="Estilo17">Julia del Prado</span> (Per&uacute;) </em></p>
+      </div></th>
+  </tr>
+</table>
+<table width="1047" border="1" align="center">
+  <tr>
+    <th width="483" scope="col"><p align="center"><em><strong><em><strong><em><strong><em><img height="31" src="estrellita%20blanca.gif" width="31" /></em></strong></em></strong></em><span lang="ES-TRAD" xml:lang="ES-TRAD"><u>Poes&iacute;a</u></span></strong> </em></p>
+        <div></div>
+      <p align="center"><em>Q<span lang="ES-TRAD" xml:lang="ES-TRAD">ue venga a cualquier   hora</span> </em></p>
+      <p align="center"><em><span lang="ES-TRAD" xml:lang="ES-TRAD">a nombrar la luz de   noche.</span> </em></p>
+      <p align="center"><em><span lang="ES-TRAD" xml:lang="ES-TRAD">Que llegue con sus   velos</span> </em></p>
+      <p align="center"><em><span lang="ES-TRAD" xml:lang="ES-TRAD">Y r&aacute;fagas de   olores</span> </em></p>
+      <p align="center"><em><span lang="ES-TRAD" xml:lang="ES-TRAD">Que me llene un segundo &iexcl;s&oacute;lo   uno&iexcl;</span> </em></p>
+      <p align="center"><em><span lang="ES-TRAD" xml:lang="ES-TRAD">Que me lleve</span> </em></p>
+      <p align="center"><em><span lang="ES-TRAD" xml:lang="ES-TRAD">Que me traiga</span> </em></p>
+      <p align="center"><em><span lang="ES-TRAD" xml:lang="ES-TRAD">Que me arrastre en su viaje del   mundo</span> </em></p>
+      <p align="center"><em><span lang="ES-TRAD" xml:lang="ES-TRAD">Que me pesque o la toque en mi   ensue&ntilde;o</span> </em></p>
+      <p align="center"><em><span lang="ES-TRAD" xml:lang="ES-TRAD">Pero llegue&hellip;</span></em></p>
+      <p align="center">&nbsp;</p>
+      <p align="center"><span class="Estilo25">Autor</span>: <em>Matha Laredo Jim&eacute;nez </em> <span class="Estilo25">(M&eacute;xico) </span></p></th>
+    <th width="522" scope="col"><div id="message1729886300" role="main">
+      <div id="yiv761990635">
+        <div>
+          <div><span class="Estilo47"><u><em><strong><em><strong><em><strong><em><span class="Estilo29"><u><em><strong><em><strong><em><strong><em><img height="31" src="estrellita%20blanca.gif" width="31" /></em></strong></em></strong></em></strong></em></u></span></em></strong></em></strong></em></strong></em>P&Aacute;JARO   DEL VINO</u><br />
+                  <span class="Estilo9">-poema-canci&oacute;n- </span></span>
+                <p><em><strong>&nbsp;</strong></em></p>
+            <p><em>&nbsp;&nbsp; en   medio del patio</em><br />
+                    <em>&nbsp;&nbsp;   soplaba la flauta</em><br />
+                    <em>&nbsp;&nbsp; los   parches lat&iacute;an</em><br />
+                    <em>&nbsp;&nbsp; al   ardor del canto</em></p>
+            <p><em>&nbsp;&nbsp;&nbsp;y   amor era algo<br />
+                  </em><em>&nbsp;&nbsp;   que soltaba dulce</em><br />
+                  <em>&nbsp;&nbsp;   silencio de p&aacute;jaro</em></p>
+            <p><em>&nbsp;&nbsp; la   arena se amaba<br />
+                  </em><em>&nbsp;&nbsp; con   manos de ni&ntilde;os</em><br />
+                  <em>&nbsp;&nbsp; que   alzaban cohetes</em><br />
+                  <em>&nbsp;&nbsp;   puentes y castillos</em></p>
+            <p><em>&nbsp;&nbsp;   y&nbsp;vos derramaste<br />
+                  </em><em>&nbsp;&nbsp;   tu ef&iacute;mero sue&ntilde;o<br />
+                </em><em>&nbsp;&nbsp;   de vino encendido</em></p>
+            <p><em>&nbsp;&nbsp; en   medio del patio<br />
+                  </em><em>&nbsp;&nbsp; la   luna apoyaba</em><br />
+                  <em>&nbsp;&nbsp; sus   pies delicados<br />
+                </em><em>&nbsp;&nbsp; en   alada danza</em></p>
+            <p><em>&nbsp;&nbsp; y   yo deshojaba</em><br />
+                    <em>&nbsp;&nbsp;   las alas del sue&ntilde;o</em><br />
+                    <em>&nbsp;&nbsp;   por mis ojos de agua.</em></p>
+            <p><em>&nbsp;</em></p>
+            <p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Estilo9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autor:</span>&nbsp; Rub&eacute;n Vedovaldi</em></p>
+            <p>&nbsp;</p>
+            <p class="Estilo9"><em>&nbsp; * Grabado en el&nbsp;Disco   Compacto:&nbsp; CUANDO LA PALABRA CANTA,&nbsp; con el m&uacute;sico Carlos Medrano,&nbsp; ARGENTINA,&nbsp;   oto&ntilde;o de 1999</em></p>
+          </div>
+        </div>
+      </div>
+    </div></th>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p align="center"><em><a href="index.html"><strong>Volver</strong></a></em></p>
+<p align="center">&nbsp;</p>
+<!-- Inserted by miarroba -->
+</script></noframes></noembed></noscript>
+<script type="text/javascript" src="https://hosting.miarroba.info/?__muid=16688eeb271a6b5b4f806a5ad45c950ac62451f7&amp;h=1395044&amp;t=1614463172&amp;k=40db6c663b5261688ee46bd52b5906ca"></script><noscript><img alt="beacon" border="0" width="1" height="1" src="https://hosting.miarroba.info/?__muid=16688eeb271a6b5b4f806a5ad45c950ac62451f7&amp;h=1395044&amp;t=1614463172&amp;k=40db6c663b5261688ee46bd52b5906ca&amp;img=1" /></noscript>
+<script type="text/javascript">var s=document.createElement("script");var t="//des.smartclip.net/ads?type=dyn&plc=75133&elementId=16688eeb271a6b5b4f806a5ad45c950ac62451f7&sz=400x320&rnd="+Math.round(Math.random()*1e8);s.type="text/javascript";s.src=t;document.body.appendChild(s);</script><div id="16688eeb271a6b5b4f806a5ad45c950ac62451f7"></div>
+<div id="ads_HEZRL65RXYI2"></div>
+<script defer="" language="javascript" type="text/javascript">
+(function(){
+var newscript= document.createElement('script');
+newscript.type = 'text/javascript';
+newscript.async = true;
+lz_elem = (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]);
+lz_elem.appendChild(newscript);
+newscript.onload = function(ev){
+var lz_url="https://play.sunmediaads.com/red/zone.php?code=HEZRL65RXYI2&a=&pubid=&lgid="+((new Date()).getTime() % 2147483648) + Math.random();
+var lz_target = "ads_HEZRL65RXYI2";
+var lz_sync_mode=false;
+lz_loadads(lz_url ,lz_target,lz_sync_mode);
+}
+newscript.src= "https://img.sunmediaads.com/ads/lz_loader.js?ver=1.4";
+})();
+</script>
+<!-- Inserted by miarroba -->
+</body>
+</html>

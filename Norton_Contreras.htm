@@ -1,0 +1,537 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<!-- Inserted by miarroba -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org' . concat('/choice/', 'd5x2uDVHd7ALE', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+  firstScript.parentNode.insertBefore(element, firstScript);
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+      var payload = json.__tcfapiCall;
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+  makeStub();
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+<!-- Inserted by miarroba -->
+<title>Norton Contreras Robledo</title>
+<meta http-equiv="" content="text/html; charset=iso-8859-1">
+<meta http-equiv="" content="text/html; charset=iso-8859-1">
+<meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"></head>
+
+<body bgcolor="#6699FF" text="#000033" link="#FF6600" vlink="#9966CC" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Inserted by miarroba -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2VG59" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Inserted by miarroba -->
+<p><a href="index.html"><strong><em>Volver </em></strong></a></p>
+<p>
+  <embed src="unexpected.mid" width="12" height="19"></embed></p>
+<p align="center"><em><font color="#FF9900"><strong><u><em><strong><em><img src="estrellita%20blanca.gif" width="31" height="31"></em></strong></em></u></strong></font></em> 
+  <strong><u><em>Cantos en... </em></u></strong></p>
+<p align="center">&nbsp;</p>
+<table width="47%" border="0" align="right">
+  <tr>
+    <td><div align="center"><em><strong>Autor: Norton Contreras Robledo</strong></em></div></td>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+<div align="center">
+  <table width="52%" border="0" align="center">
+    <tr> 
+      <td height="565"><p><em><img src="en_s%ED_mismo_graciela_m_casartelli.jpg" width="532" height="380"></em></p>
+        <p align="center"><em><font size="2">&quot;En s&iacute; mismo&quot; (del 
+          Proyecto &quot;El ser y la distancia&quot;), pintura en acr&iacute;lico 
+          de Graciela Mar&iacute;a Casartelli<strong> </strong></font></em></p></td>
+    </tr>
+  </table>
+</div>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><font color="#FF9900">&iexcl;Nuevo!<strong><u><em><strong><em><img src="estrellita%20blanca.gif" width="31" height="31"></em></strong></em></u></strong></font></em><strong><em>&nbsp;<u> Variaci&oacute;n De Balada Para Una Poeta</u></em></strong><em><strong>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Me fascina ,  cautiva y atrae<br>
+  tu sonrisa sincera  , tus palabras festivas,<br>
+  tus salidas  ingeniosas<br>
+  ese tono misterioso,<br>
+  ese&nbsp; gesto insinuante .<br>
+  Mujer terrenal con actitud de diosas  celestiales,<br>
+  Palas Ateneas  inteligente y sabia<br>
+  Artemisa cuidadora  de la naturaleza<br>
+  cazadora de almas,<br>
+  Afrodita diosa del amor, la lujuria, la belleza<br>
+  Cal&iacute;ope Musa de la elocuencia y de la poes&iacute;a &eacute;pica. <br>
+  Te escrib&iacute;&nbsp; poemas que sal&iacute;an a caudales del alma, <br>
+  poemas sencillos, simples quiz&aacute;s,<br>
+  poemas di&aacute;fanos y cristalinos como el agua<br>
+  que baja de las alturas cordilleranas.<br>
+  La sem&aacute;ntica de las palabras perd&iacute;a sentido.<br>
+  Los versos crec&iacute;an sin podar como las flores <br>
+  silvestres de los valles.</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><a href="index.html"><strong><em>Volver </em></strong></a></p>
+<p align="center"><em><strong><u>Algunos aportes anteriores</u></strong></em></p>
+<p align="center"></p>
+<p align="center">&nbsp;</p>
+<p align="center"><strong><em><font color="#FF9900"><strong><u><em><strong><em><img src="estrellita%20blanca.gif" width="31" height="31"></em></strong></em></u></strong></font></em>&nbsp;<em><u>Bajo la noche dormida</u></em></strong></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Tus ojos verdes de gatas<br>
+  resplandecen en la noche, <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;rayos del claro de luna<br>
+  suspendidos en el cielo<br>
+  alumbran tu silueta,<br>
+  en ella veo y acaricio<br>
+  dos palomas en su nido<br>
+  queriendo emprender el vuelo.<br>
+  Bajo la luna lunera<br>
+  tus hombros blancos y suaves,<br>
+  son claros y transparentes<br>
+  como tu nombre de pila.<br>
+  Bajo el vestido amarillo<br>
+  mis manos corren veloces<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;por sendas que me &nbsp;llevan<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;a la regi&oacute;n m&aacute;s transparente del Ed&eacute;n,<br>
+ah&iacute; donde todo comienza<br>
+  y nada termina.<br>
+  Bajo la noche dormida<br>
+  eres un  poema&nbsp; <br>
+  queriendo  despertar</strong></em></p>
+<p align="center"><em>Del poemario en preparaci&oacute;n:  Poemas peregrinos. </em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><strong><em><font color="#FF9900"><strong><u><em><strong><em><img src="estrellita%20blanca.gif" width="31" height="31"></em></strong></em></u></strong></font></em>&nbsp;<em><u>El  &aacute;rbol de la vida</u></em> </strong></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em>Siempre hay un origen para todo. <br>
+  La oscuridad, la nada, <br>
+  fue un comienzo. <br>
+  La transformaci&oacute;n, <br>
+  la prolongaci&oacute;n de todo <br>
+  ya es un milagro. <br>
+  Siempre hay un principio <br>
+  una primera vez.<br>
+  Barro,<br>
+  hombre,<br>
+  mujer,<br>
+&aacute;rbol,<br>
+  fruta, <br>
+  tentaci&oacute;n perpetuada<br>
+  a trav&eacute;s del tiempo. <br>
+  La ira, una sentencia, <br>
+  un castigo inclemente.<br>
+  Expulsi&oacute;n,<br>
+&eacute;xodo a tierras sin almas <br>
+  y sin nombres. <br>
+  Exilio obligado, repetido <br>
+  en todos los espacios y tiempos. <br>
+  Andamos, andamos y andamos.<br>
+  Sudor, r&iacute;os germinando, <br>
+  oc&eacute;anos de l&aacute;grimas diseminadas <br>
+  por los caminos de la vida.<br>
+  Andar y andar,<br>
+  andar tras los pasos perdidos. <br>
+  Almas errantes<br>
+  prolongadas en el &eacute;xodo infinito.<br>
+  Andar y andar en busca <br>
+  del para&iacute;so perdido,<br>
+  escondido detr&aacute;s <br>
+  del polvo de los caminos.<br>
+  Volver a los comienzos de la nada.<br>
+  Volver a los or&iacute;genes <br>
+  donde nada ha terminado.<br>
+  Remece el &aacute;rbol de la vida,<br>
+  ese que qued&oacute; abandonado<br>
+  en un rinc&oacute;n<br>
+  del Ed&eacute;n milenario.<br>
+</em></p>
+<p align="center"><em>Del  proyecto de poemario: El &aacute;rbol de la vida</em><br>
+</p>
+<p align="center">&nbsp;</p>
+<p align="center"><strong><em>&nbsp;</em></strong><strong><em>&nbsp;<u> Tras las cortinas del tiempo. La  certidumbre: tu ausencia</u></em></strong><em><br>
+</em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>N</strong>o s&eacute;  cuantos d&iacute;as y noches <br>
+  tardar&eacute; en  olvidarte, <br>
+  en el  intento ir&eacute; borrando <br>
+  la imagen  de tu rostro, <br>
+  los  recuerdos y momentos <br>
+  que  dejaste abandonados <br>
+  cuando emprendiste  el vuelo. <br>
+  Paloma  ingrata <br>
+  de alta  alcurnia y bajo vuelo <br>
+  vas de  amor en amor <br>
+  llenando  los vac&iacute;os de tu vida. <br>
+  Vas  de&nbsp; ilusi&oacute;n en ilusi&oacute;n <br>
+  &nbsp;para  reencontrarte con los sue&ntilde;os <br>
+  que llevas  en tu alma. <br>
+  Ay, mujer  como t&uacute; mientes!! <br>
+  vas por la  vida en barlovento <br>
+  navegando  por&nbsp; mares de amor <br>
+  dejando  corazones n&aacute;ufragos, <br>
+  ilusiones  ahogadas en tus mentiras <br>
+  versos  trasnochados <br>
+  en los  limites del amanecer. <br>
+  Paloma  &nbsp;ingrata <br>
+  paloma  ausente <br>
+  Aqu&iacute; me  quedo <br>
+  habl&aacute;ndole  al silencio <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>C</strong>uando las palabras  s&oacute;lo alcanzan <br>
+  para  evocar&nbsp; el dolor y la pena <br>
+  ante el  abandono imprevisto, <br>
+  sin una  misiva,pero anunciado <br>
+  en las  ausencias, <br>
+  adivinado  en los silencios, <br>
+  percibido  en las miradas esquivas <br>
+  y las  caricias rechazadas, <br>
+  hasta el  d&iacute;a en que fue sacando <br>
+  sus pertenencias  del armario, <br>
+  su foto de  la mesita de noche,,. <br>
+  &nbsp;y&nbsp;  luego ir dejando <br>
+  los  recuerdos en las paredes, <br>
+  la  certidumbre de su ausencia <br>
+  reflej&aacute;ndose  en los espejos, <br>
+  y salir de  la casa <br>
+  sin volver  la vista atr&aacute;s. <br>
+  <strong>C</strong>uando las  palabras habitando <br>
+  tras  &nbsp;las cortinas del tiempo <br>
+  s&oacute;lo  alcanzan para testimoniar <br>
+  la  certidumbre ; tu&nbsp; ausencia . <br>
+  Entonces  es mejor mirar hacia atr&aacute;s <br>
+  hacia un  pasado lejano. <br>
+  Todo era  m&aacute;s f&aacute;cil en esos d&iacute;as <br>
+  cuando mis  pasos <br>
+  iban por  caminos polvorientos, <br>
+  por  cerros, valles y montes, <br>
+  paciendo  cabras y ovejas. <br>
+  (Es bueno  acordarse de esos tiempos) <br>
+  Todo era  m&aacute;s f&aacute;cil <br>
+  cuando  sentado bajo la sombra de un &aacute;rbol <br>
+  trataba de  descifrar ese mont&oacute;n de garabatos <br>
+  en los  libros de mis hermanas., <br>
+  Todo era  m&aacute;s f&aacute;cil en esos d&iacute;as <br>
+  cuando&nbsp;  sentado bajo las sombras de un &aacute;rbol, <br>
+  mientras  las ovejas y las cabras pac&iacute;an, <br>
+  yo con un  libro en la mano, sent&iacute;a que las palabras <br>
+  tra&iacute;an a  mi nuevas experiencias y sensibilidades. <br>
+  La  naturaleza, sus colores, olores y sabores, <br>
+  las gentes  sus vidas, sus trabajos, aparecieron <br>
+  ante m&iacute;  con un nuevo significado, mis ojos <br>
+  lo ve&iacute;an  de forma diferente, las sent&iacute;a de otra manera. <br>
+  Estos  sentimientos dejaban en mi alma&nbsp; vivencias <br>
+  &nbsp;y  emociones que so&ntilde;aba con plasmar en el papel, <br>
+  para que  otros, al igual que yo hab&iacute;a le&iacute;do sus <br>
+  experiencias,&nbsp;  pudieran leer las m&iacute;as. <br>
+  Entrecerraba  los ojos e imaginaba <br>
+  estar  escribiendo en mi cuaderno lo que yo ve&iacute;a <br>
+  lo que yo  miraba y lo que yo sent&iacute;a <br>
+  (Es bueno  acordarse de esos tiempos,) <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<strong>C</strong>uando  las palabras s&oacute;lo alcanzan <br>
+  para evocar&nbsp;  el dolor y la pena <br>
+  entonces  es mejor mirar hacia atr&aacute;s <br>
+  hacia un  pasado lejano.. hacia&nbsp; los tiempos <br>
+  del pan  candeal reci&eacute;n salido del horno, <br>
+  de la  mantequilla que hac&iacute;a mi madre, <br>
+  y de los  trigales esperando la siega, <br>
+  ser  llevados a la era para ser trillados. <br>
+  Despu&eacute;s de  la trilla el trigo era el pan <br>
+  de d&iacute;a  venideros esperando en la era, <br>
+  y en los  mesones patio de la casa, <br>
+  mi madre  serv&iacute;a la comida, el pan y el vino. <br>
+  Mi padre  era la ausencia <br>
+  percibida  desde d&iacute;as lejanos <br>
+  (Es bueno  acordarse de esos tiempos ). <br>
+  Despu&eacute;s el  canto y la guitarra <br>
+  amenizaban  el resto de la tarde, <br>
+  la poes&iacute;a  llegaba en la voz de un poeta <br>
+  popular,  en la &nbsp;de un payador improvisando <br>
+  un  recitado en rima, o en la de un trovador <br>
+  cantando  acompa&ntilde;ados de una guitarra. <br>
+  Al final  todos bailando la cueca. <br>
+  (Es bueno  acordarse de esos tiempos ). <br>
+  Fue en esa  &eacute;poca y en esos Lares <br>
+  mis  primeros contactos con la poes&iacute;a, <br>
+  fue en  esos d&iacute;as en que mirando bailar la cueca <br>
+  adivin&eacute; en  el asedio amoroso <br>
+  de un  hombre a una mujer, <br>
+  el arte de  seducir. <br>
+  &iexcl;Ay ,  mujer como te extra&ntilde;o! <br>
+  Aqu&iacute; me  quedo <br>
+  en la  certidumbre de tu ausencia, <br>
+  habl&aacute;ndole  al silencio. </em></p>
+<p align="center"><em>Del  proyecto de poemario: El &aacute;rbol de la vida </em></p>
+<p align="center">&nbsp;</p>
+<p align="center"></p>
+<p align="center"><strong><em>&nbsp;</em></strong></p>
+<p align="center"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>&nbsp;&nbsp;&nbsp;&nbsp;<u>Balada para una poeta</u></em></strong></p>
+<p align="center"><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</em></p>
+<p align="center"><em>Ah&iacute; est&aacute;s sentada en medio del sal&oacute;n,<br>
+  El cuerpo  inclinado hacia atr&aacute;s<br>
+  levemente  suspendida del cigarro.<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tus pensamientos&nbsp; vuelan cabizbajos <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; entre el humo del  tabaco.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Te hablo desde la  distancia,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mi voz no te alcanza,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; la tuya&nbsp; me trae la melod&iacute;a, el ritmo,<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;la candencia&nbsp; de tus poemas.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; La vanguardia y la  postvanguardia,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;tu revelaci&oacute;n de que no lo son.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ahora s&eacute; que&nbsp; juegas con las palabras,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;que&nbsp; dibujas castillos en el aire,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vuelas a los mundos  interiores<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; del universo de tu  alma,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eres pose&iacute;da por  todos los elementos,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; en todos los lugares,  en todos los momentos<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; en todas las  pasiones.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Abrazada a un poema  te transportas <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a una nueva galaxia,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;regresas a la tierra .<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;a tu vida terrenal y cotidiana.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Desde fuera de los  limites<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; de tus poemas,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lejos de la v&Iacute;a de  escape. Me dices; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot; tengo que dejarte  &quot;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ah&iacute; te quedas en  medio del sal&oacute;n,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; suspendida del  cigarro, debatatida,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;la cabeza levemente inclinada<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;hacia abajo,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; entre el humo del  tabaco y la soledad.</em></p>
+<p align="center"><em><strong>Del proyecto de poemario Poemas Peregrinos</strong>. </em></p>
+<p align="center"><em><br>
+</em></p>
+<p align="center"><em> <strong><u>El &uacute;ltimo adi&oacute;s</u></strong><br>
+  </em></p>
+<p align="center"><em>Duele tu silencio...<br>
+  pu&ntilde;aladas<br>
+  tormentos.<br>
+  Voy por las calles masticando mi rabia,<br>
+  los laberintos que dejaste<br>
+  se cayeron de los espacios<br>
+  de tu ausencia.<br>
+  Se rompieron en mil pedazos.<br>
+  Voy tratando de recoger los restos<br>
+  levantar los cristales<br>
+  de ese universo bajo las ruinas del fracaso.<br>
+  Aqu&iacute; estoy<br>
+  tras los muros virtuales<br>
+  la lejan&iacute;a del silencio,<br>
+  al otro lado t&uacute;<br>
+  distante<br>
+  fr&iacute;a<br>
+  tejiendo tus desprecios en los segundos,<br>
+  preparando la mortaja de mis d&iacute;as,<br>
+  duele tu silencio.<br>
+  En el &uacute;ltimo adi&oacute;s<br>
+  me voy en el duelo de la melancol&iacute;a.<br>
+  </em><br>
+</p>
+<p align="center"><em> </em> </p>
+<p align="center"><strong>. . . </strong></p>
+<p align="center"><em><strong>&nbsp;Columnista de Cr&oacute;nica</strong> <strong>Digital. http://www.cronicadigital.cl</strong><br>
+</em></p>
+<p align="center"><em><a href="http://www.victorjara.se/"><font size="2">www.victorjara.se</font></a> <font size="2"><br>
+        <a href="http://www.generacion80.cl/">http://www.generacion80.cl</a><br>
+        <a href="http://www.elmurochile.blogspot.com/" target="_blank">www.elmurochile.blogspot.com</a> <br>
+  Colaborador&nbsp; de : <a href="http://www.culturamirista.cl/" target="_blank">http://www.culturamirista.cl</a><br>
+  <a href="http://www/">http://www</a>. Redacci&oacute;n Popular<br>
+  <a href="http://www/">http://www</a>. Isla negra<br>
+  <a href="http://www/">http://www</a> rebelion</font></em></p>
+<table width="91%" border="0" align="center">
+  <tr>
+    <td width="79%" height="21"><div align="center"><em><strong><font size="2">Norton 
+        Contreras Robledo</font></strong><font size="2"> naci&oacute; en Chile, 
+        en el pueblo campesino de Canela (Norte chico) Sus primeros oficios fueron 
+        de labrador y pastor. <br>
+        Es Comunicador Social. <br>
+        Inici&oacute; sus estudios en la Facultad de Educaci&oacute;n y Letras 
+        de La Universidad de Chile. que fueron dram&aacute;ticamente interrumpidos 
+        por el golpe de Estado de 1973. Vivi&oacute; en Argentina entre los a&ntilde;os 
+        1975-1978. Ese a&ntilde;o fue detenido y expulsado del pa&iacute;s, por 
+        el gobierno militar del general Videla.<br>
+        Realiz&oacute; estudios de Psicolog&iacute;a Social, Historia y Filosof&iacute;a, 
+        en la Academia de Ciencias Pol&iacute;ticas, en Sof&iacute;a, Bulgaria 
+        (1981-1982). <br>
+        Cultiva el cuento y la poes&iacute;a. <br>
+        Escribe ensayos, columnas y art&iacute;culos culturales y pol&iacute;ticos. 
+        Los que han sido publicados en la prensa escrita, Liberaci&oacute;n, (Suecia), 
+        Tribuna Popular, (Venezuela), y p&aacute;ginas y diarios digitales. <br>
+        Reside en Suecia.<br>
+        En el per&iacute;odo 1996-2007, trabaj&oacute; en los archivos de la Ciudad 
+        de Malm&ouml;, perteneciente al organismo Kultur Malm&ouml;, que incluye 
+        la gesti&oacute;n de museos, bibliotecas, archivos y galer&iacute;a de 
+        arte.<br>
+        Actualmente ha terminando el proyecto poemario &quot;Cantos en tiempos 
+        de amor y de guerra&quot;. El que ha sido publicado en Septiembre - 2008 
+        por: &#8220;Otra Dimensi&oacute;n Editores&quot;*<br>
+        Integra la Red Mundial de Escritores en espa&ntilde;ol (R.E.M.E.S); la 
+        entidad &#8220;Poetas del mundo&#8221;; la Asociaci&oacute;n Internacional 
+        de Comunicadores y Periodistas chilenos en el exterior: AICPCH. y la Organizaci&oacute;n 
+        Cultural V&iacute;ctor Jara. <br>
+        Colabora en &#8220;Panorama Cultural&#8221; en Suecia; con Rodelu- Suecia; 
+        Redacci&oacute;n Popular y Rebeli&oacute;n, revistapuntosuspensivos- Chile, 
+        Cultura Libre.cl, Pata de liebre.cl , Cr&iacute;tica .cl, Fort&iacute;n 
+        Mapocho, Aporrea.org, Puebloalzao y Encontrarte de Venezuela, Indymedia.org 
+        . y otros medios de comunicaci&oacute;n alternativa. </font></em> </div>
+      <p align="center"><em><font size="2">*-(Belgeuse Grupo Editorial).-C/ Alberto 
+        Aguilera, 35 &#8211; 2&ordm; Centro. 28015 Madrid. TEL: +34 91 548 93 
+        53;<a href="info@belgeuse.org;%20www.belgeuse.org"> info@belgeuse.org; 
+        www.belgeuse.org</a></font></em></p>
+      <p></p></td>
+    <td width="21%"><div align="right"><img src="NORTON[1].JPG" width="215" height="296"></div></td>
+  </tr>
+</table>
+<p align="center"><a href="index.html"><strong><em>Volver</em></strong></a> </p>
+<!-- Inserted by miarroba -->
+</script></noframes></noembed></noscript>
+<script type="text/javascript" src="https://hosting.miarroba.info/?__muid=eade461003e80337e50b3bd4957bb289d571b81b&amp;h=1395044&amp;t=1614477128&amp;k=bbc53d7988f8175d83e0949e1785a995"></script><noscript><img alt="beacon" border="0" width="1" height="1" src="https://hosting.miarroba.info/?__muid=eade461003e80337e50b3bd4957bb289d571b81b&amp;h=1395044&amp;t=1614477128&amp;k=bbc53d7988f8175d83e0949e1785a995&amp;img=1" /></noscript>
+<script type="text/javascript">var s=document.createElement("script");var t="//des.smartclip.net/ads?type=dyn&plc=75133&elementId=eade461003e80337e50b3bd4957bb289d571b81b&sz=400x320&rnd="+Math.round(Math.random()*1e8);s.type="text/javascript";s.src=t;document.body.appendChild(s);</script><div id="eade461003e80337e50b3bd4957bb289d571b81b"></div>
+<div id="ads_HEZRL65RXYI2"></div>
+<script defer="" language="javascript" type="text/javascript">
+(function(){
+var newscript= document.createElement('script');
+newscript.type = 'text/javascript';
+newscript.async = true;
+lz_elem = (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]);
+lz_elem.appendChild(newscript);
+newscript.onload = function(ev){
+var lz_url="https://play.sunmediaads.com/red/zone.php?code=HEZRL65RXYI2&a=&pubid=&lgid="+((new Date()).getTime() % 2147483648) + Math.random();
+var lz_target = "ads_HEZRL65RXYI2";
+var lz_sync_mode=false;
+lz_loadads(lz_url ,lz_target,lz_sync_mode);
+}
+newscript.src= "https://img.sunmediaads.com/ads/lz_loader.js?ver=1.4";
+})();
+</script>
+<!-- Inserted by miarroba -->
+</body>
+</html>

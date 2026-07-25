@@ -1,0 +1,602 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<!-- Inserted by miarroba -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org' . concat('/choice/', 'd5x2uDVHd7ALE', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+  firstScript.parentNode.insertBefore(element, firstScript);
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+      var payload = json.__tcfapiCall;
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+  makeStub();
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+<!-- Inserted by miarroba -->
+<title>victoria_aristiz&aacute;bal</title>
+<meta http-equiv="" content="text/html; charset=iso-8859-1">
+<meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"></head>
+
+<body bgcolor="#CC99FF" text="#660066" link="#FF6600" vlink="#9966FF" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Inserted by miarroba -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2VG59" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Inserted by miarroba -->
+<p align="left"><em><strong><a href="index.html">Volver </a></strong></em></p>
+<p align="center"> <em><strong> <br>
+  <u>Hacia el Infinito...</u></strong></em></p>
+ 
+<div align="center"><em><strong>
+  <embed src="En_alas_del_cantp_Mendelsohn.mid" width="18" height="14" align="left"></embed>
+</strong></em>
+  <table width="13%" border="1" align="center">
+    <tr> 
+      <td><em><strong><img src="Infinito.jpg" width="168" height="216"></strong></em></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+</div>
+<table width="927" border="1" align="center">
+  <tr>
+    <td width="883"><p align="right"><em><strong> Autor: <u>VICTORIA LUCIA ARISTIZABAL</u> (Bogot&aacute;- 
+        Colombia)</strong></em></p>
+      <p align="right"><a href="http://www.corazondelamente.com/"><em><font size="3">http://www.corazondelamente.com/</font></em></a><font size="3"><em><br>
+            <a href="http://www.elcaminodemipluma.com/">http://www.elcaminodemipluma.com/</a><br>
+    <a href="http://micompromisoconlatierra.com/">http://micompromisoconlatierra.com/</a></em></font></p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p align="center"><em><strong><img src="nav013-vicaristizabal.jpg" width="543" height="519"><br>
+  </strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><a href="index.html">Volver </a></strong></em></p>
+<p align="center"><strong><u><em>Algunos anteriores</em></u></strong></p>
+<p align="center">&nbsp;</p>
+<p align="center"><u><em><strong><u><em><em><font color="#FFCC00"><strong><u><strong><font size="3"><strong><img src="estrellita%20blanca.gif" alt="" width="34" height="24"></strong></font></strong></u></strong></font></em></em></u>ADMIRACI&Oacute;N AMIGA</strong></em></u></p>
+<p align="center"> <em>( Dedicado a Graciela Mar&iacute;a Casartelli en la Navidad de 2012)</em></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><strong><em>Te admiro como escritora y como   humana</em></strong></p>
+<p align="center"><em><strong>Con la potencia que tengo en mi   memoria</strong></em></p>
+<p align="center"><em><strong>Y con la sensibilidad que est&aacute; en el   alma</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Te admiro como qui&eacute;n valora lo   so&ntilde;ado</strong></em></p>
+<p align="center"><em><strong>Compartiendo en esta&nbsp; vida la   esperanza</strong></em></p>
+<p align="center"><em><strong>Sin objetar jam&aacute;s lo que has creado</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Te admiro s&iacute;, sin pretensi&oacute;n, ni   galardones</strong></em></p>
+<p align="center"><em><strong>Como se quiere la humildad sin   vanidades</strong></em></p>
+<p align="center"><em><strong>Para qui&eacute;n fabrica con palabras lo   rimado</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Te admiro escritora, con tu   prestancia</strong></em></p>
+<p align="center"><em><strong>Tallando en el universo inmortal tu   nombre</strong></em></p>
+<p align="center"><em><strong>Donde no existen espacios ni   distancias</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Te admiro desde mi capacidad que   avala</strong></em></p>
+<p align="center"><em><strong>Todo este acontecer que en mi   pupila</strong></em></p>
+<p align="center"><em><strong>Se enriquece con la lectura que   acompasa</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Te admiro desde la raz&oacute;n&nbsp; que te   discierne</strong></em></p>
+<p align="center"><em><strong>El cristalino manantial con que   alimentas</strong></em></p>
+<p align="center"><em><strong>Cada provocaci&oacute;n que exhala de tu   alma&nbsp;</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Te admiro con la inocencia de una   dama</strong></em></p>
+<p align="center"><em><strong>Que elevando hasta el cielo su   plegaria</strong></em></p>
+<p align="center"><em><strong>Se encuentra que est&aacute; orando cuando   vela</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Te admiro como la parte y como el   todo</strong></em></p>
+<p align="center"><em><strong>Sin medir todo el amor y el   sacrificio</strong></em></p>
+<p align="center"><em><strong>Que implica realizar una obra de este   modo</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Te admiro con el amor de qui&eacute;n   profesa</strong></em></p>
+<p align="center"><em><strong>El profesionalismo de este honroso   arte</strong></em></p>
+<p align="center"><em><strong>Que entrega cada realizaci&oacute;n, la que   confiesa</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Te admiro con tu elevaci&oacute;n de gran   conciencia</strong></em></p>
+<p align="center"><em><strong>Que en humildad expresa su dolor y   canto</strong></em></p>
+<p align="center"><em><strong>Con la dignidad gentil de tu   nobleza</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Te admiro amiga so&ntilde;adora porque   mereces</strong></em></p>
+<p align="center"><em><strong>Toda mi&nbsp;valoraci&oacute;n,&nbsp;respeto&nbsp;como   cari&ntilde;o</strong></em></p>
+<p align="center"><em><strong>Dispuesta a agradecerte una y mil   veces</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Te admiro porque s&iacute;, amiga, y porque   siento</strong></em></p>
+<p align="center"><em><strong>Que en esta Navidad como este fin de   a&ntilde;o</strong></em></p>
+<p align="center"><em><strong>Cumplimos con la expresividad del   sentimiento</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Y as&iacute; entre admiraciones y   agradecimientos</strong></em></p>
+<p align="center"><em><strong>Te va amiga, todo lo que siento por   completo</strong></em></p>
+<p align="center"><em><strong>Celebrando contigo feliz&nbsp;en este adviento </strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Diciembre 6 de 2012</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><strong><u><em><em><font color="#FFCC00"><strong><u><strong><font size="3"><strong><img src="estrellita%20blanca.gif" alt="" width="34" height="24"></strong></font></strong></u></strong></font></em></em></u><em><u>ALGO SE MUERE EN   NOSOTROS</u></em></strong></p>
+<p align="center"><em><strong>Algo se muere en nosotros d&iacute;a a   d&iacute;a</strong></em></p>
+<p align="center"><em><strong>Como tambi&eacute;n renace con la   aurora</strong></em></p>
+<p align="center"><em><strong>Es el milagro de la vida cada   hora</strong></em></p>
+<p align="center"><em><strong>Que brinda la conciencia en   armon&iacute;a</strong></em><br>
+  <br>
+</p>
+<p align="center"><em><strong>Algo se muere en nosotros y nos   mata</strong></em></p>
+<p align="center"><em><strong>Como nos vivifica el alma   peregrina</strong></em></p>
+<p align="center"><em><strong>Es el misterio de ser cuando   sensata</strong></em></p>
+<p align="center"><em><strong>La vida nos demuestra y la   imagina</strong></em><br>
+  <em><strong>&nbsp;  
+</strong>
+</em></p>
+<p align="center"><em><strong>Algo se muere en nosotros y   arrebata</strong></em></p>
+<p align="center"><em><strong>Los instantes que son ya del   pasado</strong></em></p>
+<p align="center"><em><strong>Renovando la mente con que   empata</strong></em></p>
+<p align="center"><em><strong>La intenci&oacute;n que ejecuta lo   acentuado</strong></em></p>
+<p align="center"><em><strong>&nbsp;  
+</strong>
+</em>
+<p align="center"><em><strong>Algo se muere en nosotros y se   abraza</strong></em></p>
+<p align="center"><em><strong>A la existencia misma con su   acento</strong></em></p>
+<p align="center"><em><strong>Es un soplo divino con que   enlaza</strong></em></p>
+<p align="center"><em><strong>La gloria de existir con su   alimento</strong></em></p>
+<p align="center"><em><strong>&nbsp;  
+</strong>
+</em>
+<p align="center"><em><strong>Algo se muere en nosotros y   despierta</strong></em></p>
+<p align="center"><em><strong>Las percepciones que en su cause   fluye</strong></em></p>
+<p align="center"><em><strong>Sin las esclusas que frenan en la   puerta</strong></em></p>
+<p align="center"><em><strong>Que abre la mente de qui&eacute;n no le   huye</strong></em></p>
+<p align="center"><em><strong>&nbsp;  
+</strong>
+</em>
+<p align="center"><em><strong>Algo se muere en nosotros y   apadrina</strong></em></p>
+<p align="center"><em><strong>El llanto que limpia lo que ha   herido</strong></em></p>
+<p align="center"><em><strong>Son sabios momentos que nos   ilumina</strong></em></p>
+<p align="center"><em><strong>El alma que atenta cambia lo   perdido</strong></em></p>
+<p align="center"><em><strong>&nbsp;  
+</strong>
+</em>
+<p align="center"><em><strong>Algo se muere en nosotros y   abrillanta</strong></em></p>
+<p align="center"><em><strong>Las joyas talladas en virtud y en   magia</strong></em></p>
+<p align="center"><em><strong>Convirtiendo en claridad lo que   encanta</strong></em></p>
+<p align="center"><em><strong>Al esp&iacute;ritu que su eternidad   presagia</strong></em></p>
+<p align="center"><em><strong>&nbsp;  
+</strong>
+</em>
+<p align="center"><em><strong>Algo se muere en nosotros en la   calma</strong></em></p>
+<p align="center"><em><strong>Evocando al ni&ntilde;o interior que le   fascina</strong></em></p>
+<p align="center"><em><strong>Revivir el pasado donde   empalma</strong></em></p>
+<p align="center"><em><strong>Las directrices que en bondad   atina</strong></em></p>
+<p align="center"><em><strong>&nbsp;  
+</strong>
+</em>
+<p align="center"><em><strong>Algo se muere en nosotros y   convence</strong></em></p>
+<p align="center"><em><strong>En la filosof&iacute;a simple que   resuelve</strong></em></p>
+<p align="center"><em><strong>La sencilla ecuaci&oacute;n que no le   vence</strong></em></p>
+<p align="center"><em><strong>Cuando el coraje la fe se la   devuelve</strong></em><br>
+  <br>
+</p>
+<p align="center"><em><strong>Algo se muere en nosotros y   deshoja</strong></em></p>
+<p align="center"><em><strong>El envejecimiento normal que   transmuta</strong></em></p>
+<p align="center"><em><strong>En aprendizaje perpetuo y sin   congoja</strong></em></p>
+<p align="center"><em><strong>Con la fortaleza de un alma   resoluta</strong></em></p>
+<p align="center"><em><strong>&nbsp;  
+</strong>
+</em>
+<p align="center"><em><strong>Algo se muere en nosotros y da   giro</strong></em></p>
+<p align="center"><em><strong>El que evoluciona el ser con   desaf&iacute;os</strong></em></p>
+<p align="center"><em><strong>Con la fuerza del amor que da   respiro</strong></em></p>
+<p align="center"><em><strong>Al paso del valor sin m&aacute;s   desv&iacute;os</strong></em></p>
+<p align="center"><em><strong>&nbsp;  
+</strong>
+</em>
+<p align="center"><em><strong>Algo se muere en nosotros y   prefiere</strong></em></p>
+<p align="center"><em><strong>Encontrar en la crisis   formidable</strong></em></p>
+<p align="center"><em><strong>La opci&oacute;n de un cambio que no   hiere</strong></em></p>
+<p align="center"><em><strong>Cuando el esp&iacute;ritu avanza   deleitable</strong></em></p>
+<p align="center"><em><strong>&nbsp;  
+</strong>
+</em>
+<p align="center"><em><strong>Algo se muere en nosotros es la   nota</strong></em></p>
+<p align="center"><em><strong>Que en arpegios &aacute;ureos nos   afina</strong></em></p>
+<p align="center"><em><strong>Y en teclado arm&oacute;nico de la risa   dota</strong></em></p>
+<p align="center"><em><strong>Al alma con su humor que le   fascina</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Algo se muere en nosotros en el   traje</strong></em></p>
+<p align="center"><em><strong>De un cuerpo que envejece, no el   alma</strong></em></p>
+<p align="center"><em><strong>Con suspiros que da en este   viaje</strong></em></p>
+<p align="center"><em><strong>Cuando feliz termina en justa   calma</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Bogot&aacute; Colombia</strong></em></p>
+<p align="center"><em><strong>Agosto 20 de 2012</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+
+<p align="center"><strong><u><em><em><font color="#FFCC00"><strong><u><strong><font size="3"><strong><img src="estrellita%20blanca.gif" width="34" height="24"></strong></font></strong></u></strong></font></em></em></u></strong><EM><STRONG><u>TU   BESO</u></STRONG></EM></p>
+<p align="center"><EM><STRONG>&nbsp;</STRONG></EM></p>
+<p align="center"><EM><STRONG>He recibido un beso al   parecer</STRONG></EM></p>
+<p align="center"><EM><STRONG>Dado as&iacute; de manera   intrascendente</STRONG></EM></p>
+<p align="center"><EM><STRONG>M&aacute;s fue un beso atrevido, un   beso ardiente</STRONG></EM></p>
+<p align="center"><EM><STRONG>Que incit&oacute; mis instintos de   mujer</STRONG></EM></p>
+<p align="center"><EM><STRONG>&nbsp;</STRONG></EM></p>
+<p align="center"><EM><STRONG>He pregonado el beso por   doquier</STRONG></EM></p>
+<p align="center"><EM><STRONG>Y he contado tu beso a tanta   gente&hellip;</STRONG></EM></p>
+<p align="center"><EM><STRONG>Y qu&eacute; bueno ser&iacute;a si de   repente</STRONG></EM></p>
+<p align="center"><EM><STRONG>Volvieras a besarme como   ayer.</STRONG></EM></p>
+<p align="center"><EM><STRONG>&nbsp;</STRONG></EM></p>
+<p align="center"><EM><STRONG>Es el beso delicia de los   dioses</STRONG></EM></p>
+<p align="center"><EM><STRONG>Una canci&oacute;n de amor, que   aunque sin voces</STRONG></EM></p>
+<p align="center"><EM><STRONG>Nos habla de ternura y de   pasi&oacute;n.</STRONG></EM></p>
+<p align="center"><EM><STRONG>&nbsp;</STRONG></EM></p>
+<p align="center"><EM><STRONG>La sublime bohemia de los   dioses</STRONG></EM></p>
+<p align="center"><EM><STRONG>Y es el punto crucial de los   adioses</STRONG></EM></p>
+<p align="center"><EM><STRONG>Cuando quiere quedarse el   coraz&oacute;n.</STRONG></EM></p>
+<p align="center">. . .</p>
+<p align="center"><EM><STRONG><u><em><em><font color="#FFCC00"><strong><u><strong><font size="3"><strong><img src="estrellita%20blanca.gif" width="34" height="24"></strong></font></strong></u></strong></font></em></em>YO SOY EL   AMOR</u></STRONG></EM></p>
+<p align="center">&nbsp;</p>
+<p align="center"><EM><STRONG>&nbsp;</STRONG></EM></p>
+<p align="center"><EM><STRONG>&iexcl;Yo soy el amor! Tengo su   soberan&iacute;a</STRONG></EM></p>
+<p align="center"><EM><STRONG>En la pasi&oacute;n inmensa de mi   sue&ntilde;o</STRONG></EM></p>
+<p align="center"><EM><STRONG>Su eco est&aacute; en mi fomentada   alegr&iacute;a</STRONG></EM></p>
+<p align="center"><EM><STRONG>Golpeando en la rivera del   empe&ntilde;o</STRONG></EM></p>
+<p align="center"><EM><STRONG>&nbsp;</STRONG></EM></p>
+<p align="center"><EM><STRONG>&iexcl;Yo soy el amor! En pura   sabidur&iacute;a</STRONG></EM></p>
+<p align="center"><EM><STRONG>&nbsp;Nace en el alma y cruza en estas   venas</STRONG></EM></p>
+<p align="center"><EM><STRONG>crep&uacute;sculo en celeste y firme   veedur&iacute;a</STRONG></EM></p>
+<p align="center"><EM><STRONG>all&iacute;&nbsp;naufragan las dudas y las   penas</STRONG></EM></p>
+<p align="center"><EM><STRONG>&nbsp;</STRONG></EM></p>
+<p align="center"><EM><STRONG>&iexcl;Yo soy el amor! Porque lo llevo   dentro</STRONG></EM></p>
+<p align="center"><EM><STRONG>&nbsp;lo tengo en mi Dios, con   fe&nbsp;ejercitado</STRONG></EM></p>
+<p align="center"><EM><STRONG>Pues&nbsp;&nbsp;es mi poder, como es mi   centro</STRONG></EM></p>
+<p align="center"><EM><STRONG>&nbsp;Ante&nbsp;un coraz&oacute;n que   ya ha avanzado</STRONG></EM></p>
+<p align="center"><EM><STRONG>&nbsp;</STRONG></EM></p>
+<p align="center"><EM><STRONG>&iexcl;Yo soy el amor! Sus olas cruzan mi   mar</STRONG></EM></p>
+<p align="center"><EM><STRONG>Con sed que no se sacia como el   viento</STRONG></EM></p>
+<p align="center"><EM><STRONG>Y en la profundidad virgen, es   suspirar</STRONG></EM></p>
+<p align="center"><EM><STRONG>Donde el afecto se ancla&nbsp;a buen   puerto</STRONG></EM></p>
+<p align="center"><EM><STRONG>&nbsp;</STRONG></EM></p>
+<p align="center"><EM><STRONG>&iexcl;Yo soy el amor! Su ternura   enriquecida</STRONG></EM></p>
+<p align="center"><EM><STRONG>Lo cifra la sensatez de mi   cabeza</STRONG></EM></p>
+<p align="center"><EM><STRONG>Y en los tifones rudos y la   enloquecida</STRONG></EM></p>
+<p align="center"><EM><STRONG>Es el pensador que muestra &nbsp;la   certeza</STRONG></EM></p>
+<p align="center"><EM><STRONG>&nbsp;</STRONG></EM></p>
+<p align="center"><EM><STRONG>&iexcl;Yo soy el amor! Eterna y firme   placidez</STRONG></EM></p>
+<p align="center"><EM><STRONG>Con un cielo azul de techo que me   funde</STRONG></EM></p>
+<p align="center"><EM><STRONG>Lo llevo en el fulgor de decidida   sensatez</STRONG></EM></p>
+<p align="center"><EM><STRONG>Y en el verso que nunca me   confunde</STRONG></EM></p>
+<p align="center"><EM><STRONG>&nbsp;</STRONG></EM></p>
+<p align="center"><EM><STRONG>&iexcl;Yo soy el amor! Que nunca se ha   muerto</STRONG></EM></p>
+<p align="center"><EM><STRONG>El de tallo, ra&iacute;z y flor tan   finamente...</STRONG></EM></p>
+<p align="center"><EM><STRONG>Que es antojo de sol, victoria en   huerto</STRONG></EM></p>
+<p align="center"><EM><STRONG>l&aacute;grima viva&nbsp;de   sensibilidad,&nbsp;visiblemente</STRONG></EM></p>
+<p align="center"><EM><STRONG>Agosto 2 de   2010</STRONG></EM></p>
+<p align="center">&nbsp;</p>
+<p align="center"><u><strong><u><em><em><font color="#FFCC00"><strong><u><strong><font size="3"><strong><img src="estrellita%20blanca.gif" width="34" height="24"></strong></font></strong></u></strong></font></em></em></u><em>SONETOS SIN   UN TEMA</em></strong></u></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>Dif&iacute;cil decisi&oacute;n,   es un gran reto</strong></em></p>
+<p align="center"><em><strong>No importa que yo   escriba poco o nada</strong></em></p>
+<p align="center"><em><strong>Mas el gusto de mi   pluma es mi coartada</strong></em></p>
+<p align="center"><em><strong>Rimando dulces   letras en concreto</strong></em></p>
+<p align="center"><em><strong>&nbsp;</strong></em></p>
+<p align="center"><em><strong>La idea es   escribir alg&uacute;n soneto</strong></em></p>
+<p align="center"><em><strong>En secuencia de   fonemas tapizada</strong></em></p>
+<p align="center"><em><strong>Intentando reunir   en fiel cascada</strong></em></p>
+<p align="center"><em><strong>Esencias al comp&aacute;s   del alfabeto</strong></em></p>
+<p align="center"><em><strong>&nbsp;</strong></em></p>
+<p align="center"><em><strong>Profundo o simple   es este embate</strong></em></p>
+<p align="center"><em><strong>Sin saber cual va   a ser al fin el tema</strong></em></p>
+<p align="center"><em><strong>M&aacute;s debo as&iacute;   vencer este combate</strong></em></p>
+<p align="center"><em><strong>&nbsp;</strong></em></p>
+<p align="center"><em><strong>Resalto que es un   arte con un lema</strong></em></p>
+<p align="center"><em><strong>Zanjando con   mesura este remate</strong></em></p>
+<p align="center"><em><strong>&iquest;Ser&aacute; amor con   fuego que no quema?</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>&nbsp;II</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>&iquest;C&oacute;mo hago&nbsp;mi soneto esta   semana?</strong></em></p>
+<p align="center"><em><strong>&hellip;aspirando a poeta me   inquir&iacute;a</strong></em></p>
+<p align="center"><em><strong>Alguien que al preguntarme no   sab&iacute;a</strong></em></p>
+<p align="center"><em><strong>De la franqueza que mi numen   mana</strong></em></p>
+<p align="center"><em><strong>&nbsp;</strong></em></p>
+<p align="center"><em><strong>Escoja un buen motivo y lo   engalana</strong></em></p>
+<p align="center"><em><strong>Algo impregnado de   melancol&iacute;a&hellip;</strong></em></p>
+<p align="center"><em><strong>Tome su pluma y al nacer el   d&iacute;a</strong></em></p>
+<p align="center"><em><strong>Escriba: ven a m&iacute; como   brisa&nbsp;temprana</strong></em></p>
+<p align="center"><em><strong>&nbsp;</strong></em></p>
+<p align="center"><em><strong>Busque la rima y m&eacute;trica   adecuada</strong></em></p>
+<p align="center"><em><strong>Y si intent&aacute;ndolo&nbsp;a&uacute;n logra   nada</strong></em></p>
+<p align="center"><em><strong>Hay una clave que al lector   despista;</strong></em></p>
+<p align="center"><em><strong>&nbsp;</strong></em></p>
+<p align="center"><em><strong>Ya que su musa se mostr&oacute;   lejana</strong></em></p>
+<p align="center"><em><strong>Escriba como bien le venga en   gana</strong></em></p>
+<p align="center"><em><strong>Y diga que es poeta   modernista</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><br>
+</p>
+<p align="center"><em><em><u><em><font color="#660066" size="3"><img src="estrellita%20blanca.gif" width="34" height="24"></font></em></u></em><u><strong>S&Eacute; QUE   TAMBI&Eacute;N TE IR&Aacute;S</strong></u></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><EM>S&eacute; que   tambi&eacute;n te ir&aacute;s un d&iacute;a cualquiera</EM></p>
+<p align="center"><EM>y te ver&eacute;   partir a cualquier hora</EM></p>
+<p align="center"><EM>como se va   la noche tras la aurora</EM></p>
+<p align="center"><EM>como se va   la lluvia en primavera</EM>.</p>
+<p align="center">&nbsp;</p>
+<p align="center"><EM>No quiero   retenerte aunque pudiera</EM></p>
+<p align="center"><EM>pues si el   alma no sabe qu&eacute; atesora</EM></p>
+<p align="center"><EM>ni sabe en   su interior a qui&eacute;n adora</EM></p>
+<p align="center"><EM>ninguna   retenci&oacute;n v&aacute;lida fuera</EM></p>
+<p align="center">&nbsp;</p>
+<p align="center"><EM>Me quedar&eacute;   plantada en la colina</EM></p>
+<p align="center"><EM>mirando   c&oacute;mo el d&iacute;a se termina</EM></p>
+<p align="center"><EM>o sintiendo   las lluvias caer</EM></p>
+<p align="center">&nbsp;</p>
+<p align="center"><EM>Me quedar&eacute;   en las sombras del ocaso</EM></p>
+<p align="center"><EM>sin el   apoyo del amado abrazo</EM></p>
+<p align="center"><EM>y en   silencio mi propio atardecer</EM><EM></EM></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><em><em><strong><u><strong><em><strong><font color="#660066" size="3"><img src="estrellita%20blanca.gif" width="34" height="24"></font></strong></em></strong></u></strong></em><strong>&iquest;<u>Para qu&eacute;</u>?</strong><br>
+</em></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em>Para qu&eacute; limpias tu casa <br>
+  y la quieres tan compuesta<br>
+&nbsp;para qu&eacute;&nbsp;la&nbsp;llenas de adornos<br>
+&nbsp;si es que hasta ti nadie llega...?&nbsp;</em></p>
+<p align="center"><em>Para qu&eacute; quieres murales <br>
+  de pintores extranjeros <br>
+  y para qu&eacute; las alfombras <br>
+  que te trajeron de Persia, <br>
+  si en esas c&aacute;lidas tardes <br>
+  de los sedientos veranos <br>
+  ninguno toca tu puerta...?</em></p>
+<p align="center"><em>Para qu&eacute; quieres sillones <br>
+  y para qu&eacute; chimeneas, <br>
+  si en esas g&eacute;lidas noches <br>
+  que nos depara el invierno <br>
+  ninguno llega con fr&iacute;o <br>
+  y junto a ti se calienta...? </em></p>
+<p align="center"><em>Para qu&eacute; guardas los vinos <br>
+  las champa&ntilde;as y las mentas, <br>
+  si t&uacute; no ofreces la copa, <br>
+  si t&uacute; no brindas con nadie <br>
+  ni en tu casa se dan fiestas...? </em></p>
+<p align="center"><em>Para qu&eacute; quieres los libros <br>
+  y para qu&eacute; bibliotecas <br>
+  si t&uacute; no sientes saudades <br>
+  por escuchar los violines <br>
+  ni el dolor de los poetas...? </em></p>
+<p align="center"><em>Qu&iacute;tale el techo a tu casa <br>
+  los dinteles y las cercas <br>
+  que el sol al brillar fecunde <br>
+  con calor en estas fechas </em></p>
+<p align="center"><em>Qu&iacute;tale el techo a tu casa <br>
+  las ventanas y las puertas <br>
+  pues el cielo te repasa<br>
+  el compartir horas ciertas </em></p>
+<p align="center"><em>Qu&iacute;tale el techo a tu casa <br>
+  y&nbsp;las llaves a&nbsp;tus puertas <br>
+  para que un nido de besos <br>
+  el amor forme con ellas! </em></p>
+<p align="center">&nbsp;</p>
+<p align="center"></p>
+<p align="center">&nbsp;</p>
+<p align="center"><u><strong><em><strong><font color="#660066" size="3"><img src="estrellita%20blanca.gif" width="34" height="24"></font></strong>TODO 
+  ME ENCANTA DE TI</em></strong></u><em> <br>
+  <br>
+  <br>
+  Todo me encanta de ti y nada ignoro<br>
+  si hay algo que m&aacute;s me enamora<br>
+  es saberte m&iacute;o cada segundo y hora<br>
+  hermoso descubrimiento que atesoro</em></p>
+<p align="center"><em>Todo me encanta de ti, es tan puro<br>
+  que gobierna todo y me consuela<br>
+  es todo mi ser cuando a ti &eacute;l vuela<br>
+  que s&oacute;lo felicidad para los dos auguro</em></p>
+<p align="center"><em>Todo me encanta de ti, me fascina<br>
+  lo que produce este encantamiento<br>
+  es la entrega de este sentimiento<br>
+  la certeza de lo que sabe y no adivina</em></p>
+<p align="center"><em>Todo me encanta de ti, como se agita<br>
+  cuando mi coraz&oacute;n acude fascinante<br>
+  ador&aacute;ndote como caballero amante<br>
+  que cumple a cabalidad con cada cita</em></p>
+<p align="center"><em>Todo me encanta de ti, tu voz dulce<br>
+  la profundidad con que la entonas<br>
+  sue&ntilde;a mi alegr&iacute;a con lo que abonas<br>
+  filtrando lo que nuestra alma deduce</em></p>
+<p align="center"><em>Todo me encanta de ti y es un hechizo<br>
+  vivir contigo en esta forma sin medida<br>
+  y hoy me siento dichosa de estar asida<br>
+  a esta relaci&oacute;n que en la virtud se hizo<br>
+  </em> </p>
+<p align="center"><em>. . .</em></p>
+<p align="center"><em><strong><u>CORAZ&Oacute;N DE MAR</u></strong><br>
+  <br>
+  <br>
+  Tu coraz&oacute;n, profunda ola en marejada<br>
+  con un centro de luz en palabra reluce<br>
+  y con una extensa visi&oacute;n mi alma luce<br>
+  en entregas de espiritual corazonada </em></p>
+<p align="center"> <em><br>
+  El m&iacute;o, una tierna y febril como alocada<br>
+  en agrupado amor mi alma a ti cerca<br>
+  cuerpo y alma dichosamente cubierta<br>
+  con toda esta entrega tan enamorada </em></p>
+<p align="center"> <em><br>
+  No hay naufragio en este barco<br>
+  donde nos subimos para amarnos tanto<br>
+  con dos corazones firmes y maduros </em></p>
+<p align="center"> <em><br>
+  A tu ser con todo hoy lo abarco<br>
+  con este sediento amor de risa y canto<br>
+  y la esperanza de sentirnos seguros<br>
+  </em> </p>
+<p align="center"><br>
+  <br>
+  <br>
+</p>
+<p align="center"></p>
+<p align="center"><font size="2"><em>Musicalizaci&oacute;n: EN ALAS DEL CANTO OP.34, 
+  N&ordm; 2,MENDELSSOHN, FELIX, mid</em></font></p>
+<p align="center"><em><strong><a href="index.html">Volver</a></strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"></p>
+<p align="center"></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><br>
+  </strong></em></p>
+<!-- Inserted by miarroba -->
+</script></noframes></noembed></noscript>
+<script type="text/javascript" src="https://hosting.miarroba.info/?__muid=01713cf131472a6b94bdb05b36e00df0e6112035&amp;h=1395044&amp;t=1614091850&amp;k=9adb4c01799e70cc9b6b5e345570b67b"></script><noscript><img alt="beacon" border="0" width="1" height="1" src="https://hosting.miarroba.info/?__muid=01713cf131472a6b94bdb05b36e00df0e6112035&amp;h=1395044&amp;t=1614091850&amp;k=9adb4c01799e70cc9b6b5e345570b67b&amp;img=1" /></noscript>
+<script type="text/javascript">var s=document.createElement("script");var t="//des.smartclip.net/ads?type=dyn&plc=75133&elementId=01713cf131472a6b94bdb05b36e00df0e6112035&sz=400x320&rnd="+Math.round(Math.random()*1e8);s.type="text/javascript";s.src=t;document.body.appendChild(s);</script><div id="01713cf131472a6b94bdb05b36e00df0e6112035"></div>
+<div id="ads_HEZRL65RXYI2"></div>
+<script defer="" language="javascript" type="text/javascript">
+(function(){
+var newscript= document.createElement('script');
+newscript.type = 'text/javascript';
+newscript.async = true;
+lz_elem = (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]);
+lz_elem.appendChild(newscript);
+newscript.onload = function(ev){
+var lz_url="https://play.sunmediaads.com/red/zone.php?code=HEZRL65RXYI2&a=&pubid=&lgid="+((new Date()).getTime() % 2147483648) + Math.random();
+var lz_target = "ads_HEZRL65RXYI2";
+var lz_sync_mode=false;
+lz_loadads(lz_url ,lz_target,lz_sync_mode);
+}
+newscript.src= "https://img.sunmediaads.com/ads/lz_loader.js?ver=1.4";
+})();
+</script>
+<!-- Inserted by miarroba -->
+</body>
+</html>

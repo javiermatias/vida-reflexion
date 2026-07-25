@@ -1,0 +1,1519 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<!-- Inserted by miarroba -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org' . concat('/choice/', 'd5x2uDVHd7ALE', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+  firstScript.parentNode.insertBefore(element, firstScript);
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+      var payload = json.__tcfapiCall;
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+  makeStub();
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+<!-- Inserted by miarroba -->
+<title>dulce-la-vida</title>
+<meta http-equiv="" content="text/html; charset=iso-8859-1">
+<meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1"><meta http-equiv="" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFCCCC" text="#FF0066" link="#FF6600" vlink="#9900FF" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Inserted by miarroba -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2VG59" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Inserted by miarroba -->
+<p align="left"><em><strong><a href="index.html"> 
+  <embed src="unchained_melody%5B1%5D.mid" width="22" height="14" align="left"></embed><br>
+  </a></strong></em></p>
+<p align="left"><em><strong><a href="index.html">Volver</a> </strong></em></p>
+<p align="center">&nbsp; </p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><em><strong><em><img src="estrellita%20blanca.gif" width="31" height="31"></em></strong></em><u>Serenidad de atardecer</u></strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<table width="1112" border="1" align="center">
+  <tr>
+    <td width="213"><img src="fernandocianciola-clave1.jpg" width="213" height="159"></td>
+    <td width="196"><img src="fernandocianciola-clave.jpg" width="213" height="159"></td>
+    <td width="12"><img src="fernandocianciola-paisaje1.jpg" width="213" height="159"></td>
+    <td width="663"><div align="center">
+      <p><em><strong> La poes&iacute;a de Ana Luisa 
+        Arellano Excelente (M&eacute;xico) </strong></em></p>
+      <p><em><strong><br>
+        </strong></em></p>
+    </div></td>
+  </tr>
+</table>
+<p align="center"><strong><em>Las im&aacute;genes de esta p&aacute;gina son dise&ntilde;os de Fernando Cianciola, C&oacute;rdoba, Argentina</em></strong></p>
+<p align="center">&nbsp;</p>
+<div align="center"></div>
+<div id="yui_3_13_0_ym1_1_1386807067729_3016">
+  <div id="yui_3_13_0_ym1_1_1386807067729_3044">
+    <div align="center"><strong id="yui_3_13_0_ym1_1_1386807067729_3043"><strong id="yui_3_13_0_ym1_1_1386807067729_3042"><br>
+        <em><em><em><font color="#FF6600">&iexcl;Nuevo!</font></em></em><strong><em><strong><em><img src="estrellita%20blanca.gif" width="31" height="31"></em></strong></em></strong><u>UN MUNDO APARTE</u></em></strong></strong></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3057">
+    <div align="center"></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3015">
+    <div align="center"><em><strong><strong><br clear="none">
+      </strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3018">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3063"><strong id="yui_3_13_0_ym1_1_1386807067729_3062">Hoy quiero alimentar de sue&ntilde;os tu alma entera</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3020">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3066"><strong id="yui_3_13_0_ym1_1_1386807067729_3065">y quiero que adornes mis labios con &nbsp;tus besos&nbsp;</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3024">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3023"><strong id="yui_3_13_0_ym1_1_1386807067729_3022">que se encari&ntilde;aron con la luz de tu amado recuerdo.</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3026">
+    <div align="center"><em><strong><strong><br clear="none">
+      </strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3030">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3029"><strong id="yui_3_13_0_ym1_1_1386807067729_3028">Hoy quiero hacer que tu felicidad renazca &nbsp;</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3069">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3072"><strong id="yui_3_13_0_ym1_1_1386807067729_3071">con mis m&aacute;s dulces y apasionados besos.</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3074">
+    <div align="center"><em><strong><strong>&nbsp;&nbsp;</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3076">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3079"><strong id="yui_3_13_0_ym1_1_1386807067729_3078">Para que el amor entibie tu coraz&oacute;n de nuevo &nbsp;</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3081">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3084"><strong id="yui_3_13_0_ym1_1_1386807067729_3083">al menos por un momento.</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3086">
+    <div align="center"><em><strong><strong><br clear="none">
+      </strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3088">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3091"><strong id="yui_3_13_0_ym1_1_1386807067729_3090">Quiero Inventarle a tu alma algo muy nuevo</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3093">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3098"><strong id="yui_3_13_0_ym1_1_1386807067729_3097">Algo que te haga sentir satisfecho.</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3095">
+    <div align="center"><em><strong><strong>&nbsp;</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div>
+    <div align="center"><em><strong><strong>Quiero buscar el amor en todo lo tierno</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div>
+    <div align="center"><em><strong><strong>en todo lo dulce y en todo lo bello</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3165">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3164"><strong id="yui_3_13_0_ym1_1_1386807067729_3163">para entregarlo a t&iacute;.</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3161">
+    <div align="center"><em><strong><strong><br clear="none">
+      </strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3159">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3158"><strong id="yui_3_13_0_ym1_1_1386807067729_3157">Quiero encontrar algo que haga surgir&nbsp;</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3152">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3155"><strong id="yui_3_13_0_ym1_1_1386807067729_3154">la felicidad desde dentro de ti.</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3150">
+    <div align="center"><em><strong><strong><br clear="none">
+      </strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3145">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3148"><strong id="yui_3_13_0_ym1_1_1386807067729_3147">Hoy me propongo hacer que conmigo&nbsp;<strong>te sientas...</strong></strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3139">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3143"><strong id="yui_3_13_0_ym1_1_1386807067729_3142"><strong id="yui_3_13_0_ym1_1_1386807067729_3141">!Especial y feliz.</strong></strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3137">
+    <div align="center"><em><strong><strong><strong><br clear="none">
+      </strong></strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3132">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3135"><strong id="yui_3_13_0_ym1_1_1386807067729_3134">Hoy tan s&oacute;lo quiero recorrerte con mis manos...</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3127">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3130"><strong id="yui_3_13_0_ym1_1_1386807067729_3129">Reinventarte con mis labios&nbsp;<strong><strong>&nbsp;</strong></strong></strong></strong>
+    </em></div>
+    <div>
+      <div align="center"><em><strong><strong><strong><strong>y construir para ti...</strong></strong></strong></strong></em></div>
+    </div>
+    <div align="center"></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3102">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3125"><strong id="yui_3_13_0_ym1_1_1386807067729_3124">Un mundo aparte.</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3104">
+    <div align="center"><em><strong><strong><br clear="none">
+      </strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3121">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3120"><strong id="yui_3_13_0_ym1_1_1386807067729_3119">Deja que te bese en la distancia&nbsp;</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3106">
+    <div align="center"><em><strong id="yui_3_13_0_ym1_1_1386807067729_3117"><strong id="yui_3_13_0_ym1_1_1386807067729_3116">mientras te escribo mis versos.</strong></strong></em></div>
+  </div>
+  <div align="center">
+  </div>
+  <div id="yui_3_13_0_ym1_1_1386807067729_3108">
+    <div align="center"><em><strong><strong>@n@Copiright</strong></strong></em></div>
+  </div>
+  <div align="center"></div>
+</div>
+<div align="center"><br>
+</div>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><a href="index.html">Volver</a></strong></em></p>
+<p align="center"><em><strong><u><font color="#FF6600">Algunos Anteriores</font></u><font color="#FF6600">&nbsp; </font></strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><u><strong><em>Sonr&iacute;e</em></strong></u>...</p>
+<DIV></DIV>
+<DIV>
+  <DIV>
+    <div align="center">
+      <DIV>
+        <p><img src="anaarellanooct2013.jpg" width="487" height="549"></p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p><img src="anaarellano-mayo2013.jpg" width="354" height="381"></p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p><strong><em><u>ENAMORARSE</u></em></strong></p>
+      </DIV>
+      <p>&nbsp; </p>
+      <DIV>
+        <DIV></DIV>
+        <DIV><strong><BR>
+        </strong></DIV>
+        <DIV>
+          <DIV><strong><em>Enamorarse&nbsp;</em></strong></DIV>
+          <DIV><em><strong>Es siempre un gran estreno,</strong></em></DIV>
+          <DIV><em><strong>es crear algo m&aacute;gico y maravilloso</strong></em></DIV>
+          <DIV><em><strong>con las tibias manos del alma</strong></em></DIV>
+          <DIV><em><strong>es darse generosamente</strong></em></DIV>
+          <DIV><em><strong>y compartir&nbsp; </strong>
+            </em>
+            <DIV><em><strong>de la vida &nbsp;</strong></em></DIV>
+            <DIV><em><strong>lo majestuoso y lo bello   .</strong></em></DIV>
+          </DIV>
+          <DIV><em><strong><BR>
+          </strong></em></DIV>
+          <DIV>
+            <DIV><em><strong>Enamorarse&nbsp;</strong></em></DIV>
+            <DIV><em><strong>es remontar sin alas el magn&iacute;fico azul del cielo</strong></em></DIV>
+            <DIV><em><strong>y volar &nbsp;hasta las&nbsp; </strong>
+              </em>
+              <DIV><em><strong>estrellas&nbsp;</strong></em></DIV>
+              <DIV>
+                  <DIV><em><strong>m&aacute;s lejanas&nbsp;</strong></em></DIV>
+              </DIV>
+            </DIV>
+            <DIV><em><strong>para traerlas&nbsp; </strong>
+              </em>
+              <DIV><em><strong>de pronto&nbsp;</strong></em></DIV>
+              <DIV>
+                  <DIV><em><strong>a alumbrarnos&nbsp;</strong></em></DIV>
+              </DIV>
+            </DIV>
+            <DIV>
+              <DIV>
+                <DIV><em><strong>todo el universo   entero.</strong></em></DIV>
+              </DIV>
+            </DIV>
+          </DIV>
+          <DIV><em><strong><BR>
+          </strong></em></DIV>
+          <DIV>
+            <DIV><em><strong>Enamorarse &nbsp;</strong></em></DIV>
+            <DIV><em><strong>Es&nbsp; </strong>
+              </em>
+              <DIV><em><strong>es renacer a la vida con   sorpresa</strong></em></DIV>
+            </DIV>
+            <DIV><em><strong>es curar con besos las m&aacute;s hondas heridas</strong></em></DIV>
+            <DIV>
+              <DIV>
+                <DIV><em><strong>y es poder estrenar mil caricias   nuevas</strong></em></DIV>
+              </DIV>
+            </DIV>
+            <DIV><em><strong>sin temer la incertidumbre del pasado.</strong></em></DIV>
+            <DIV><em><strong><BR>
+            </strong></em></DIV>
+            <DIV>
+              <DIV><em><strong>Enamorarse</strong></em></DIV>
+              <DIV><em><strong>Es salirse de los l&iacute;mites del tiempo</strong></em></DIV>
+              <DIV><em><strong>que mantiene prisioneras nuestras alas</strong></em></DIV>
+              <DIV><em><strong>y comprime el&nbsp; </strong>
+                </em>
+                <DIV>
+                  <DIV><em><strong>vuelo&nbsp;</strong></em></DIV>
+                  </DIV>
+                <DIV>
+                    <DIV>
+                      <DIV><em><strong>libre de nuestros   sentidos</strong></em></DIV>
+                    </DIV>
+                </DIV>
+              </DIV>
+              <DIV><em><strong>que huyen como peces luminosos&nbsp;</strong></em></DIV>
+              <DIV><em><strong>a su encuentro con un hermoso destino.</strong></em></DIV>
+            </DIV>
+            <DIV>
+              <DIV>
+                <DIV><em><strong><BR>
+                </strong></em></DIV>
+              </DIV>
+            </DIV>
+            <DIV>
+              <DIV>
+                <DIV><em><strong>Enamorarse&nbsp;</strong></em></DIV>
+              </DIV>
+            </DIV>
+            <DIV><em><strong>Es&nbsp; </strong>
+              </em>
+              <DIV><em><strong>es como empezar un nuevo   d&iacute;a&nbsp;</strong></em></DIV>
+            </DIV>
+            <DIV><em><strong>es sentir un gran amanecer en nuestro cielo</strong></em></DIV>
+            <DIV><em><strong>es escuchar la voz que nos murmura mil &quot;te quieros</strong></em>&quot;</DIV>
+            <DIV>
+              <DIV align="center">
+                <DIV align="center"><em><strong>es encontrar el camino que nos trae de vuelta a casa</strong></em></DIV>
+                <DIV align="center">
+                  <DIV>
+                    <DIV>
+                      <DIV align="center">
+                        <DIV align="center">
+                          <DIV align="center">
+                            <DIV align="center">
+                              <DIV align="center">
+                                <DIV align="center">
+                                  <DIV align="center"><em><strong>es regalarse por completo y   pedirlo todo sin   ego&iacute;smo.</strong></em></DIV>
+                                </DIV>
+                              </DIV>
+                            </DIV>
+                          </DIV>
+                        </DIV>
+                      </DIV>
+                    </DIV>
+                  </DIV>
+                </DIV>
+                <DIV align="center">
+                  <DIV>
+                    <DIV>
+                      <DIV align="center">
+                        <DIV align="center">
+                          <DIV align="center">
+                            <DIV align="center">
+                              <DIV align="center">
+                                <DIV align="center">
+                                  <DIV align="center"><em><strong><BR>
+                                  </strong></em></DIV>
+                                </DIV>
+                              </DIV>
+                            </DIV>
+                          </DIV>
+                        </DIV>
+                      </DIV>
+                    </DIV>
+                  </DIV>
+                </DIV>
+                <DIV align="center"> 
+                  <DIV> 
+                    <DIV>
+                      <DIV align="center">
+                        <DIV align="center">
+                          <DIV>
+                            <DIV>
+                              <DIV align="center">
+                                <DIV align="center">
+                                  <DIV align="center">
+                                    <DIV align="center">
+                                      <DIV align="center">
+                                        <DIV align="center">
+                                          <DIV align="center">
+                                            <DIV align="center"><em><strong>Enamorarse&nbsp;</strong></em></DIV>
+                                          </DIV>
+                                        </DIV>
+                                      </DIV>
+                                    </DIV>
+                                  </DIV>
+                                </DIV>
+                              </DIV>
+                            </DIV>
+                          </DIV>
+                        </DIV>
+                      </DIV>
+                      </DIV>
+                    </DIV>
+                </DIV>
+                <DIV align="center"> 
+                  <DIV> 
+                    <DIV>
+                      <DIV align="center">
+                        <DIV align="center">
+                          <DIV>
+                            <DIV>
+                              <DIV align="center">
+                                <DIV align="center">
+                                  <DIV align="center">
+                                    <DIV align="center">
+                                      <DIV align="center">
+                                        <DIV align="center">
+                                          <DIV align="center">
+                                            <DIV align="center"><em><strong>Es calmar la sed de amar al   beberse el amor de un   trago&nbsp;</strong></em></DIV>
+                                          </DIV>
+                                        </DIV>
+                                      </DIV>
+                                    </DIV>
+                                  </DIV>
+                                </DIV>
+                              </DIV>
+                            </DIV>
+                          </DIV>
+                        </DIV>
+                      </DIV>
+                      </DIV>
+                    </DIV>
+                </DIV>
+                <DIV align="center">
+                  <DIV>
+                    <DIV> 
+                      <DIV> 
+                        <DIV> 
+                          <DIV align="center"> 
+                            <DIV align="center"> 
+                              <DIV> 
+                                <DIV>
+                                  <DIV align="center">
+                                    <DIV align="center">
+                                      <DIV>
+                                        <DIV>
+                                          <DIV align="center">
+                                            <DIV align="center">
+                                              <DIV align="center">
+                                                <DIV align="center">
+                                                  <DIV align="center">
+                                                    <DIV align="center">
+                                                      <DIV align="center">
+                                                        <DIV align="center"><em><strong>es escalar los m&aacute;s hondos   abismos, tomados de las   manos</strong></em></DIV>
+                                                      </DIV>
+                                                    </DIV>
+                                                  </DIV>
+                                                </DIV>
+                                              </DIV>
+                                            </DIV>
+                                          </DIV>
+                                        </DIV>
+                                      </DIV>
+                                    </DIV>
+                                  </DIV>
+                                  </DIV>
+                                </DIV>
+                              </DIV>
+                            </DIV>
+                          </DIV>
+                        </DIV>
+                    </DIV>
+                  </DIV>
+                </DIV>
+                <DIV align="center">
+                  <DIV>
+                    <DIV> 
+                      <DIV> 
+                        <DIV> 
+                          <DIV align="center"> 
+                            <DIV align="center"> 
+                              <DIV> 
+                                <DIV>
+                                  <DIV align="center">
+                                    <DIV align="center">
+                                      <DIV>
+                                        <DIV>
+                                          <DIV align="center">
+                                            <DIV align="center">
+                                              <DIV align="center">
+                                                <DIV align="center">
+                                                  <DIV align="center">
+                                                    <DIV align="center">
+                                                      <DIV align="center">
+                                                        <DIV align="center"><em><strong>es desafiar las   tormentas&nbsp;</strong></em></DIV>
+                                                      </DIV>
+                                                    </DIV>
+                                                  </DIV>
+                                                </DIV>
+                                              </DIV>
+                                            </DIV>
+                                          </DIV>
+                                        </DIV>
+                                      </DIV>
+                                    </DIV>
+                                  </DIV>
+                                  </DIV>
+                                </DIV>
+                              
+                              <DIV> 
+                                <DIV> 
+                                  <DIV align="center"> 
+                                    <DIV align="center"> 
+                                      <DIV> 
+                                        <DIV> 
+                                          <DIV> 
+                                            <DIV> 
+                                              <DIV align="center"> 
+                                                <DIV> 
+                                                  <DIV> 
+                                                    <DIV align="center"> 
+                                                      <DIV align="center"> 
+                                                        <DIV> 
+                                                          <DIV>
+                                                              <DIV align="center">
+                                                                <DIV align="center">
+                                                                  <DIV>
+                                                                    <DIV>
+                                                                      <DIV align="center">
+                                                                        <DIV align="center">
+                                                                          <DIV align="center">
+                                                                            <DIV align="center">
+                                                                              <DIV align="center">
+                                                                                <DIV align="center">
+                                                                                  <DIV align="center">
+                                                                                    <DIV align="center"><em><strong>hombro a hombro, lado a   lado</strong></em></DIV>
+                                                                                  </DIV>
+                                                                                </DIV>
+                                                                              </DIV>
+                                                                            </DIV>
+                                                                          </DIV>
+                                                                        </DIV>
+                                                                      </DIV>
+                                                                    </DIV>
+                                                                  </DIV>
+                                                                </DIV>
+                                                              </DIV>
+                                                            </DIV>
+                                                          </DIV>
+                                                        </DIV>
+                                                      </DIV>
+                                                    </DIV>
+                                                  </DIV>
+                                                </DIV>
+                                              </DIV>
+                                            </DIV>
+                                          </DIV>
+                                        </DIV>
+                                      </DIV>
+                                    </DIV>
+                                  </DIV>
+                              </DIV>
+                              </DIV>
+                            <DIV align="center"> 
+                              <DIV>
+                                  <DIV>
+                                    <DIV align="center">
+                                      <DIV align="center">
+                                        <DIV>
+                                          <DIV>
+                                            <DIV>
+                                              <DIV>
+                                                <DIV align="center">
+                                                  <DIV>
+                                                    <DIV>
+                                                      <DIV align="center">
+                                                        <DIV align="center">
+                                                          <DIV>
+                                                            <DIV>
+                                                              <DIV align="center">
+                                                                <DIV align="center">
+                                                                  <DIV>
+                                                                    <DIV>
+                                                                      <DIV align="center">
+                                                                        <DIV align="center">
+                                                                          <DIV align="center">
+                                                                            <DIV align="center">
+                                                                              <DIV align="center">
+                                                                                <DIV align="center">
+                                                                                  <DIV align="center">
+                                                                                    <DIV align="center"><em><strong>es incendiar con besos los   cielos y los   oc&eacute;anos</strong></em></DIV>
+                                                                                  </DIV>
+                                                                                </DIV>
+                                                                              </DIV>
+                                                                            </DIV>
+                                                                          </DIV>
+                                                                        </DIV>
+                                                                      </DIV>
+                                                                    </DIV>
+                                                                  </DIV>
+                                                                </DIV>
+                                                              </DIV>
+                                                            </DIV>
+                                                          </DIV>
+                                                        </DIV>
+                                                      </DIV>
+                                                    </DIV>
+                                                  </DIV>
+                                                </DIV>
+                                              </DIV>
+                                            </DIV>
+                                          </DIV>
+                                        </DIV>
+                                      </DIV>
+                                    </DIV>
+                                  </DIV>
+                                </DIV>
+                            </DIV>
+                            
+                            <DIV> 
+                              <DIV> 
+                                <DIV align="center"> 
+                                  <DIV align="center"></DIV>
+                                  </DIV>
+                                </DIV>
+                            </DIV>
+                            <DIV align="center">
+                                <DIV>
+                                  <DIV>
+                                    <DIV align="center">
+                                      <DIV align="center">
+                                        <DIV>
+                                          <DIV>
+                                            <DIV>
+                                              <DIV>
+                                                <DIV align="center">
+                                                  <DIV align="center">
+                                                    <DIV>
+                                                      <DIV>
+                                                        <DIV align="center">
+                                                          <DIV align="center">
+                                                            <DIV>
+                                                              <DIV>
+                                                                <DIV align="center">
+                                                                  <DIV align="center">
+                                                                    <DIV align="center">
+                                                                      <DIV align="center">
+                                                                        <DIV align="center">
+                                                                          <DIV align="center">
+                                                                            <DIV align="center">
+                                                                              <DIV align="center"><em><strong>y encender los rel&aacute;mpagos   de</strong></em></DIV>
+                                                                            </DIV>
+                                                                          </DIV>
+                                                                        </DIV>
+                                                                      </DIV>
+                                                                    </DIV>
+                                                                  </DIV>
+                                                                </DIV>
+                                                              </DIV>
+                                                            </DIV>
+                                                          </DIV>
+                                                        </DIV>
+                                                      </DIV>
+                                                    </DIV>
+                                                  </DIV>
+                                                </DIV>
+                                              </DIV>
+                                            </DIV>
+                                          </DIV>
+                                        </DIV>
+                                      </DIV>
+                                    </DIV>
+                                  </DIV>
+                                </DIV>
+                              <DIV>
+                                  <DIV>
+                                    <DIV align="center">
+                                      <DIV align="center">
+                                        <DIV>
+                                          <DIV>
+                                            <DIV align="center">
+                                              <DIV align="center">
+                                                <DIV>
+                                                  <DIV>
+                                                    <DIV align="center">
+                                                      <DIV align="center">
+                                                        <DIV align="center">
+                                                          <DIV align="center">
+                                                            <DIV align="center">
+                                                              <DIV align="center">
+                                                                <DIV align="center">
+                                                                  <DIV align="center"><em><strong>&nbsp;vivir   ilusionados,</strong></em></DIV>
+                                                                </DIV>
+                                                              </DIV>
+                                                            </DIV>
+                                                          </DIV>
+                                                        </DIV>
+                                                      </DIV>
+                                                    </DIV>
+                                                  </DIV>
+                                                </DIV>
+                                              </DIV>
+                                            </DIV>
+                                          </DIV>
+                                        </DIV>
+                                      </DIV>
+                                    </DIV>
+                                  </DIV>
+                              </DIV>
+                            </DIV>
+                            </DIV>
+                          </DIV>
+                        </DIV>
+                    </DIV>
+                  </DIV>
+                </DIV>
+                <DIV align="center"><em><strong><BR>
+                </strong></em></DIV>
+                <DIV align="center"></DIV>
+              </DIV>
+            </DIV>
+          </DIV>
+          <DIV align="center"><em><strong>Enamorarse</strong></em></DIV>
+          <DIV align="center">
+            <DIV align="center">
+              <DIV align="center"><em><strong>Es ser puerto seguro al que   los barcos siempre llegan</strong></em></DIV>
+            </DIV>
+          </DIV>
+          <DIV align="center">
+            <DIV align="center">
+              <DIV><em><strong>y abrirse paso f&aacute;cilmente por caminos   nuevos</strong></em></DIV>
+            </DIV>
+          </DIV>
+        </DIV>
+        <DIV>
+          <DIV><em><strong>sobre un mar de espejismos delirantes</strong></em></DIV>
+          <DIV>
+            <DIV><em><strong>entre r&iacute;tmicas oleadas   sobre</strong></em></DIV>
+            <em><strong>&nbsp;una barca sin amarras.</strong></em></DIV>
+        </DIV>
+        <DIV>
+          <DIV align="center">
+            <DIV align="center">
+              <DIV align="center"><em><strong><BR>
+              </strong></em></DIV>
+            </DIV>
+            <DIV align="center">
+              <DIV align="center"><em><strong>Enamorarse</strong></em></DIV>
+              <DIV align="center"><em><strong>Es tocar tu piel, mirar tus ojos, sentir tu tibio cuerpo</strong></em></DIV>
+              <DIV align="center"><em><strong>es tomar por primera vez tus manos,&nbsp;</strong></em></DIV>
+              <DIV align="center"><em><strong>es saber a que saben tus exquisitos labios</strong></em></DIV>
+              <DIV align="center"><em><strong>y disolver con un beso el dolor de estar distantes</strong></em></DIV>
+              <DIV align="center"><em><strong>siendo como somos un alma en dos distintos cuerpos.</strong></em></DIV>
+              <DIV align="center"><em><strong><BR>
+              </strong></em></DIV>
+            </DIV>
+            <DIV align="center">
+              <DIV align="center"><em><strong>Enamorarse</strong></em></DIV>
+              <DIV align="center"><em><strong>Es concentrarse en el sentir del otro</strong></em></DIV>
+              <DIV align="center"><em><strong>como el cielo se concentra en fabricar estrellas</strong></em></DIV>
+            </DIV>
+            <DIV align="center">
+              <DIV align="center">
+                <DIV>
+                  <DIV align="center">
+                    <DIV align="center">
+                      <DIV align="center"><em><strong>haci&eacute;ndole vibrar y   estremecer al alma entera</strong></em></DIV>
+                    </DIV>
+                  </DIV>
+                </DIV>
+              </DIV>
+            </DIV>
+            <DIV align="center">
+              <DIV align="center"><em><strong>llevandole a experimentar, la vida y la muerte...</strong></em></DIV>
+              <DIV align="center"><em><strong>En tan s&oacute;lo un instante eterno.</strong></em></DIV>
+              <DIV align="center"><em><strong>@n@Coppyright.</strong></em></DIV>
+            </DIV>
+          </DIV>
+        </DIV>
+      </DIV>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><strong><em><u>Tu Amor.</u>...</em></strong></p>
+    </div>
+  </DIV>
+  <DIV>
+    <div align="center">
+      <p>&nbsp;</p>
+      <p><em><strong>Es es el fulgor de los diamantes</strong></em></p>
+    </div>
+  </DIV>
+  <DIV>
+    <div align="center"><em><strong>El tesoro de los mares</strong></em></div>
+  </DIV>
+  <DIV>
+    <div align="center"><em><strong>El fuego de todas las hogueras</strong></em></div>
+  </DIV>
+  <DIV>
+    <div align="center"><em><strong>Y la paz de todas la guerras.</strong></em></div>
+  </DIV>
+  <DIV>
+    <div align="center"><em><strong>Tu Amor.... </strong></em></div>
+  </DIV>
+  <DIV>
+    <div align="center"><em><strong>Es la piedra filosofal de la Alqu&iacute;mia</strong></em></div>
+  </DIV>
+  <DIV>
+    <div align="center"><em><strong>La galaxia de la Astronom&iacute;a</strong></em></div>
+  </DIV>
+  <DIV>
+    <div align="center"><em><strong>La monta&ntilde;a de la Geolog&iacute;a</strong></em></div>
+  </DIV>
+  <DIV>
+    <div align="center"><em><strong>Y la paloma blanca de la Zoolog&iacute;a</strong></em></div>
+  </DIV>
+  <DIV>
+    <div align="center"><em><strong>Tu Amor.... </strong></em></div>
+  </DIV>
+  <DIV>
+    <div align="center"><em><strong>Es la llave de todas las prisiones</strong></em></div>
+  </DIV>
+  <DIV>
+    <div align="center"><em><strong>El consuelo de todas las penas</strong></em></div>
+  </DIV>
+  <DIV>
+    <div align="center"><em><strong>El sanador de todas las heridas</strong></em></div>
+  </DIV>
+  <DIV>
+    <div align="center"><em><strong>Y el ant&iacute;doto de todos los venenos.</strong></em></div>
+  </DIV>
+  <DIV>
+    <div align="center"><em><strong>Cuando en el cielo se apaguen</strong></em></div>
+  </DIV>
+  <DIV>
+    <div align="center"><em><strong>todas las estrellas...</strong></em></div>
+  </DIV>
+  <DIV>
+    <div align="center"><em><strong>Tu Amor...</strong></em></div>
+  </DIV>
+  <DIV>
+    <div align="center"><em><strong>Continuar&aacute; brillando en mi cielo.</strong></em></div>
+  </DIV>
+  <DIV>
+    <div align="center">
+      <p>&nbsp;</p>
+      <p><strong>@n@copyright</strong></p>
+    </div>
+  </DIV>
+</DIV>
+<p align="center">&nbsp;</p>
+<div align="center">
+  <p><em><strong><u>CORAZ&Oacute;N</u></strong><u><strong>&nbsp;DE&nbsp;NI&Ntilde;A</strong></u></em></p>
+</div>
+<DIV>
+  <div align="center">
+    <p>&nbsp;</p>
+  </div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong><BR>
+  </strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>Quisiera   olvidarme&nbsp;de&nbsp;ti</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>como&nbsp;de&nbsp;algo que nunca ha   sido...</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong><BR>
+  </strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>Pero, en la   marchita primavera&nbsp;de&nbsp;mis sue&ntilde;os</strong></em>;</div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>en el l&aacute;nguido   verano&nbsp;de&nbsp;mis vanos   deseos</strong></em>;</div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>en el desolado   oto&ntilde;o&nbsp;de&nbsp;mis   recuerdos</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>y en las largas   veladas&nbsp;de&nbsp;mi oscuro   invierno...</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong><BR>
+  </strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>el Amor se agita   triste y solitario</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>en mi   fr&aacute;gil&nbsp;coraz&oacute;n&nbsp;de&nbsp;ni&ntilde;a....</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong><BR>
+  </strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong><br>
+  Como el latido   secreto&nbsp;de&nbsp;una dulce   pena</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>que me devora el   alma.</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong><BR>
+  </strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong><br>
+  Quisiera   olvidarme&nbsp;de&nbsp;ti</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>como olvida las   flores el desierto;</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>como olvida la   luz, la oscuridad eterna</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>como se olvida   el tiempo...</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>en el latir   pausado&nbsp;de&nbsp;las hora   muertas.</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong><BR>
+  </strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong><br>
+  Quisera   olvidareme&nbsp;de&nbsp;ti&nbsp;</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>con s&oacute;lo cerrar   los ojos&nbsp;o contener el aliento;</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong><BR>
+  </strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>cerrarte las   puertas del alma</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>que la   ilusi&oacute;n&nbsp;de&nbsp;volverte a   ver&nbsp;</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>a&uacute;n mantiene   abiertas.</strong></em><br>
+  </div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong><BR>
+  </strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>M&aacute;s, mi universo   te llama; mi cuerpo te desea</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>y un p&aacute;lido rayo   del sol&nbsp;de&nbsp;tu recuerdo</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>me alumbra   el&nbsp;coraz&oacute;n&nbsp;cuando te   pienso.</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong><BR>
+  </strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong><br>
+  Quisiera   olvidarme&nbsp;de&nbsp;ti en cada   momento</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>triste o   alegre&nbsp;de&nbsp;mi vida</strong></em>...</div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong><br>
+  M&aacute;s, siempre algo   sucede y&nbsp;de&nbsp;nuevo&nbsp;</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong>vuelves a vivir   en mi recuerdo.</strong></em></div>
+</DIV>
+<DIV>
+  <div align="center"><em><strong><br>
+  @n@copyright.</strong></em></div>
+</DIV>
+<p align="center">&nbsp;</p>
+<p align="center"><strong><em>. . . . </em></strong></p>
+<p align="center">&nbsp;</p>
+<div align="center">
+  <table width="75%" border="0" align="center">
+    <tr> 
+      <td width="97%"><p align="center"><em><strong><u>LOS PEGAZOS DEL ALMA</u></strong></em></p>
+        <p align="center"><em><strong>Hay algunos sue&ntilde;os que no se van 
+          a realizar <br>
+          mas siempre existir&aacute; un poema<br>
+          para poder saborear los m&aacute;s caros anhelos<br>
+          en otra dimensi&oacute;n de la existencia </strong></em></p>
+        <p align="center"><em><strong>Donde el entorno verdadero se diluye <br>
+          y permite que el esp&iacute;ritu se fugue <br>
+          hacia esos mundos perdidos <br>
+          donde es posible despiertos so&ntilde;ar. </strong></em></p>
+        <p align="center"><em><strong>Un poema.. ese espacio perfecto para imaginar; 
+          <br>
+          ese camino abierto hacia la sensibilidad, <br>
+          que incendia el mundo interno, le presta su calor, y lo sabe iluminar.</strong></em></p></td>
+    </tr>
+  </table>
+</div>
+<p align="center"><em><strong>Un poema... que nos revela mundos que cre&iacute;mos 
+  perdidos<br>
+  y nos regala la fant&aacute;stica ilusi&oacute;n <br>
+  de crearnos universos nuevos<br>
+  donde no existen l&iacute;mites distantes o ajenos ... </strong></em></p>
+<p align="center"><em><strong>S&oacute;lo existen los pegazos del alma<br>
+  que atrapan nuestros sentidos <br>
+  y aunque que tal vez nunca lleguen <br>
+  siempre estar&aacute;n presentes muy dentro del coraz&oacute;n.<br>
+  </strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>. . .</strong></em></p>
+<p align="center"><em><strong><u>AHORA QUE NO EST&Aacute;S.</u><br>
+  </strong></em></p>
+<p align="center"><em><strong> S&eacute; que el tiempo<br>
+  se va quedando siempre<br>
+  lentamente y poco a poco<br>
+  con todos nuestros sue&ntilde;os.</strong></em></p>
+<p align="center"> <em><strong><br>
+  A&uacute;n as&iacute;, ahora que partiste de mi lado,<br>
+  me gusta imaginarte descansando<br>
+  a orillas del sol naciente,<br>
+  en un d&iacute;a luminoso y tibio.</strong></em></p>
+<p align="center"><em><strong><br>
+  En un hermoso oasis<br>
+  de intens&iacute;simos colores,<br>
+  jugando los dos muy juntos,<br>
+  como gotitas de agua en la cascada.</strong></em></p>
+<p align="center"> <em><strong><br>
+  Me gusta imaginarte en tu universo de cometas<br>
+  cuidando tu reba&ntilde;o de delfines,<br>
+  mientras el sol te ba&ntilde;a con su luz dorada<br>
+  y el cielo nunca te anuncia su crep&uacute;sculo.</strong></em></p>
+<p align="center"><em><strong><br>
+  Me gusta imaginar que ahora habitas<br>
+  en un dulce para&iacute;so donde el mar no tiene<br>
+  ni fin ni principio, y t&uacute; le prestas<br>
+  tu calor al brillo del agua.</strong></em></p>
+<p align="center"> <em><strong><br>
+  Me gusta imaginarte<br>
+  en ese mundo intangible, donde el aire<br>
+  se fragmenta en sue&ntilde;os y la luna se adorna<br>
+  para ti, siempre con destellos nuevos.</strong></em></p>
+<p align="center"><em><strong><br>
+  Me gusta imaginar que al fin nos encontramos,<br>
+  y como una chiquilla me extiendes tus brazos<br>
+  y volvemos a compartir<br>
+  nuevamente todos nuestros sue&ntilde;os.</strong></em></p>
+<p align="center"><em><strong><br>
+  Y ahora que no est&aacute;s quiero decirte...<br>
+  <br>
+  Que mi coraz&oacute;n te llama y s&eacute; que t&uacute; me escuchas,<br>
+  que mi pensamiento vuelve a ti constante,<br>
+  que la chispa de tu amor nunca se extingue<br>
+  que tu recuerdo es el pan y la sal de mi hambre.<br>
+  <br>
+  Que se mantiene intacta la emoci&oacute;n que me trajiste,<br>
+  que tu presencia inolvidable contin&uacute;a<br>
+  aleteando en el viento, y que siempre te amar&eacute;,<br>
+  de aqu&iacute; hasta donde termina el cielo.<br>
+  <br>
+  -- <br>
+  &quot; El Amor es una llama<br>
+  que cuando se enciende,<br>
+  ni el tiempo puede apagarla&quot;<br>
+  @n@<br>
+  <br>
+  . . . </strong></em></p>
+<p align="center"><em><strong><u><br>
+  CONFESIONES </u></strong></em></p>
+<p align="center"><em><strong><br>
+  Hora tras eterna hora,<br>
+  eres el cometa que me ilumina los sue&ntilde;os,<br>
+  el fuego de mi pasi&oacute;n arrolladora,<br>
+  una llama que se aviva con el viento<br>
+  y juega con mi piel ardiente,<br>
+  en esas madrugadas...<br>
+  donde termina la leyenda<br>
+  y la vida de nuevo comienza a rienda suelta,<br>
+  donde la magia se presenta,<br>
+  con todos sus brebajes<br>
+  y sus perfumes nuevos e inocentes,<br>
+  en ese fascinante drama<br>
+  lleno de amor y ficci&oacute;n<br>
+  que nos invita a tentar a la suerte<br>
+  a cambiar los inviernos en veranos<br>
+  a quitarle los colmillos al reloj eterno,<br>
+  ese lobo hambriento<br>
+  que trata de robar las alas<br>
+  de las dulces mariposas <br>
+  que aletean en nuestras almas.</strong></em></p>
+<p align="center"><em><strong>Noche tras eterna noche<br>
+  te confieso que te quiero,<br>
+  que existen para m&iacute;,<br>
+  dos cosas imposibles de evitar...<br>
+  <br>
+  Amarte y recordarte;<br>
+  y que existe una palabra<br>
+  para cada sentimiento...<br>
+  <br>
+  Menos para expresar<br>
+  todas las cosas que por ti yo siento<br>
+  cuando me arropo en las galaxias<br>
+  de tu dulce universo...<br>
+  . . .</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><u>A pesar de todo</u>...</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>A pesar de todo<br>
+  lo que tu alma est&eacute; sintiendo,<br>
+  el d&iacute;a a&uacute;n sigue siendo bello... <br>
+  por mis antojos y tus besos. </strong></em></p>
+<p align="center"><em><strong> Y si te tomas tu tiempo,<br>
+  y miras hacia el horizonte et&eacute;reo,<br>
+  puedes darte cuenta que, <br>
+  los resultados siempre son hermosos.</strong></em></p>
+<p align="center"><em><strong>Porque al final<br>
+  todo en la vida resulta en <br>
+  amar y querer ... </strong></em></p>
+<p align="center"><em><strong>Si... el amor viene primero...<br>
+  despu&eacute;s los besos<br>
+  y entonces nos damos cuenta<br>
+  de que estamos hechos<br>
+  de la misma esencia...</strong></em></p>
+<p align="center"><em><strong>Y de que somos dos latidos en uno;<br>
+  entonces nos damos cuenta <br>
+  que la vida es un poema <br>
+  y una oportunidad<br>
+  para encontrar la dicha.</strong></em></p>
+<p align="center"><em><strong>Es entonces que puedo darme cuenta,<br>
+  mientras acaricio<br>
+  el sat&eacute;n impalpable de tu piel amada...</strong></em></p>
+<p align="center"><em><strong>Que la dulce fragancia de tu amor<br>
+  est&aacute; conmigo...<br>
+  aunque t&uacute; te encuentres,<br>
+  a muchas millas, a lo lejos.<br>
+  </strong></em></p>
+<p align="center"><em><strong>. . . . .</strong></em></p>
+<p align="center"><em><strong><br>
+  <u>Misterio</u><br>
+  <br>
+  </strong></em></p>
+<p align="center"><em><strong>Un hechizo s&oacute;lo, no es suficiente<br>
+  el amor es quien le da su fuerza,<br>
+  cuando el crep&uacute;sculo cierra<br>
+  las ventanitas del horizonte.</strong></em></p>
+<p align="center"><em><strong>El amor es aquello que da su voz al sentimiento,<br>
+  es un dorado misterio que nos regala el cielo<br>
+  para romper el espacio y el tiempo.<br>
+  <br>
+  Es un huracanado viento que nos hacer temblar<br>
+  como palmera solitaria en el desierto,<br>
+  cuando la lluvia seca sus ojos<br>
+  y deja asomarse al cielo.<br>
+  <br>
+  Es un Domingo cualquiera<br>
+  que se desliza en el azul del cielo<br>
+  y nos ense&ntilde;a mil universos nuevos.<br>
+  <br>
+  Es un fuego alegre brillando en la chimenea,<br>
+  es todo eso que habita dentro de los sue&ntilde;os<br>
+  cuando la noche baja en silencio<br>
+  y deja todo en penumbras.<br>
+  <br>
+  Es un juego que se aprende muy dentro del alma,<br>
+  una joya luminosa que se prende al coraz&oacute;n<br>
+  y ya con nada se arranca.<br>
+  <br>
+  El amor no es el mismo cielo, pero...<br>
+  cuando el viento frota su cara con la m&iacute;a<br>
+  y el amor abre sus ojos y me mira,<br>
+  &iexcl;Ah...! Como se parece al cielo.</strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong><br>
+  <br>
+  <u>BESOS DE NIEBLA</u></strong></em></p>
+<p align="center">&nbsp;</p>
+<p align="center"><em><strong>El &uacute;ltimo sol de nuestro amor se est&aacute; 
+  poniendo<br>
+  dej&aacute;ndome en la piel, sus tristes besos de niebla. <br>
+  Se ha fragmentado en trozos de cristal el sue&ntilde;o.</strong></em></p>
+<p align="center"><em><strong>S&oacute;lo hay rutina entre los dos, s&oacute;lo 
+  caricias serenas,<br>
+  ya no hay prisas ni carreras&#8230;ni un sue&ntilde;o, una ilusi&oacute;n<br>
+  o un beso que inicie la tormenta.</strong></em></p>
+<p align="center"><em><strong>Tal vez deba dejar que se apague para siempre la 
+  quimera<br>
+  mientras mi coraz&oacute;n se rompe entre el silencio<br>
+  y la soledad se adue&ntilde;a de mi vida entera.</strong></em></p>
+<p align="center"><em><strong>Tal vez yo deba desafiar el miedo<br>
+  despojarme de esta piel&#8230; nacer de nuevo.. <br>
+  Y no dejar que la rosa del amor<br>
+  pierda su luz, su &uacute;ltimo fuego&#8230;<br>
+  y ese perfume azul de su eterna belleza .</strong></em></p>
+<p align="center"><em><strong>El &uacute;ltimo sol de nuestro amor se est&aacute; 
+  poniendo&#8230;<br>
+  tal vez el melod&iacute;a de un nuevo amor venga a mi encuentro <br>
+  y apagando tu tenue luz&#8230; me recueste a esperarlo ilusionada...<br>
+  </strong></em></p>
+<p align="center"><em><strong><font size="2"> </font></strong></em></p>
+<p align="center"><em><strong>. . . .</strong></em></p>
+<p align="center"><em><strong><u>DESDE OTRAS TIERRAS</u><br>
+  </strong></em></p>
+<p align="center"> <em><strong>Y a&uacute;n sigo yo aqu&iacute;,<br>
+  en estas tierras...<br>
+  queriendo zambullirme entre tus brazos,<br>
+  queriendo que tu amor<br>
+  siga haciendo brillar el d&iacute;a<br>
+  Queriendo adivinar esos secretos<br>
+  que esconde <br>
+  misteriosa y tentadora tu sonrisa...<br>
+  <br>
+  A&uacute;n sigo aqu&iacute;<br>
+  deseando ignorar al padre tiempo<br>
+  para volverme un ovillo de luz<br>
+  que dibuje mil universos en tu vida..<br>
+  A&uacute;n sigo aqu&iacute;<br>
+  queriendo descifrar<br>
+  &iquest;c&oacute;mo ser&iacute;a<br>
+  sentir sobre mi piel<br>
+  el excitante lenguaje de tus manos,<br>
+  que mi cuerpo, bien entender&iacute;a?<br>
+  <br>
+  A&uacute;n sigo aqu&iacute;<br>
+  regando con mis besos tus recuerdos</strong></em></p>
+<p align="center"><em><strong>queriendo que este amor tan luminoso y m&aacute;gico<br>
+  como esa espuma de luz que es nuestra luna,<br>
+  nunca se extinga. <br>
+  A&uacute;n sigo aqu&iacute;<br>
+  en &eacute;sta dimensi&oacute;n ficticia<br>
+  en &eacute;ste laberinto placentero<br>
+  donde tus besos bulliciosos como ni&ntilde;os<br>
+  llenan al l&iacute;mite mi cuerpo con caricias<br>
+  y el fuego de tu amor,<br>
+  desde otra tierras...<br>
+  sigue alumbr&aacute;ndome la vida<br>
+  </strong></em></p>
+<p align="center"><em><strong>. . . <br>
+  <br>
+  <br>
+  <u>LA PIEL DE TU SOMBRA</u><br>
+  <br>
+  Se me incendia la sangre cada que me atrapas,<br>
+  cada vez que tu sombra me hace presa<br>
+  del antojo de tu delicioso fuego. <br>
+  <br>
+  Se me hielan una a una, las p&aacute;ginas del alma...<br>
+  cada vez que me captas<br>
+  para acariciarme, para descifrarme...<br>
+  <br>
+  Para estremecerme a la luz de tus deseos <br>
+  que encienden mi pasi&oacute;n<br>
+  y mis m&aacute;s hondos secretos.<br>
+  <br>
+  Se me quema el aire<br>
+  cada vez que anhelo, la piel de tu sombra<br>
+  dentro de mi cuerpo h&uacute;medo de besos.<br>
+  <br>
+  La piel de tu sombra me tiene cautiva<br>
+  si juegas conmigo cada madrugada<br>
+  bajo las cambiantes galas de la luna.<br>
+  <br>
+  T&uacute; pasi&oacute;n domina todo y me haces sentir fascinada<br>
+  cuando siento entrar en m&iacute;<br>
+  la piel de tu sombra salvaje y delicada.<br>
+  <br>
+  Cuando empiezas a rozar mis labios<br>
+  y tus labios me muerden la piel con furia loca<br>
+  suspirando delirios en mi pecho.<br>
+  <br>
+  Es entonces cuando siento que el amor ha regresado <br>
+  y todo grita en m&iacute;, de un modo sensual y voluptuoso, <br>
+  que...&iexcl;Te necesito!</strong></em></p>
+<p align="center"><em><strong>. . .<br>
+  </strong></em></p>
+<p align="center"><em><strong><u>NAVIDAD SIN TI</u><br>
+  </strong></em></p>
+<p align="center"><em><strong>En esta navidad, yo s&oacute;lo pienso en ti<br>
+  &iquest;c&oacute;mo voy a celebrarla si t&uacute; no est&aacute;s aqu&iacute;?<br>
+  no hay dulces ni guirnaldas en mi alma<br>
+  nada es igual sin ti...<br>
+  El vuelo de la luna se detuvo<br>
+  el brillo de las luces parece congelado <br>
+  las gingle bells no entibian el ambiente<br>
+  con su ding dong alegre.<br>
+  Ya no hay m&aacute;s tiernos duendes<br>
+  ni adornos, ni regalos, ni besos con abrazos.<br>
+  La nieve ya no canta villancicos como siempre.<br>
+  Mi coraz&oacute;n se siente solo, <br>
+  la navidad ya no significa nada para m&iacute;.<br>
+  La estrella de los sue&ntilde;os se ha apagado para m&iacute;.<br>
+  El concierto de la vida se ha callado para siempre<br>
+  por que tu no est&aacute;s aqu&iacute;.<br>
+  <br>
+  </strong></em></p>
+<p align="center"><em><strong>. . . . .</strong></em></p>
+<p align="center"><em><strong><br>
+  <br>
+  ---------------------------------------<br>
+  El amor para existir<br>
+  necesita mirarse en otros ojos <br>
+  refugiarse en otros labios... <br>
+  cobijarse en otro cuerpo...</strong></em></p>
+<p align="center"><em><strong><font size="2">@n@<br>
+  </font></strong><br>
+  E-mail: sheresada@gmail.com <br>
+  <font size="2">@n@ Copyright &copy; 2008 -<br>
+  Todos los derechos reservados.</font><strong><font size="2"></font></strong><strong><br>
+  <br>
+  <a href="index.html">Volver </a></strong></em></p>
+<div align="center">
+  <table width="89%" border="1" align="center">
+    <tr> 
+      <td width="71%"><em><strong><font size="2">Es licenciada en Medicina desde 
+        1985. Actualmente cursa Psicolog&iacute;a, en cuyo &aacute;mbito tiene 
+        pensado desarrollar su actividad en la especialidad de la Psicolog&iacute;a 
+        Geri&aacute;trica. </font></strong></em> 
+        <p><font size="2"><em><strong>Entre 
+          sus aficiones est&aacute;n la m&uacute;sica, la lectura, el deporte 
+          y la naturaleza. Le encanta disfrutar las puestas de sol, dejando que 
+          sus sue&ntilde;os viajen por el azul del cielo para escribir acerca 
+          de algunas de las formas como se manifiesta el amor, que para ella es 
+          lo mas maravilloso que tiene la vida. Mujer sensible, rom&aacute;ntica 
+          cari&ntilde;osa y sentimental, gusta de escribir para compartir mis 
+          sentimientos.</strong></em></font></p> <p><em><strong><font size="2">Aficionada 
+          a la lectura desde la ni&ntilde;ez, en sus ratos libres agrada escribir 
+          cuentos para ni&ntilde;os y, &uacute;ltimamente, practica con di&aacute;fana 
+          desenvoltura un tipo de poes&iacute;a subjetivo-rom&aacute;ntica, que 
+          se manifiesta en una l&iacute;rica plet&oacute;rica de ternura y humanidad. 
+          &laquo;Algunos de mis poemas van dedicados a alguien especial que, de 
+          una u otra forma, ha llenado un espacio en alg&uacute;n momento de mi 
+          vida y que me ha dado el material del cual est&aacute;n hechas las ilusiones 
+          para escribir mis versos&raquo;, ha afirmado.<br>
+          </font> </strong></em></p></td>
+      <td width="29%"><div align="center"><em><strong><img src="ana_luisa_arellano.jpg" width="121" height="108"></strong></em></div></td>
+    </tr>
+  </table>
+</div>
+<p align="center"><em><strong><font color="#FFFFFF"><a href="index.html">Volver</a></font></strong></em></p>
+<p align="center"></p>
+<!-- Inserted by miarroba -->
+</script></noframes></noembed></noscript>
+<script type="text/javascript" src="https://hosting.miarroba.info/?__muid=5aef3ab04d5685ae36490298d39278cc3ac64768&amp;h=1395044&amp;t=1614567313&amp;k=6ac77b0c03a9bed89cbb1b28f19d9d42"></script><noscript><img alt="beacon" border="0" width="1" height="1" src="https://hosting.miarroba.info/?__muid=5aef3ab04d5685ae36490298d39278cc3ac64768&amp;h=1395044&amp;t=1614567313&amp;k=6ac77b0c03a9bed89cbb1b28f19d9d42&amp;img=1" /></noscript>
+<script type="text/javascript">var s=document.createElement("script");var t="//des.smartclip.net/ads?type=dyn&plc=75133&elementId=5aef3ab04d5685ae36490298d39278cc3ac64768&sz=400x320&rnd="+Math.round(Math.random()*1e8);s.type="text/javascript";s.src=t;document.body.appendChild(s);</script><div id="5aef3ab04d5685ae36490298d39278cc3ac64768"></div>
+<div id="ads_HEZRL65RXYI2"></div>
+<script defer="" language="javascript" type="text/javascript">
+(function(){
+var newscript= document.createElement('script');
+newscript.type = 'text/javascript';
+newscript.async = true;
+lz_elem = (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]);
+lz_elem.appendChild(newscript);
+newscript.onload = function(ev){
+var lz_url="https://play.sunmediaads.com/red/zone.php?code=HEZRL65RXYI2&a=&pubid=&lgid="+((new Date()).getTime() % 2147483648) + Math.random();
+var lz_target = "ads_HEZRL65RXYI2";
+var lz_sync_mode=false;
+lz_loadads(lz_url ,lz_target,lz_sync_mode);
+}
+newscript.src= "https://img.sunmediaads.com/ads/lz_loader.js?ver=1.4";
+})();
+</script>
+<!-- Inserted by miarroba -->
+</body>
+</html>
